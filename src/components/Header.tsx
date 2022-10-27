@@ -1,22 +1,23 @@
-import { Dimensions, Platform, StatusBar, View } from "react-native";
+import {  Platform, StatusBar, View } from "react-native";
 import React from "react";
 import SearchBar from "./SearchBar";
 import { Stack, Text } from "native-base";
 import Slide from "./Slide";
-import { headerSlide } from "../db";
+import { MemberImageProps } from "./MemberImage";
 
 export interface HeaderProps {
   showSlide?: boolean;
   title: string;
+  dataSlide: MemberImageProps[] | any;
 }
 
 export default function Header(props: HeaderProps) {
-  const { showSlide, title } = props;
+  const { showSlide, title, dataSlide } = props;
 
   return (
     <View style={{height: showSlide ? 420 : 132}}>
       <Stack
-        bg="#3D7944"
+        bg="#306599"
         width="100%"
         borderBottomRadius={20}
         height={showSlide ? 250 : 132}
@@ -29,7 +30,7 @@ export default function Header(props: HeaderProps) {
           {title}
         </Text>
       </Stack>
-      {showSlide && <Slide style={{ position: "absolute", bottom: 0 }} data={headerSlide} />}
+      {showSlide && <Slide style={{ position: "absolute", bottom: 0 }} data={dataSlide} />}
     </View>
   );
 }

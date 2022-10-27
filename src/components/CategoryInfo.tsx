@@ -12,47 +12,53 @@ import { LinearGradient } from "expo-linear-gradient";
 
 export interface CategoryInfoProps extends TouchableHighlightProps {
   image: ImageSourcePropType;
-  quantity: string;
+  name: string;
   title: string;
-  summary: string;
 }
 
 export default function CategoryInfo(props: CategoryInfoProps) {
-  const { image, quantity, summary, title, ...rest } = props;
+  // const { image, quantity, summary, title, ...rest } = props;
+  const { image, name, title, ...rest } = props;
   const [showUnderlay, setShowUnderlay] = useState(false);
   return (
-    <TouchableHighlight
-      style={styles.header}
-      onPress={() => {}}
-      onShowUnderlay={() => setShowUnderlay(true)}
-      onHideUnderlay={() => setShowUnderlay(false)}
-      underlayColor="rgba(0,0,0,0)"
-      {...rest}
-    >
-      <>
-        <ImageBackground source={image} style={styles.insectImage} borderRadius={15} />
-        {showUnderlay && <View style={styles.underlay} />}
-        <LinearGradient
-          // Background Linear Gradient
-          colors={["#1A1B1F", "rgba(101,102,104,0.3)", "transparent"]}
-          locations={[0.02, 0.6, 0.8]}
-          style={styles.background}
-          start={[0,0]}
-          end={[1,0]}
-        />
-        <View style={styles.container}>
-          <Text style={styles.title}>{title}</Text>
-          <Text style={styles.quantity}>{quantity}</Text>
-          <Text style={styles.summary}>{summary}</Text>
+      <TouchableHighlight
+        style={styles.header}
+        onPress={() => {}}
+        onShowUnderlay={() => setShowUnderlay(true)}
+        onHideUnderlay={() => setShowUnderlay(false)}
+        underlayColor="rgba(0,0,0,0)"
+        {...rest}
+      >
+        <View style={styles.body}>
+          <ImageBackground source={image} style={styles.imageBody} />
+          <Text style={styles.nameBody}>{name}</Text>
         </View>
-      </>
-    </TouchableHighlight>
+      </TouchableHighlight>
   );
 }
 
 const styles = StyleSheet.create({
+  body: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  imageBody: {
+    borderRadius: 6,
+    width: 100,
+    height: 100,
+  },
+
+  nameBody: {
+    textAlign: 'center',
+    fontSize: 16,
+    // height: 100,
+  },
+
   header: {
     marginTop: 20,
+    marginHorizontal: 7,
   },
   underlay: {
     backgroundColor: "rgba(0,0,0,0.4)",

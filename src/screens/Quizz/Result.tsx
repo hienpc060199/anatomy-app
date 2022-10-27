@@ -19,7 +19,7 @@ const Result = () => {
   
   return (
     <View style={styles.bg}>
-      <Text style={styles.text__main}>ZOODY'S QUIZ</Text>
+      <Text style={styles.text__main}>Biotolofy’s quiz</Text>
       <Text style={styles.text__level}>Level: {show[level]}</Text>
       <View style={styles.container}>
         <Text style={styles.text__comment}>GREAT JOB</Text>
@@ -39,17 +39,6 @@ const Result = () => {
           </View>
         </View>
       </View>
-
-      <Image
-        source={require("../../../assets/images/quizresult-bg.png")}
-        width={Math.round(Dimensions.get("screen").height * 0.25)}
-        height={Math.round(Dimensions.get("screen").height * 0.25)}
-        alt="quizresult-bg"
-        position="absolute"
-        resizeMode="stretch"
-        bottom="3"
-        right="0"
-      />
     </View>
   );
 };
@@ -60,7 +49,7 @@ const styles = StyleSheet.create({
   bg: {
     width: "100%",
     height: "100%",
-    backgroundColor: "#3D7944",
+    backgroundColor: "#306599",
     alignItems: "center",
   },
   text__main: {

@@ -23,18 +23,18 @@ export default function Slide(props: SlideProps) {
         sliderWidth={screenWidth}
         onSnapToItem={(index) => setSlideIndex(index)}
       />
-      <HStack justifyContent="space-around" width={100}>
+      {/* <HStack justifyContent="space-around" width={100}>
         {data.map((_, i) => (
           <Box
             width={3}
             height={3}
             marginTop={2}
             borderRadius={100}
-            bg={i == slideIndex ? "#3D7944" : "gray.600"}
+            bg={i == slideIndex ? "#306599" : "gray.600"}
             key={i}
           />
         ))}
-      </HStack>
+      </HStack> */}
     </View>
   );
 }
@@ -44,5 +44,6 @@ const styles = StyleSheet.create({
     zIndex: 1,
     width: "100%",
     alignItems: "center",
+    // height: 300,
   },
 });

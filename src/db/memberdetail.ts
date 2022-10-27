@@ -1,2637 +1,1099 @@
 import { MemberImageProps } from "../components/MemberImage";
 import { PartSummaryProps } from "../components/PartSummary";
+import { ImageSourcePropType } from "react-native";
 
 export interface MemberDetailData {
   [key: string]: {
     slide: MemberImageProps[];
-    climateZone: string;
-    biome: string;
-    facts: string[];
-    weight: string;
-    speed: string;
-    lifespan: string;
-    length: string;
-    bodyParts: PartSummaryProps[];
+    intro: string[];
+    func: string[];
+    anatomy: string[];
   };
 }
 
-export const memberDetailData: MemberDetailData = {
-  wolf: {
+export const memberDetailData : MemberDetailData = {
+
+  pharynx: {
     slide: [
-      { image: require("../../assets/images/mammals/wolf/toanthan2.jpg") },
-      { image: require("../../assets/images/mammals/wolf/toanthan3.jpg") },
-      { image: require("../../assets/images/mammals/wolf/Wolf.jpg") },
+      { name: "Pharynx", image: require('../../assets/image/Home/respiratorySystem/pharynx.png') },
     ],
-    weight: "30 - 80 kg",
-    length: "80 - 85 cm",
-    lifespan: "6 - 8 years",
-    speed: "5 miles/h",
-    climateZone:
-      "They tend to live in the remote wilderness, though red wolves prefer to live in swamps, coastal prairies and forests. Many people think wolves live only in colder climates, but wolves can live in temperatures that range from minus 70 to 120 degrees F (minus 50 to 48.8 degrees C), according to the San Diego Zoo",
-    biome:
-      "wolves are habitat generalists, so this means that they're actually found in different biomes. However, wolves mainly thrive in the Siberian Taiga biome. You will also find Arctic wolves in the tundra, Arabian wolves in the deserts, and Eurasian wolves in the grassland biome",
-    facts: [
-      "- Most wolves stand at 26 to 32 inches at the shoulder.",
-      "- Females weight 60 to 80 pounds. Males weight 70 to 110 pounds.",
-      "- A wolf footprint will measure 4 inches wide by 5 inches long.",
-      "- Wolves can live up to 13 years in the wild.",
-      "- Wolves have 42 teeth.",
+    intro: [
+      "The pharynx, commonly called the throat, is a muscular, funnel-shaped passageway inside the body. It connects the mouth and nose to the esophagus (leading to the stomach) and larynx (leading to the trachea and then lungs).",
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/wolf/toanthan1.jpg"),
-        title: "Diet",
-        summary:
-          "Wolves are carnivores—they prefer to eat large hoofed mammals such as deer, elk, bison, and moose. They also hunt smaller mammals such as beavers, rodents, and hares.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Carries air to the respiratory system.",
+      "Delivers food and liquid to the digestive system:",
+      "Pushes food into the esophagus so it’s not breathed in.",
+      "Equalizes pressure in the ears and drains fluid from the ears.",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/wolf/toanthan2.jpg"),
-        title: "Habitat",
-        summary:
-          "Wolves can thrive in a diversity of habitats from the tundra to woodlands, forests, grasslands and deserts. Wolves are carnivores—they prefer to eat large hoofed mammals such as deer, elk, bison, and moose.s",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/wolf/toanthan3.jpg"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Young wolves are called pups. The leader of the pack and his female mate are usually the only ones in a pack that will have offspring. They mate in late winter.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location and size:The pharynx is in the middle of the neck. It starts at the bottom of the skull and is about 4.5 inches long.",
+      "Components:",
+      "Nasopharynx: The top part of the throat connects to the nasal cavities (nose) and lets air pass through.",
+      "Oropharynx: The middle part of the throat connects to the oral cavity (mouth). It allows air, food and fluid to pass through.",
+      "Laryngopharynx (or hypopharynx): The bottom part of the throat is near the larynx (or voice box). It regulates the passage of air to the lungs and food and fluid to the esophagus.",
+      "Tonsils: There are three sets of tonsils. They are located at the back of the throat and base of the tongue. Tonsils are the body’s first defense against infection.",
+      "Auditory (eustachian) tubes: These two tubes connect the ears to the throat. They equalize pressure and help drain fluid.",
     ],
   },
-  tiger: {
+
+  trachea: {
     slide: [
-      { image: require("../../assets/images/mammals/tiger/toanthan1.png") },
-      { image: require("../../assets/images/mammals/tiger/toanthan2.png") },
-      { image: require("../../assets/images/mammals/tiger/toanthan3.png") },
+      { name: "Trachea", image: require('../../assets/image/Home/respiratorySystem/trachea.png') },
     ],
-    weight: "90 - 310 kg",
-    length: "2,5 - 3,9 m",
-    lifespan: "8 - 10 years",
-    speed: "96 km/h",
-    climateZone: "Tropical temperate",
-    biome:
-      "Forest, rainforest, montane forest, riparian, shrubland, grass land",
-    facts: [
-      "The tiger is the national animal of India, Bangladesh, Malaysia, and South Korea.",
-      'Did you know that a tiger"s coat pattern is still visible when it is shaved. This is not due to skin pigmentation but to the stubble and hair follicles embedded in the skin.',
+    intro: [
+      "Your trachea is a long, U-shaped tube that connects your larynx (voice box) to your lungs. The trachea is often called the windpipe. It's a key part of your respiratory system",
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/tiger/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Tigers are carnivores. They are nocturnal hunters that feed on large prey such as deer, cattle, wild pigs, rhinoceroses, and elephants.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Main function: is to carry air in and out of your lungs",
+      "Trachea’s function within the respiratory system:",
+      "From your nose and mouth into your trachea",
+      "From your trachea into your left and right bronchi",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/tiger/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Tigers inhabit a wide range of habitats such as lowland evergreen forests, taiga, grasslands, tropical forests, and mangrove swamps. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/tiger/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Tigers reproduce sexually. Tiger cubs generally leave their den with their mother at about 8 weeks old and are independent at 18 months.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "There are two  parts: Cervical trachea (in your neck), thoracic trachea (in your chest)",
+      "Size: In most people, the trachea is about 4 inches (10 centimeters) long. It is about an inch (2.5 centimeters) wide",
+      "Location: in your lower neck and upper chest, below your larynx. It is behind the notch at your lower throat, between the inside edges of your collarbones.",
+      "Components: 16 to 20 rings of cartilage (the body’s main type of connective tissue), trachealis (muscle between each ring of cartilage), mucosa, and cilia.",
     ],
   },
-  otter: {
+
+  sinuses: {
     slide: [
-      { image: require("../../assets/images/mammals/otter/toanthan1.png") },
-      { image: require("../../assets/images/mammals/otter/toanthan2.png") },
-      { image: require("../../assets/images/mammals/otter/toanthan3.png") },
+      { name: "Sinuses", image: require('../../assets/image/Home/respiratorySystem/sinuses.png') },
     ],
-    weight: "45-90 pounds",
-    length: "100 - 153 cm",
-    lifespan: "10 - 15 years",
-    speed: "47 kph (29 mph)",
-    climateZone:
-      "Sea otters naturally inhabit offshore areas with an abundance of food and kelp canopy. They tend to live in ocean depths shallower than 130 feet (40 m) with water temperatures ranging between 35°F and 60°F",
-    biome:
-      "They can live in freshwater and coastal marine habitats, including rivers, lakes, marshes, swamps, and estuaries. River otters can tolerate a variety of environments, including cold and warmer latitudes and high elevations",
-    facts: [
-      "- Their fur contains between 600,000 to 1,000,000 hair follicles per square inch.",
-      "- Unlike most other marine mammals, otters lack a blubber layer.",
-      "- Instead, they depend on their dense, water-resistant fur to provide insulation.",
-      "- To keep warm, sea otters spend a large portion of their days grooming and conditioning their fur.",
+    intro: [
+      "The sinuses are hollow spaces in the skull and the face bones around your nose. There are four pairs of sinuses",
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/otter/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "River otters eat a variety of aquatic wildlife, such as fish, crayfish, crabs, frogs, birds' eggs, birds and reptiles such as turtles.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Connect to your nasal passages in a complex network of air flow and drainage passages",
+      "Produce mucus that coats and lubricates your nasal passages and the sinuses themselves",
+      "Give your voice resonance as the air vibrates",
+      "Help protect your face in case of trauma",
+      "Insulate against rapid temperature changes in the nose",
+      "Provide an immunological defense",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/otter/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "They can thrive in any water habitat, such as ponds, marshes, lakes, rivers, and estuaries—in cold, warm, or even high-elevation areas—as long as the habitat provides adequate food",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/otter/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "River otters mate in late winter or early spring, usually March or April, shortly after the female bears her annual litter. Mating may take place on land, but is more likely to occur in the water.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "There are 4 types:",
+      "Frontal sinuses: The right and left frontal sinuses are located in the center of the forehead (frontal bone) just above each eye",
+      "Maxillary sinuses: These are the largest of the sinuses and are located behind the cheekbones near the maxillae, or upper jaws.",
+      "Sphenoid sinuses: The sphenoid sinuses are located in the sphenoid bone near the optic nerve and the pituitary gland on the side of the skull",
+      "Ethmoid sinuses: The ethmoid sinuses are located in the ethmoid bone, which separates the nasal cavity from the brain. These sinuses aren’t single sacs but a collection of 6 to 12 small air cells that open independently into the nasal cavity. They’re divided into front, middle, and rear groups.",
     ],
   },
-  orca: {
+
+  nose: {
     slide: [
-      { image: require("../../assets/images/mammals/orca/toanthan1.png") },
-      { image: require("../../assets/images/mammals/orca/toanthan2.png") },
-      { image: require("../../assets/images/mammals/orca/toanthan3.png") },
+      { name: "Nose", image: require('../../assets/image/Home/respiratorySystem/nose.png') },
     ],
-    weight: "3,000 - 4,000 kg",
-    length: "6 - 8 m",
-    lifespan: "10 - 45 years",
-    speed: "56 km/h",
-    climateZone:
-      "Orcas live in all of the world oceans and belong to the most widely spread mammals of the world. However, they prefer the cold, polar regions to sub tropical waters.",
-    biome:
-      "Killer whales may be seen in all types of marine ecosystems but prefer cooler temperate and polar regions. Although sometimes spotted in deep water, they are usually partial to coastal areas.",
-    facts: [
-      "- That’s 30 times longer than humans!",
-      "- However, over the past 200 years, human activities have contributed to several orca populations becoming endangered.",
-      "- Orcas are especially threatened by food shortages, chemical pollution, and increasing noise in the ocean.",
+    intro: [
+      "Openings that pull air from outside your body into your respiratory system",
+      "The mouth, also called the oral cavity or buccal cavity, in human anatomy, through which food and air enter the body,  and it also helps you speak",
+      "The nose, a structure that sticks out from the middle of your face, is the entrance to the respiratory tract and contains the olfactory organ",
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/orca/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "They're at the top of the food chain and have very diverse diets, feasting on fish, penguins, and marine mammals such as seals, sea lions, and even whales, employing teeth that can be four inches long.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The mouth is involved in several essential bodily functions: Breathing, Chewing, Digesting foods and drinks, Drinking, Swallowing, Talking, Tasting.",
+      "The nose is involved in several important bodily functions:",
+      "Allows air to enter your body",
+      "Contributes to how you look and how you sound when you speak",
+      "Filters and cleans air to remove particles and allergens.",
+      "Provides a sense of smell",
+      "Warms and moistens air so it can move comfortably into your respiratory system",
+      "Protects your airways from harmful substances and irritants.",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/orca/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Killer whales inhabit all oceans of the world. Next to humans and perhaps the brown rat (Rattus norvegicus), killer whales are the most widely distributed mammal.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/orca/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "On average, females may have four estrous cycles during one polyestrus period. This period is highly variable, as is the period of noncycling, both for one whale over time, and between whales.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Structure: Left and right lung",
+      "Location: Your lungs are located in your chest (your thorax). Your thoracic cavity is the name of the space that contains your lungs and other organs. Your lungs rest on a muscle called your diaphragm",
+      "Weight and size: A typical lung in a human adult lung weighs about 2.2 pounds and is a little longer than 9 inches when you’re breathing normally, and about 10.5 inches when your lungs are completely expanded",
+      "The right lung is made up of three lobes. The left lung has only two lobes to make room for your heart.",
     ],
   },
-  jaguar: {
+
+  lungs: {
     slide: [
-      { image: require("../../assets/images/mammals/jaguar/toanthan1.png") },
-      { image: require("../../assets/images/mammals/jaguar/toanthan2.png") },
-      { image: require("../../assets/images/mammals/jaguar/toanthan3.png") },
+      { name: "Lungs", image: require('../../assets/image/Home/respiratorySystem/lungs.png') },
     ],
-    weight: "56 – 96 kg",
-    length: "63 – 76 cm",
-    lifespan: "12 - 15 years",
-    speed: "80 km/h",
-    climateZone:
-      "Jaguars live in a range of habitats, including arid scrubland, thick tropical forests, swamps, coastal mangroves, lowland river valleys, grasslands, and mixed-conifer forests. They gravitate toward areas near rivers and streams",
-    biome:
-      "They're typically found in tropical rainforests but also live in savannas and grasslands.",
-    facts: [
-      "Jaguars Have the Strongest Bite of the Cat Kingdom (Relative to Size) These majestic cats have a stocky, heavy build with robust canines and a massive head, allowing them a more powerful bite than any other large cat relative to its size",
+    intro: ["Your lungs make up a large part of your respiratory system, which is the network of organs and tissues that allow you to breathe.",],
+    func: [
+      "Your lungs make oxygen available to your body and remove other gases, such as carbon dioxide, from your body. This process takes place 12 to 20 times per minute.",
+      "When you inhale: air travels down your pharynx, passes through your larynx, into your trachea and bronchial tubes. One bronchial tube leads to your left lung, the other to your right lung. Your bronchial tubes lead to smaller air passages called bronchi, and then into bronchioles. The bronchioles end in tiny air sacs called alveoli, where oxygen is transferred from the inhaled air to your blood",
+      "When cells use oxygen, they produce carbon dioxide and transfer it to your blood. Your bloodstream carries the carbon dioxide back to your lungs. When you exhale, you remove the carbon dioxide.",
+      "Your respiratory system prevents harmful substances from entering your lungs using small hairs in your nose, mucus in your trachea and bronchial, and the sweeping motion of cilia",
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/jaguar/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Capybaras, deer, tortoises, iguanas, armadillos, fish, birds and monkeys are just some of the prey that jaguars eat. They can even tackle South America's largest animal, the tapir, and huge predators like caiman.",
-        icon: require("../../assets/images/vecter.png"),
-      },
 
-      {
-        image: require("../../assets/images/mammals/jaguar/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Jaguars often live in tropical low-lying habitats close to lakes, rivers and inland wetlands. In the past, jaguars could be found from the south-western USA to the scrub grasslands of Argentina.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/jaguar/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Jaguars have no defined breeding season and will mate any time of year. After a gestation period of 100 days, a female will give birth to a litter of two to four cubs.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Structure: Left and right lung",
+      "Location: Your lungs are located in your chest (your thorax). Your thoracic cavity is the name of the space that contains your lungs and other organs. Your lungs rest on a muscle called your diaphragm",
+      "Weight and size: A typical lung in a human adult lung weighs about 2.2 pounds and is a little longer than 9 inches when you’re breathing normally, and about 10.5 inches when your lungs are completely expanded",
+      "The right lung is made up of three lobes. The left lung has only two lobes to make room for your heart.",
     ],
   },
-  elephants: {
+
+  bronchial: {
     slide: [
-      { image: require("../../assets/images/mammals/elephant/toanthan1.png") },
-      { image: require("../../assets/images/mammals/elephant/toanthan2.png") },
-      { image: require("../../assets/images/mammals/elephant/toanthan3.png") },
+      { name: "Bronchial", image: require('../../assets/image/Home/respiratorySystem/bronchial.png') },
     ],
-    weight: "7 tons",
-    length: "3.2 m",
-    lifespan: "60 – 70 years",
-    speed: "40 km/h",
-    climateZone:
-      "The climate where Asian elephants live is tropical, although in some parts the temperature is slightly colder than typical of tropical climates. A tropical climate is typically defined as a non-arid climate with low temperatures remaining over 64 degrees.",
-    biome:
-      "African savanna elephants are found in 23 countries and live in a variety of habitats, from open and wooded savannas to even some deserts and forests. The largest populations are in Southern and Eastern African countries, including Botswana, Zimbabwe, Tanzania, Kenya, Namibia, Zambia, and South Africa.",
-    facts: [
-      "- THEIR TRUNKS HAVE MAD SKILLS",
-      "- Elephants have around 150,000 muscle units in their trunk.Their trunks are perhaps the most sensitive organ found in any mammal - Asian elephants have been seen to pick up a peanut, shell it, blow the shell out and eat the nut",
-      "- Elephants use their trunks to suck up water to drink – it can contain up to 8 litres of water. They also use their trunks as a snorkel when swimming",
+    intro: ["Bronchial tubes are the large tubes that connect to your trachea (windpipe) and direct the air you breathe to your right and left lungs",],
+    func: [
+      "Your bronchi carries air to and from your lungs. The bronchi also helps moisturize the air you breathe and screen out foreign particles.",
+      "Your airways are lined with cells that create mucus. The mucus keeps your airways moist. It also traps bacteria, viruses, fungi and other particles to protect your lungs and prevent infection.",
+      "The bronchi are lined with cilia, tiny hairlike structures. The cilia help move mucus (phlegm) and particles out of your lungs. When you cough or swallow, the particles trapped in the mucus move out of your body or into your digestive tract, where your body can dispose of them.",
+      "Air passes from your mouth to your trachea",
+      "Your trachea divides into your left and right bronchi",
+      "The bronchi carry air into your lungs",
+      "At the end of the bronchi, the bronchioles carry air to small sacs in your lungs called alveoli. The alveoli perform your body’s gas exchange",
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/elephant/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Elephants are big vegetarians. In the wild, they eat a wide variety of plants, from savannah grasses, shrubs, and herbs, to woody trees, bark, and fruits. Their diet depends on what's available in their habitat in a given season",
-        icon: require("../../assets/images/vecter.png"),
-      },
 
-      {
-        image: require("../../assets/images/mammals/elephant/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "They are found most often in savannas, grasslands, and forests, but they occupy a wide range of habitats, including deserts, swamps, and highlands in tropical and subtropical regions of Africa and Asia.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Right main bronchus is a short, wide air passageway into your right lung",
+      "Left main bronchus is a narrow, long passageway into your left lung",
+      "Your right and left main bronchi are the widest portions of your bronchi. Then your bronchi divide into branches that get smaller and smaller starting with:",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/elephant/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Elephants mature slowly, and have a long reproductive lifetime.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+  },
+
+  spinal: {
+    slide: [
+      { name: "Spinal", image: require('../../assets/image/Home/nervousSystem/spinal.png') },
+    ],
+    intro: ["The spinal cord is a long, tube-like band of tissue. It connects your brain to your lower back. Your spinal cord carries nerve signals from your brain to your body and vice versa. These nerve signals help you feel sensations and move your body",],
+    func: [
+      "These nerve messages have three crucial functions:",
+      "Control body movements and functions. Signals from your brain to other body parts control your movements. They also direct autonomic (involuntary) functions like your breathing rate and heartbeat, as well as bowel and bladder function.",
+      "Report senses to your brain. Signals from other parts of your body help your brain record and process sensations like pressure or pain.",
+      "Manage your reflexes. Your spinal cord controls some reflexes (involuntary movements) without involving your brain. For example, your spinal cord manages your patellar reflex (involuntarily moving your leg when someone taps your shin in a certain spot).",
+    ],
+
+    anatomy: [
+      "There are 3 main parts: Cervical (neck), Thoracic (chest), Lumbar (lower back)",
+      "The layers of tissue called meninges cover the spinal cord. These protective tissues include:",
+      "Dura mater. The outer layer that protects your spinal cord from injury",
+      "Arachnoid mater. The middle layer between the epidural and subarachnoid space.",
+      "Pia mater. The inner layer that covers your spinal cord.",
+      "Location and size: The spinal cord begins at the bottom part of your brainstem, called the medulla oblongata. At your lower back, your spinal cord forms a cone shape called the conus medullaris.",
+      "Length: In most adults, your spinal cord is about 18 inches (45 centimeters) long.",
+    ],
+
+  },
+
+  nerves: {
+    slide: [
+      { name: "Nerves", image: require('../../assets/image/Home/nervousSystem/nerves.png') },
+    ],
+  
+    intro: [
+      "Nerves are like cables that carry electrical impulses between your brain and the rest of your body. These impulses help you feel sensations and move your muscles. They also maintain certain autonomic functions like breathing, sweating or digesting food",
+      "Nerve cells are also called neurons. Neurons are present all over your body, especially in your brain and spinal cord. Nerves, together with your brain and spinal cord, are the foundation of your nervous system.",
+    ],
+    func: [
+      "Nerves send electrical signals from one part of your body to another. These signals control your:",
+      "Voluntary movement",
+      "Senses (touch, pain, feeling hot or cold, vibration, hearing, sense of balance, taste, smell and sight).",
+      "Blood pressure",
+      "Breathing.",
+      "Digestion.",
+      "Digestion.",
+      "Heart rate.",
+      "Stress response.",
+      "When a nerve sends an electrical impulse:",
+      "The signal travels down the axon, the “wiring” connection of the nerve.",
+      "The message converts to a chemical signal at the end of the nerve called the axon hillock.",
+      "The chemical releases molecules called neurotransmitters, into a space that bridges the space between one neuron to another. These bridges are called synapses.",
+      "The neurotransmitter binds to a receptor on the muscle or connecting neuron and converts to another electrical signal.",
+      "Electrical signals travel up the length of that next neuron.",
+      "The process repeats until the message reaches its target.",
+    ],
+
+    anatomy: [
+      "Location: Many nerves start in your spinal cord and some even from your brain. They extend throughout your body, including in your:",
+      "Arms, including your ulnar nerve, median nerve, radial nerve and axillary nerve.",
+      "Chest and abdomen, including your vagus nerve and phrenic nerve.",
+      "Face, including your facial nerve, trigeminal nerve and optic nerve.",
+      "Legs, including your sciatic nerve, femoral nerve, tibial nerve, obturator nerve and sural nerve",
+      "Pelvis, including your pudendal nerve",
+      "Structure: Your nerves are made up of",
+      "Axons, cord-like groups of fibers in the center of your nerve.",
+      "Dendrites, branches that carry electrical impulses.",
+      "Endoneurium, a layer of connective tissue surrounding axons.",
+      "Perineurium, a layer of connective tissue that surrounds groups of axons called fascicles.",
+      "Epineurium, a layer of connective tissue that covers the outer surface of your nerve",
     ],
   },
-  deer: {
+
+  brain: {
     slide: [
-      { image: require("../../assets/images/mammals/deer/toanthan1.png") },
-      { image: require("../../assets/images/mammals/deer/toanthan2.png") },
-      { image: require("../../assets/images/mammals/deer/toanthan3.png") },
+      { name: "Brain", image: require('../../assets/image/Home/nervousSystem/brain.png') },
     ],
-    weight: "68 kg (150 lb)",
-    length: "85 – 150 cm",
-    lifespan: "6 years",
-    speed: "60 – 80 km/h",
-    climateZone:
-      "They live in wetlands, deciduous forests, grasslands, rain forests, arid scrublands and mountains. Sometimes, when human civilizations get too close to home, deer will even make themselves comfortable in urban settings.",
-    biome:
-      "Deer can be found in 5 different biomes around the world, which are the temperate, tundra, taiga, desert, and tropical biomes. The main deer species found in these biomes will be either White-tailed Deer, Reindeer/Caribou, Moose, Mule Deer, or Marsh Deer",
-    facts: [
-      "- Deer is a wild animal that belongs to the Cervidae family.",
-      "- It is in the order of Artiodactyla, which means mammals with even toe hooves with each one of their foot having two small and two large hooves",
-      "- Deers have about 50 species such as the reindeer, red deer, elk, white-tailed deer, and moose among others.",
+  
+    intro: [
+      `The brain is an organ that’s made up of a large mass of nerve tissue that’s protected within the skull. It plays a role in just about every major body system.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/deer/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Grasses, sedges, the leaves and shoots of trees and other woody plants are all on the menu. Fruit and berries are sometimes eaten too, while tree bark is taken when other food is scarce",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Processing sensory information",
+      "Regulating blood pressure and breathing",
+      "Releasing hormones",
+      "Controls thought, memory, emotion, temperature, hunger and every process that regulates our body",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/deer/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Deer are found in many different ecosystems. They live in wetlands, deciduous forests, grasslands, rain forests, arid scrublands and mountains.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/deer/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Deer reproduce sexually and there is internal fertilization. A deer's gestation period is 200 to 205 days, most of the fawns being born in the latter part of May or the first part of June.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Cerebrum:",
+      `The cerebrum is the largest part of the brain. It’s divided into two halves, called hemispheres.`,
+      "Each hemisphere of the cerebrum is divided into broad regions called lobes. Each lobe is associated with different functions",
+      "4 lobes: Frontal, parietal, temporal, occipital",
+      `Cerebellum: The cerebellum is located in the back of the brain, just below the occipital lobes. It’s involved with fine motor skills`,
+      "Diencephalon:",
+      "The diencephalon is located at the base of the brain",
+      "Components: thalamus, subthalamus, epithalamus, hypothalamus",
+      "Brain stem:",
+      `The brainstem is located in front of the cerebellum and connects to the spinal cord. It’s responsible for passing messages to various parts of the body and the cerebral cortex`,
+      "Components: Midbrain, pons, medulla, oblongata",
     ],
   },
-  cheetah: {
+
+  skeletal: {
     slide: [
-      { image: require("../../assets/images/mammals/cheetah/toanthan1.png") },
-      { image: require("../../assets/images/mammals/cheetah/toanthan2.png") },
-      { image: require("../../assets/images/mammals/cheetah/toanthan3.png") },
+      { name: "Skeletal", image: require('../../assets/image/Home/musculoskeletalSystem/skeletal.png') },
     ],
-    weight: "21 – 72 kg",
-    length: "67 – 94 cm",
-    lifespan: "8 - 10 years",
-    speed: "80 – 130 km/h",
-    climateZone:
-      "Cheetahs prefer dry, hot climates, but aren't fond of deserts or tropical areas – although there is a small population of cheetahs that can be found in the Sahara desert. Certain areas in southern Africa – namely Namibia, Botswana and South Africa — tick all the right boxes and this is where cheetahs are most common",
-    biome:
-      "The cheetah's habitat is a open country or biome. They live in grasslands,savannahs, areas dense vegetation, in an open biotope,and thick brush",
-    facts: [
-      "- When they do stir, cheetahs can accelerate faster than most sports cars",
-      "- The name cheetah comes from a Hindi word, chita, meaning 'spotted one'",
+  
+    intro: [
+      `The skeletal system is your body’s central framework. It consists of bones and connective tissue, including cartilage, tendons, and ligaments.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/cheetah/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "These carnivores eat small antelope, including springbok, steenbok, duikers, impala and gazelles, as well as the young of larger animals, such as warthogs, kudu, hartebeest, oryx, roan and sable.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The primary function of muscle is contraction. Following contraction, skeletal muscle functions as an endocrine organ by secreting myokines – a wide range of cytokines and other peptides that act as signalling molecules. Myokines in turn are believed to mediate the health benefits of exercise. Myokines are secreted into the bloodstream after muscle contraction. Interleukin 6 (IL-6) is the most studied myokine, other muscle contraction-induced myokines include BDNF, FGF21, and SPARC.",
+      "Muscle also functions to produce body heat. Muscle contraction is responsible for producing 85% of the body's heat. This heat produced is as a by-product of muscular activity, and is mostly wasted. As a homeostatic response to extreme cold, muscles are signaled to trigger contractions of shivering in order to generate heat.",
+      "Skeletal muscles are voluntary muscles under the control of the somatic nervous system. The other types of muscle are cardiac muscle which is also striated and smooth muscle which is non-striated; both of these types of muscle tissue are classified as involuntary, or, under the control of the autonomic nervous system",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/cheetah/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Hunting is the major activity of cheetahs throughout the day, with peaks during dawn and dusk. Groups rest in grassy clearings after dusk.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/cheetah/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "It has been noted that the females can mate with several different males in the span of a couple of days.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "There are more than 600 skeletal muscles in the human body, also called the contractile part of a muscle, making up around 40% to 50% of body weight. ",
+      `Location: Most muscles occur in bilaterally-placed pairs to serve both sides of the body`,
+      "Components: ",
+      "In the torso, there are several major muscle groups including the pectoral, and abdominal muscles;",
+      `Intrinsic and extrinsic muscles are subdivisions of muscle groups in the hand, foot, tongue, and extraocular muscles of the eye.`,
+      "Muscles are also grouped into compartments including four groups in the arm, and four groups in the leg.",
+      "Apart from the contractile part of a muscle consisting of its fibers, a muscle contains a non-contractile part of dense fibrous connective tissue that makes up the tendon at each end. ",
+      "Joints:",
+      "A joint is where two or more bones in the body come together. There are three different joint types. The types of joints are:",
+      `The tendons attach the muscles to bones to give skeletal movement. The length of a muscle includes the tendons.`,
+      "Connective tissue is present in all muscles as deep fascia. Deep fascia specialises within muscles to enclose each muscle fiber as endomysium; each muscle fascicle as perimysium, and each individual muscle as epimysium. Together these layers are called mysia. Deep fascia also separates the groups of muscles into muscle compartments.",
+      "Movable joints: Movable joints allow a wide range of motion. Your elbow, shoulder, and knee are movable joints.",
+      "Ligaments: Bands of strong connective tissue called ligaments hold bones together.",
+      "Tendons: Tendons are bands of tissue that connect the ends of a muscle to your bone.",
     ],
   },
-  "blue whale": {
+
+  muscles: {
     slide: [
-      { image: require("../../assets/images/mammals/blue_whale/toanthan1.png") },
-      { image: require("../../assets/images/mammals/blue_whale/toanthan2.png") },
-      { image: require("../../assets/images/mammals/blue_whale/toanthan3.png") },
+      { name: "Muscles", image: require('../../assets/image/Home/musculoskeletalSystem/muscles.jpg') },
     ],
-    weight: "30,000 – 150,000 kg",
-    length: "24 m",
-    lifespan: "80 – 90 years",
-    speed: "5 - 20 miles/h",
-    climateZone:
-      "Blue whales are found in all oceans except the Arctic. They generally migrate seasonally between summer feeding grounds and winter breeding grounds, but some evidence suggests that individuals in certain areas might not migrate at all",
-    biome:
-      "The blue whale lives in every ocean in the world, this means it inhabits every aquatic habitat. They have been found in the Arctic, Tropical, Subtropical, and Temperate seas.",
-    facts: [
-      "- Blue whales are the largest animals ever known to have lived on Earth.",
-      "- These magnificent marine mammals rule the oceans at up to 100 feet long and upwards of 200 tons.",
-      "- Their tongues alone can weigh as much as an elephant.",
+  
+    intro: [
+      `Skeletal muscles (commonly referred to as muscles) are organs of the vertebrate muscular system and typically are attached by tendons to bones of a skeleton. The muscle cells of skeletal muscles are much longer than in the other types of muscle tissue, and are often known as muscle fibers. The muscle tissue of a skeletal muscle is striated – having a striped appearance due to the arrangement of the sarcomeres.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/blue_whale/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Blue whales eat krill - tiny, shrimp-like crustaceans that live throughout Earth's oceans. The huge whales can eat up to four tonnes of krill every day. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The primary function of muscle is contraction. Following contraction, skeletal muscle functions as an endocrine organ by secreting myokines – a wide range of cytokines and other peptides that act as signaling molecules. Myokines in turn are believed to mediate the health benefits of exercise. Myokines are secreted into the bloodstream after muscle contraction. Interleukin 6 (IL-6) is the most studied myokine, other muscle contraction-induced myokines include BDNF, FGF21, and SPARC.",
+      "Muscle also functions to produce body heat. Muscle contraction is responsible for producing 85% of the body's heat. This heat produced is as a by-product of muscular activity, and is mostly wasted. As a homeostatic response to extreme cold, muscles are signaled to trigger contractions of shivering in order to generate heat.",
+      "Skeletal muscles are voluntary muscles under the control of the somatic nervous system. The other types of muscle are cardiac muscle which is also striated and smooth muscle which is non-striated; both of these types of muscle tissue are classified as involuntary, or, under the control of the autonomic nervous system",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/blue_whale/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Blue whales are found in all oceans except the Arctic. They generally migrate seasonally between summer feeding grounds and winter breeding grounds.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/blue_whale/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Baleen whales give birth to a single calf. In most species, a female may bear a calf every two to four years. If twins are conceived, they are unlikely to survive to full term.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "There are more than 600 skeletal muscles in the human body, also called the contractile part of a muscle, making up around 40% to 50% of body weight. ",
+      `Location: Most muscles occur in bilaterally-placed pairs to serve both sides of the body.`,
+      "Components:",
+      "In the torso, there are several major muscle groups including the pectoral, and abdominal muscles;",
+      `Intrinsic and extrinsic muscles are subdivisions of muscle groups in the hand, foot, tongue, and extraocular muscles of the eye.`,
+      "Muscles are also grouped into compartments including four groups in the arm, and four groups in the leg.",
+      "Apart from the contractile part of a muscle consisting of its fibers, a muscle contains a non-contractile part of dense fibrous connective tissue that makes up the tendon at each end. ",
+      "The tendons attach the muscles to bones to give skeletal movement. The length of a muscle includes the tendons.",
+      "Connective tissue is present in all muscles as deep fascia. Deep fascia specialises within muscles to enclose each muscle fiber as endomysium; each muscle fascicle as perimysium, and each individual muscle as epimysium. Together these layers are called mysia. Deep fascia also separates the groups of muscles into muscle compartments.",
+      `Two types of sensory receptors found in muscles are muscle spindles, and Golgi tendon organs. Muscle spindles are stretch receptors located in the muscle belly. Golgi tendon organs are proprioceptors located at the myotendinous junction that inform of a muscle's tension.`,
     ],
   },
-  bear: {
+
+  vas: {
     slide: [
-      { image: require("../../assets/images/mammals/bear/toanthan1.png") },
-      { image: require("../../assets/images/mammals/bear/toanthan2.png") },
-      { image: require("../../assets/images/mammals/bear/toanthan3.png") },
+      { name: "Vas", image: require('../../assets/image/Home/maleSystem/vas.png') },
     ],
-    weight: "80 – 600 kg",
-    length: "70 – 150 cm",
-    lifespan: "20 – 30 years",
-    speed: "56 km/h",
-    climateZone:
-      "Polar bears are only found in the Arctic. The most important habitats for polar bears are the edges of pack ice where currents and wind interact, forming a continually melting and refreezing matrix of ice patches and leads (open spaces in the sea ice).",
-    biome:
-      "dense evergreen needle-leafed forest Typical plants include white spruce, black spruce, and jack pine. Typical animals include moose, black bears, wolves, and migrant birds. Cold winters with deep snow, but longer growing season than tundra.",
-    facts: [
-      "Adult grizzly bears can run up to an incredible 40mph — the same pace as a greyhound — and would break the speed limit on many roads in the US! Polar bears, the largest of all bear species, can weigh between 900-1500 pounds and grow approximately 6-10 feet long",
+  
+    intro: [
+      `Your two vasa deferentia are part of the male reproductive system. The vas deferens is also called a ductus deferens or a sperm duct. This long muscular tube runs from the epididymis into the pelvic cavity behind your bladder and connects to your urethra through a structure called the ejaculatory duct. `,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/mammals/bear/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "The bear is omnivorous. Its diet consists of berries, grain, fish, insects, birds and mammals. The bear will hunt deer and moose and also feed on carcasses.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The vas deferens transports mature sperm to the urethra in preparation for ejaculation. When you’re sexually aroused, muscle contractions move the sperm from the epididymis to the vas deferens and from there into the urethra so you’re able to ejaculate semen outside of your body. During the process, your body adds secretions to the sperm cells to make semen.",
+    ],
 
-      {
-        image: require("../../assets/images/mammals/bear/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Bears, a small group of mostly large omnivorous mammals, can be found all over the world; they live in forests, mountains, tundra, deserts and grassy areas",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/mammals/bear/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Adult females give birth in dens to baby bears called cubs. Cubs are born in January and weigh between 8 ounces and 16 ounces.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The vas deferens begins in the scrotum, which is the sac containing your testicles. The vas deferens then travels from the testicle into your body. It continues until it joins with the duct of the seminal vesicle to create the ejaculatory duct.",
+      `Size: The vas deferens, or ductus deferens, can be 30 centimeters (almost 12 inches) to 45 centimeters (almost 18 inches) long. Some parts of it are coiled, but other parts are straight. The tube is described as being fibromuscular, meaning that it’s made of fibrous tissue and muscle tissue.`,
+      "Structure: Your vas deferens is surrounded by your spermatic cord and transports mature sperm to the urethra before you ejaculate.",
     ],
   },
-  turtle: {
+
+  testicles: {
     slide: [
-      { image: require("../../assets/images/reptile/turtle/toanthan1.png") },
-      { image: require("../../assets/images/reptile/turtle/toanthan2.png") },
-      { image: require("../../assets/images/reptile/turtle/toanthan3.png") },
+      { name: "Testicles", image: require('../../assets/image/Home/maleSystem/testicles.png') },
     ],
-    weight: "550 - 2,000lbs",
-    length: "6 cm to 6 ft",
-    lifespan: "2 - 50 years",
-    speed: "3 mph",
-    climateZone:
-      "most sea turtles stay in the epipelagic zone",
-    biome:
-      "tropical and temperate oceans",
-    facts: [
-      "- Some species of aquatic turtles can get up to 70 percent of their oxygen through their butt.",
-      "- Most sea turtles abandon their eggs on the shore, allowing them to hatch on their own before making their way to the ocean.",
-      "- The average pet turtle has a lifespan of nearly 80 years with the right care.",
+  
+    intro: [
+      `Either of the two round male sex organs that produce sperm and are contained in the scrotum below and behind the penis`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/turtle/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Omnivore",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The main function of the testes is producing and storing sperm. They’re also crucial for creating testosterone and other male hormones called androgens.",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/turtle/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Aquatic, muddy, swampy areas, dry land for sun basking",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/turtle/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The way that sea turtles and land-based turtles mate is a bit different. However, land-based turtles vary in their approach. Since turtles are reptiles, they release eggs.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location:",
+      `Your testicles are located underneath your penis. They’re enclosed in a pouch of skin called the scrotum. Generally, you’ll have one testicle to the right and one testicle to the left of your penis.`,
+      "Your testicles are connected to the inside of your body by a cord called the spermatic cord. Each cord contains nerves and blood vessels. The cords also contain the vas deferens, which are the tubes that move sperm to your penis, so it can leave your body in semen.",
+      "Shape: Your testicles aren’t visible because they’re located inside your scrotum. However, their outlines are visible, and you can feel them. Testicles have been described as being like large olives, small eggs or walnuts.",
+      "Size: There’s no exact size for testicles. In fact, one of your testicles may be a little bit bigger than the other one. One testicle might be a little lower than the other. An adult testicle may range from half an inch (15 mL) to 1.5 inches (35 mL) or more. One comparison says the normal range goes from the size of a bird egg to the size of a small chicken egg.",
     ],
   },
-  tortoise: {
+
+  seminalVesicles: {
     slide: [
-      { image: require("../../assets/images/reptile/tortoise/toanthan1.png") },
-      { image: require("../../assets/images/reptile/tortoise/toanthan2.png") },
-      { image: require("../../assets/images/reptile/tortoise/toanthan3.png") },
+      { name: "Seminal Vesicles", image: require('../../assets/image/Home/maleSystem/seminalVesicles.png') },
     ],
-    weight: "0.1 - 300kg",
-    length: "10 – 18 inches",
-    lifespan: "30-150 years",
-    speed: "0.3 mph",
-    climateZone:
-      "most active when ambient temperatures range from 60 to 70 degrees F (15-21 degrees C)",
-    biome:
-      "is found on all continents except for Australia and Antarctica",
-    facts: [
-      "- Tortoises can survive for extended periods of time without consuming any water or food",
-      "- Like all turtles, tortoises move very slowly. On arid islands, tortoises lick dew off of boulders, leaving half-sphere depressions in the rock.",
-      "- Adwaita, an Aldabra giant tortoise, purportedly lived to the age of 255 years. There are several other examples of tortoises living well past the age of 150 years",
-      "- Turtles and tortoises are believed to have first appeared around 220 million years ago"
+  
+    intro: [
+      `A seminal vesicle is a part of the anatomy that’s typically considered male. The two seminal vesicles are glands that produce the fluids that will turn into semen. The vesicles may also be called seminal glands or vesicular glands.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/tortoise/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Grass, Weeds, Leafy greens",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The seminal vesicle is part of the reproductive system. The vesicles have both glandular tissue and muscular tissue. The muscular tissue contracts to move seminal fluid and sperm into the urethra and out through the penis.",
+      "The seminal vesicles work together with other parts of your reproductive system. For instance, the vesicles and the vas deferens and its ampulla (sperm repository) are all involved in pushing out ejaculate into and from the penis.",
+      "The fluids that develop in your seminal vesicles make up an estimated 50% to 80% of your semen’s volume. The substances in these fluids are designed to help sperm stay alive once they enter the vagina. The fluids carry:",
+      "Fructose, which provides energy.",
+      "Prostaglandins, which keep the vagina from seeing sperm as an invader.",
+      "Alkaline fluid, which helps keep the sperm alive in the vagina, which is acidic.",
+      "Clotting factors, which also help to keep sperm alive longer.",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/tortoise/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Sandy soil close to water",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/tortoise/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Female tortoises use their hind limbs to dig nests. They lay their eggs at night and cover the clutch with soil, sand, and organic material.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The seminal vesicles are located behind your bladder but in front of your rectum. The tip of the vas deferens is near the vesicles.",
+      `Structure: Seminal glands, which are like bags or pouches, have blood vessels and nerves within them. There are also lymph nodes nearby. The seminal glands combine glandular and muscular tissue.`,
+      "Size: A typical seminal gland (seminal vesicle) is about 5 centimeters long or not quite 2 inches long. However, it’s in a tight coil that would be twice as long if stretched out.",
     ],
   },
-  'sulcata tortoise': {
+
+  scrotum: {
     slide: [
-      { image: require("../../assets/images/reptile/sulcata/toanthan1.png") },
-      { image: require("../../assets/images/reptile/sulcata/toanthan2.png") },
-      { image: require("../../assets/images/reptile/sulcata/toanthan3.png") },
+      { name: "Scrotum", image: require('../../assets/image/Home/maleSystem/scrotum.png') },
     ],
-    weight: "79 to 200 pounds",
-    length: "30 inches",
-    lifespan: "More than 70 years",
-    speed: "0.3 mph",
-    climateZone:
-      "Hot and dry",
-    biome:
-      "In the Saharan desert such as Mauritania, Mali, Sudan, and Ethiopia.",
-    facts: [
-      "- Like many reptiles, the sex of a hatchling is probably determined by the temperature it was exposed to in the egg and not by chromosomes",
-      "- Females seem to be a bit more protective of their nests than other turtles. They will try to see off an invader, usually by trying to ram them with the edge of their carapace. But other than this, she provides no care for eggs or hatchlings.",
-      "- The tortoise is a symbol of happiness and fertility in some Senegalese societies.",
+  
+    intro: [
+      `The scrotum is a part of a male's body that is the loose pouch-like sac of skin that hangs behind the penis. It holds the testicles (also called testes), as well as many nerves and blood vessels.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/sulcata/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Plant materials as grasses and succulents.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The scrotum is responsible for protecting the testes. In addition, the scrotum protects the testicles and major blood vessels, as well as tubes that release sperm from the testicles into the penis for ejaculation.",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/sulcata/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Desert, dry savanna",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/sulcata/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "After mating, the female will be gravid for about 60 days before she looks for a place to lay her eggs. She lays her eggs in a nest scooped out of the ground",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Each side of the scrotum usually consists of a:",
+      `Testicle. Each testicle produces hormones, the main one being testosterone, with the help of parts of the brain like the hypothalamus and pituitary gland.`,
+      "Epididymis. An epididymis is located on the top of each testicle.",
+      "Spermatic cord. Each spermatic cord contains blood vessels, nerves, lymph vessels, and a tube called the vas deferens.",
+      "Cremaster muscle. Each cremaster muscle surrounds one of the testicles and its spermatic cord.",
     ],
   },
-  snake: {
+
+  prostateGland: {
     slide: [
-      { image: require("../../assets/images/reptile/snake/toanthan1.png") },
-      { image: require("../../assets/images/reptile/snake/toanthan2.png") },
-      { image: require("../../assets/images/reptile/snake/toanthan3.png") },
+      { name: "ProstateGland", image: require('../../assets/image/Home/maleSystem/prostateGland.png') },
     ],
-    weight: "4 or 5 pounds",
-    length: "1 m (3.3 ft)",
-    lifespan: "2-8 years",
-    speed: "29 km/h",
-    climateZone:
-      "Live in the desert and in the forest, whether it is tropical or temperate",
-    biome:
-      "They’re found everywhere except in Antarctica, Iceland, Ireland, Greenland, and New Zealand.",
-    facts: [
-      "- There are 3,789 snake species, making them the second largest group of reptiles after lizards",
-      "- They are “solar-powered” and rely fully on external heat or light sources",
-      "- While approximately 70% of snakes lay eggs, others don’t. Snakes living in especially colder climates have live births because the eggs wouldn’t survive outside",
-      "- Snakes do have nostrils, but they don’t use them to smell. Instead they have evolved to smell with their tongue and by using their Jacobson’s organ in the roof of their mouth"
+  
+    intro: [
+      `A firm partly muscular partly glandular body that is situated about the base of the male urethra and that secretes an alkaline viscid fluid which is a major constituent of the semen`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/snake/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Eat a wide variety of animals, including rodents, insects, birds' eggs and young birds",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Helping to produce semen: The prostate contributes 20-30% of fluid to the total semen volume.",
+      "Closing the urethra during ejaculation: During ejaculation, the prostate contracts and squirts prostatic fluid into the urethra. Here, it mixes with sperm cells and fluid from the seminal vesicles to create semen, which the body then expels.When the prostate contracts during ejaculation, it closes off the opening between the bladder and urethra, pushing semen through at speed. This is why, in typical anatomic situations, it is impossible to urinate and ejaculate simultaneously.",
+      "Hormone metabolism",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/snake/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "A wide variety of habitats including forests, swamps, grasslands, deserts and in both fresh and saltwater",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/snake/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Snakes reproduce by internal fertilization and either give birth to live young or lay eggs, depending on the species.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Size: the prostate is a walnut-sized gland locate between the bladder and the penis",
+      `The following layers make up the prostate, beginning with the outer capsule and ending inside the prostate:`,
+      "Anterior zone: Made of muscle and fibrous tissues, medical professionals call this zone the anterior fibromuscular zone.",
+      "Peripheral zone: Mostly situated toward the back of the gland, this is where most of the glandular tissue sits.",
+      "Central zone: This surrounds the ejaculatory ducts and makes up around 25% of the prostate’s total mass.",
+      "Transition zone: This is the part of the prostate that surrounds the urethra. It is the only portion of the prostate that continues to grow throughout life.",
     ],
   },
-  lizard: {
+
+  penis: {
     slide: [
-      { image: require("../../assets/images/reptile/lizard/toanthan1.png") },
-      { image: require("../../assets/images/reptile/lizard/toanthan2.png") },
-      { image: require("../../assets/images/reptile/lizard/toanthan3.png") },
+      { name: "Penis", image: require('../../assets/image/Home/maleSystem/penis.png') },
     ],
-    weight: "0.5 gram - 150 kg",
-    length: "2 cm to 3 meters",
-    lifespan: "3-5 years",
-    speed: "20 km/h",
-    climateZone:
-      "Tropical forests, subtropical zones or even deserts.",
-    biome:
-      "The lizards can be found in any ecosystem except in those with cold climates",
-    facts: [
-      "- Apart from Antarctica, Lizards are found on every other continent! Lizards have a variety of natural habitats including marshes, rocky mountainsides and forests.",
-      "- Some species of desert dwelling lizard are thought to be able to go their entire life without drinking water.",
-      "- Some species of lizard, such as the Chameleon or the Anole can change color at will. It is not know what factors cause this color change, but it is believed to be heavily influenced by their environment",
-      "- As a last-ditch attempt to escape from a predator, a lizard may choose to detach their tail from their body."
+  
+    intro: [
+      `The penis is the male sex organ, a complex external organ used to urinate and for sex and reproduction in people who are born biologically male.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/lizard/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Mealworms, crickets, Dubia roaches, butterworms, hornworms, Phoenix worms, earthworms, silkworms, superworms, and waxworms",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The two main functions of the penis include sexual intercousrse and urination.",
+      "When a person experiences arousal, the penis fills with blood, causing an erection. As such, erectile function is closely related to cardiovascular health.",
+      "The penis also plays an important urinary role. The penis contains the urethra, which allows passage of urine from the bladder to the urethral opening, enabling a person to expel urine from the body.",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/lizard/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Deserts, forests, prairies, marshes, and rocky areas.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/lizard/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "In some small species, the number of eggs is rather uniform for each laying or clutch. For example, all anoles (Anolis) lay but a single egg at a time, many geckos lay one or two eggs",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: at the front of the body at the base of the pelvis.",
+      `The penis consists of several major structures:`,
+      "Glans: The glans, or head of the penis, is the sensitive structure at the end of the corpus (shaft).",
+      "Urethra: The urethra is a tube inside the penis that runs from the bladder to the head of the penis. It is used for urination. It also crosses through the prostate gland, where an opening (called the ejaculatory duct) receives sperm and fluids that mix together to form semen.",
+      "Meatus: The meatus is the opening at the tip of the glans through which urine or semen exits the body.",
+      "Prepuce: The prepuce, or foreskin, is a loose fold of skin that covers the head of the penis. The removal of the foreskin is referred to as circumcision.",
+      "Corpus cavernosa: The corpus cavernosa are two columns of spongy tissue that run along the interior shaft of the penis. When filled with blood, the tissues stiffen, causing an erection.",
+      "Corpus spongiosum: The corpus spongiosum is the third column of tissue that prevents the urethra from closing during an erection.",
     ],
   },
-  'leopard gecko': {
+
+  maleUrethra: {
     slide: [
-      { image: require("../../assets/images/reptile/leopard/toanthan1.png") },
-      { image: require("../../assets/images/reptile/leopard/toanthan2.png") },
-      { image: require("../../assets/images/reptile/leopard/toanthan3.png") },
+      { name: "Male Urethra", image: require('../../assets/image/Home/maleSystem/maleUrethra.png') },
     ],
-    weight: "50 to 80 grams",
-    length: "7 to 11 inches",
-    lifespan: "8 to 15 years",
-    speed: "3 feet per second",
-    climateZone:
-      "Arid and warm to hot",
-    biome:
-      "Dry, hot deserts and scrublands throughout the Middle East",
-    facts: [
-      "- Leopard geckos are possibly the most popular and most widely domesticated pet reptile in the world!",
-      "- Leopard geckos, unlike the majority of gecko species, are terrestrial rather than arboreal. This means they prefer staying low to the ground and aren’t very strong climbers.",
-      "- Unlike most gecko species, leopard geckos have fully-functional eyelids",
-      "- While most geckos are able to easily climb up walls and other flat surfaces with ease, leopard geckos have claws rather than microscopic setae."
+  
+    intro: [
+      `The urethra is the tube that lets urine leave your bladder and your body. If you were assigned male at birth, your urethra passes through your prostate and into your penis. If you were assigned female at birth, your urethra is much shorter. It runs from your bladder to open in front of your vagina.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/leopard/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Small insects",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The urethra is part of your urinary system. This system is made up of your kidneys, bladder, ureters and urethra.",
+      "Your kidneys clean your blood and produce urine, a waste product. From your two kidneys, two ureters move the urine to the bladder, where it’s stored until you urinate (pee). Urine leaves your body through a hole at the end of your urethra. That hole from the inside to the outside is called the urethral meatus. (The term ‘meatus’ refers to any opening from the inside to the outside.)",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/leopard/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Arid, rocky deserts and scrublands throughout the Middle East; countries include India, Afghanistan, Pakistan, Nepal, and Iran",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/leopard/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Leopard geckos reach sexual maturity at around 18 to 24 months old. Males will often compete and fight over female mates, and they display typical courtship behaviors towards females",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "The urethra has two different types of sphincters, or muscles that act as valves that open or close. There is an internal urethral sphincter, which is located at the point where the urethra leaves the bladder. There’s also an external urethral sphincter located in the pelvic floor. These muscles work together with the bladder to get urine out of your body.",
+      `Location: The urethra is a passageway located in your body’s pelvic region. The walls of the tube are thin and made up of epithelial tissue, smooth muscle cells and connective tissue.`,
+      "Length: If you’re someone who’s been assigned female at birth, your urethra is about 1.5 inches (3 to 4 centimeters) long. If you’re someone who’s been assigned male at birth, your urethra is about 8 to 9 inches long (about 20 centimeters).",
+      "Components:",
+      "The prostatic urethra: The part of the urethra that carries seminal fluid through the prostate gland to produce the semen that will be ejaculated.",
+      "The membranous urethra: The short part of the urethra that transports fluids through the pelvic floor.",
+      "The penile urethra (also called the spongy urethra or the cavernous urethra): The longest piece of the urethra. This section extends the entire length of the penis and ends at the urethral meatus or the opening outside the body.",
     ],
   },
-  iguana: {
+
+  epididymis: {
     slide: [
-      { image: require("../../assets/images/reptile/iguana/toanthan1.png") },
-      { image: require("../../assets/images/reptile/iguana/toanthan2.png") },
-      { image: require("../../assets/images/reptile/iguana/toanthan3.png") },
+      { name: "Epididymis", image: require('../../assets/image/Home/maleSystem/epididymis.png') },
     ],
-    weight: "4 - 8kg",
-    length: "30 – 42 cm",
-    lifespan: "15 - 20 years",
-    speed: "21 mph",
-    climateZone:
-      "Tropical and subtropical forests, deserts and coastlines",
-    biome:
-      "Rain forests of northern Mexico, Central America, the Caribbean Islands, and southern Brazil",
-    facts: [
-      "- Uses visual signals to communicate",
-      "- They have a keen sense of eyesight, which allows them to navigate with ease. They also communicate with other iguanas with their eyes.",
-      "- These animals can shed part of their tail when threatened by predators, allowing them to escape.",
-      "- Iguanas also have a photopigment called parapinopsin that is sensitive to the difference between day and night.",
+  
+    intro: [
+      `The epididymis is a long, coiled tube that stores sperm and transports it from the testes.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/iguana/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Insects, Fruit, Leaves",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The primary functions of the epididymis are sperm transport and sperm maturation.",
+      "The sperm move from the testes, through the epididymis, and into the vas deferens prior to being mixed with various secretions at the time of ejaculation.",
+      "During their time moving through the epididymis, sperm mature and gain additional function.",
+      "In particular, they gain the ability to propel themselves forward. Sperm must pass through at least the middle of the corpus to mature enough to fertilize an egg on their own.",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/iguana/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Lowland tropical rainforest near water",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/iguana/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "These animals exhibit a promiscuous mating style. Courtship occurs during the dry season, with females controlling large territories where they make several nests",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "The epididymis is a coiled tube in three sections. It sits inside the scrotum, rests on the backside of each testicle, attached to the testes.",
     ],
   },
-  crocodile: {
+
+  ejaculatoryDuct: {
     slide: [
-      { image: require("../../assets/images/reptile/crocodile/toanthan1.png") },
-      { image: require("../../assets/images/reptile/crocodile/toanthan2.png") },
-      { image: require("../../assets/images/reptile/crocodile/toanthan3.png") },
+      { name: "Ejaculatory Duct", image: require('../../assets/image/Home/maleSystem/ejaculatoryDuct.png') },
     ],
-    weight: "over 1,000 kg",
-    length: "6 meters",
-    lifespan: "70 years",
-    speed: "24 - 35 km/h",
-    climateZone:
-      "Crocodiles are found in tropical regions of Africa, Asia, Australia and the Americas",
-    biome:
-      "Crocodiles are found mainly in the lowland, humid tropics, the Northern and Southern hemispheres",
-    facts: [
-      "- Cros were around before the dinosaurs; and while they might not be as big as a T-Rex, they have lasted a lot longer",
-      "- Crocodiles produce tears when they eat their prey. However, it doesn't mean they actually cry",
-      "- The saltwater crocodile has an average lifespan of 70 years. The Nile crocodile can live up to 100 years. But over the years, some crocodiles have broken those records",
-      "- Crocodiles' jaws can't move sideways, meaning these reptiles can't grind food down in a traditional chewing motion",
-      "- Crocodiles can hold their breath underwater for at least one hour without coming up for a breath of air as they can reduce their heart rate to 2-3 beats per minute",
+  
+    intro: [
+      `On each side of the prostate gland (in the male reproductive system) is an ejaculatory duct.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/crocodile/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Insects, fish, small frogs, lizards, crustaceans and small mammals",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The ejaculatory duct delivers sperm into the urethra, adding secretions and additives from the prostate necessary for sperm function, while providing an interface between the reproductive and urinary systems in men",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/crocodile/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Crocodiles are inhabitants of swamps, lakes, and rivers, although some species make",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/crocodile/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Crocodiles are sexually dimorphic, and adult males are larger than females. All crocodiles lay hard-shelled eggs, which may weigh 50–160 grams (0.1–0.4 pound) each",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: In prostate gland.",
+      "Length: about two centimeters in length",
+      "Structure: Either of two hollow tubes. These ducts are formed by the fusion of the vas deferens and the seminal vesicles.",
     ],
   },
-  chameleon: {
+
+  fallopian: {
     slide: [
-      { image: require("../../assets/images/reptile/chameleon/toanthan1.png") },
-      { image: require("../../assets/images/reptile/chameleon/toanthan2.png") },
-      { image: require("../../assets/images/reptile/chameleon/toanthan3.png") },
+      { name: "Fallopian", image: require('../../assets/image/Home/femaleSystem/fallopian.png') },
     ],
-    weight: "0.01 - 2 kg",
-    length: "2.8 - 68.5 cm",
-    lifespan: "4 - 8 years",
-    speed: "21 mph",
-    climateZone:
-      "Mostly live in the rain forests and deserts of Africa.",
-    biome:
-      "Africa, Asia",
-    facts: [
-      "- They can focus their eyes relatively well, meaning they can judge distances and spot prey between 5 and 10 meters",
-      "- Excluding their tail, some chameleons’ tongues can be twice the length of their body. Their tongues consist of both muscles and bones, and can bend round to grab their prey",
-      "- They can move their eyes separately, with each eye having a field of 180 degrees. This means they can see 360 degrees if they need to",
-      "- Chameleons actually change their color due to a number of different factors, including their mood, changes in light or temperature, or the humidity of their environment.",
+  
+    intro: [
+      `Your fallopian tubes are a pair of hollow, muscular ducts located between your ovaries and your uterus. Each fallopian tube is a channel between your ovaries, where your body makes eggs, and your uterus, where a fertilized egg can develop into a fetus.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/chameleon/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Insects, Snails, Leaves",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Your fallopian tubes play an important role in conception and pregnancy.",
+      "A holding place for your egg: Each month, one of your ovaries releases a mature egg as part of your menstrual cycle. Finger-like structures at the end of your fallopian tube, called fimbriae, sweep the egg into the tube, where the egg waits to be fertilized.",
+      "The site where fertilization happens: If your partner ejaculates during intercourse, their sperm travels through your vagina, cervix, uterus and eventually into your fallopian tubes. Fertilization happens in your fallopian tubes when an egg and sperm meet.",
+      "An active passageway that moves a fertilized egg to your uterus: A fertilized egg (embryo) travels through your fallopian tubes until it reaches your uterus, where it can grow into a fetus.",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/chameleon/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Tropical forests and desert",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/chameleon/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The oviparous species lay eggs three to six weeks after copulation. The female will dig a hole—from 10–30 cm (4–12 in), deep depending on the species—and deposit her eggs.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: You have two fallopian tubes. One on the right side of your uterus and one on the left side. Each tube extends from an ovary and opens into your uterus.",
+      "Size: each fallopian tube is between 4 to 5 inches long and between 0.2 to 0.6 inches in diameter.",
+      "Components: A fallopian tube consists of a thin mucous membrane and layers of muscle:",
+      "Mucous membrane: A delicate lining in your fallopian tubes secrete fluids that maintain an environment where fertilization can happen and an embryo can develop. Small hair-like structures in the lining (cilia) sway, moving eggs, sperm and an embryo (if fertilization takes place) through your fallopian tubes.",
+      "Muscular layers: Your fallopian tube’s muscular wall has varied layers. The outermost layer is mostly smooth, long muscle fibers. The innermost layer consists of circular fibers. Together, these muscles contract (squeeze) to move an egg, sperm, or embryo through your fallopian tubes, along with the help of the cilia.",
     ],
   },
-  caiman: {
+
+  ovaries: {
     slide: [
-      { image: require("../../assets/images/reptile/caiman/toanthan1.png") },
-      { image: require("../../assets/images/reptile/caiman/toanthan2.png") },
-      { image: require("../../assets/images/reptile/caiman/toanthan3.png") },
+      { name: "Ovaries", image: require('../../assets/image/Home/femaleSystem/ovaries.png') },
     ],
-    weight: "6 - 300 kg",
-    length: "1.5 - 6 m",
-    lifespan: "30 - 40 years",
-    speed: "25 mph",
-    climateZone:
-      "Tropical rainforest",
-    biome:
-      "Central and South America",
-    facts: [
-      "- When they hear the hatchlings calling, the female caimans then help their young to the water by carrying them in their mouths",
-      "- Like other crocodilian species, caimans have a third transparent eyelid which helps to protect their eyes when they are in the water without compromising their sight",
-      "- They also have flaps over the external parts of their ears and nose that close to prevent water from entering them and a special flap at the back of their throat",
+  
+    intro: [
+      `The ovaries are small, oval-shaped glands that produce and store your eggs (also called ovum) and make hormones.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/reptile/caiman/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Carnivore",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "They shelter and protect the eggs a female is born with until they are ready for use.",
+      "Produce female reproductive hormones called estrogen and progesterone, and some lesser hormones called relaxin and inhibin to help develop adult female characteristic, aid in the reproduction cycle.",
+      "Ovaries release one egg, or sometimes more, each menstrual cycle. ",
+    ],
 
-      {
-        image: require("../../assets/images/reptile/caiman/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Rivers, lakes and swampland",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/reptile/caiman/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The timing of the breeding season is also species dependent: spectacled caimans breed during the wet season in May and June, where black caimans breed during the dry season",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The ovaries lie on either side of the uterus against the pelvic wall in a region called the ovarian fossa. They are held in place by ligaments attached to the uterus.",
+      "Size: The size of the ovaries relate to the age. The average size of an ovary is round 4 centimeters, and declines every decade of life once you turn 30.",
+      "Components: The ovary has three layers. The outer layer is similar to a capsule found on medicine. The middle layer is the ovarian cortex. It's made up of connective tissue and contains the ovarian follicles. The innermost layer (medulla) contains blood and lymphatic vessels.",
     ],
   },
-  mosquitoes: {
+
+  uterus: {
     slide: [
-      { image: require("../../assets/images/insects/mosquitoes/toanthan1.png") },
-      { image: require("../../assets/images/insects/mosquitoes/toanthan2.png") },
-      { image: require("../../assets/images/insects/mosquitoes/toanthan3.png") },
+      { name: "Uterus", image: require('../../assets/image/Home/femaleSystem/uterus.png') },
     ],
-    weight: "0.000088 ounces",
-    length: "0.125 - 0.75 inches",
-    lifespan: "2 weeks - 6 months",
-    speed: "1.6 – 2.4 km/h",
-    climateZone:
-      "These mosquitoes are often found in temperate climate zones and are known to be vectors for several arboviruses",
-    biome:
-      "Mosquito fauna in the northeast semiarid region of Brazil, Caatinga biome, are poorly known.",
-    facts: [
-      "- The scientific name culicidae comes from the Latin words 'culex' and 'culicis', which mean 'gnat'",
-      "- Even though there often are larger numbers of mosquitoes, there are actually a very small number of different species. Only one mosquito species overwinters as an adult",
+  
+    intro: [
+      `Your uterus is a pear-shaped organ in the reproductive system of people assigned female at birth. It’s where a fertilized egg implants during pregnancy and where your baby develops until birth.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/mosquitoes/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Carnivore",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Your uterus plays a key role in your reproductive health and function. The three main jobs of your uterus are:",
+      "Pregnancy: Your uterus stretches to grow your baby during pregnancy. It can also contract to help push your baby out of your vagina.",
+      "Fertility: Your uterus is where a fertilized egg implants during conception and where your baby grows.",
+      "Menstrual cycle: Your uterine lining is where blood and tissue come from during menstruation.",
+    ],
 
-      {
-        image: require("../../assets/images/insects/mosquitoes/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Some mosquitoes like living near people, while others prefer forests, marshes, or tall grasses. All mosquitoes like water because mosquito larvae and pupae live in the water with little or no flow. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/mosquitoes/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Eggs are ready to hatch from a few days to several months after being laid. Eggs hatch when submerged in water Larvae are aquatic and develop into pupae in as little as 5 days.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: Your uterus is in your pelvis between your bladder and rectum. It’s supported by your pelvic floor muscles and perineal body.",
+      "Components: consists of three layers",
+      "Perimetrium: The outermost, protective layer.",
+      "Myometrium: The highly muscular middle layer. This is what expands during pregnancy and contracts to push your baby out.",
+      "Endometrium: The inner layer or lining of your uterus (uterine lining). This layer of your uterus is shed during your menstrual cycle.",
+      "Size and weight: Your uterus is about 3 inches from top to bottom and 2 inches wide at the widest part. It’s about 1 inch thick and weighs around 1 ounce.",
     ],
   },
-  ladybug: {
+
+  vagina: {
     slide: [
-      { image: require("../../assets/images/insects/ladybug/toanthan1.png") },
-      { image: require("../../assets/images/insects/ladybug/toanthan2.png") },
-      { image: require("../../assets/images/insects/ladybug/toanthan3.png") },
+      { name: "Vagina", image: require('../../assets/image/Home/femaleSystem/vagina.png') },
     ],
-    weight: "0.02 grams",
-    length: "8 - 10 mm",
-    lifespan: "4 weeks",
-    speed: "37mph",
-    climateZone:
-      "Ladybugs are found more frequently in warmer climates",
-    biome:
-      "They can be found in grasslands, meadows, urban parks and gardens, forests, wetlands, and more. They will hide from predators in shrubs, grasses, trees, and more.",
-    facts: [
-      "- One ladybug can eat up to 5,000 insects in its lifetime!",
-      "- Most ladybugs have oval, dome-shaped bodies with six short legs.",
-      "- Depending on the species, they can have spots, stripes, or no markings at all",
-      "- Seven-spotted ladybugs are red or orange with three spots on each side and one in the middle",
+  
+    intro: [
+      `The vagina is a muscular canal lined with nerves and mucus membranes. It connects the uterus and cervix to the outside of the body.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/ladybug/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Most ladybugs voraciously consume plant-eating insects, such as aphids, and in doing so they help to protect crops",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The vagina has 3 main functions:",
+      "provides a passageway for blood and mucosal tissue from the uterus during a woman’s monthly period",
+      "receives the penis during sexual intercourse and holds the sperm until they pass into the uterus",
+      "provides a passageway for childbirth",
+    ],
 
-      {
-        image: require("../../assets/images/insects/ladybug/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Ladybugs can be found in many different habitats including forests, grasslands, rivers, and in cities and suburbs. These beetles mainly live in shrubs, trees, fields, gardens, and sometimes within homes",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/ladybug/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "In ladybirds, reproduction is exclusively sexual, a new zygote resulting from the fertilisation of an egg by a sperm.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: Your vagina extends from your cervix, a neck-like piece of tissue that connects your vagina to your uterus. Your vagina ends as a hole outside of your body, called your vaginal opening. Your vagina is between your bladder and your rectum",
+      "Depth: a little over 3.5 inches deep, but depends on various factors, including age, weight.",
     ],
   },
-  'harvester ants': {
+
+  bladder: {
     slide: [
-      { image: require("../../assets/images/insects/ants/toanthan1.png") },
-      { image: require("../../assets/images/insects/ants/toanthan2.png") },
-      { image: require("../../assets/images/insects/ants/toanthan3.png") },
+      { name: "Bladder", image: require('../../assets/image/Home/excretorySystem/bladder.png') },
     ],
-    weight: "5 - 10 milligrams",
-    length: "5 - 7 mm",
-    lifespan: "14 – 50 years",
-    speed: "2 inches per second",
-    climateZone:
-      "Prefer wooded environments, open grasslands, especially areas with clay loam soils. They are common along the edges of dirt roads. Red harvester ants are most active during hot, dry conditions",
-    biome:
-      "Harvester ants construct their nests in dry, sandy to hard soils. The entrance to the nest is often marked by a crater or a cone in the center of a slight mound, usually surrounded by a pile of small stones",
-    facts: [
-      "- Harvester ants have six jointed legs each and hard exoskeletons that protect their bodies",
-      "- Harvester ants are larger than many ants",
-      "- Queen harvester ants are at least a half-inch long while workers are about half that size",
+  
+    intro: [
+      `The urinary bladder, or simply bladder, is a hollow organ in humans and other vertebrates that stores urine from the kidneys before disposal by urination. In humans the bladder is a distensible organ that sits on the pelvic floor. Urine enters the bladder via the ureters and exits via the urethra.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/ants/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "The main food source for red harvester ants usually consists of seeds, which they hoard in great numbers",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The bladder is the organ that holds urine until it is ready to be released and then helps to expel it from the body.",
+      "Ureters bring urine to the bladder from the kidneys, passing through an opening to the bladder called the ureterovesical junction.",
+      "As the bladder fills with urine, nerves send signals to the central nervous system. Somatic and autonomic nerves control the detrusor muscle, which contracts and relaxes along with sphincters in the urethra.",
+      "When full, the typical adult bladder can hold up to 500 milliliters of urine at a time—or about 2 cups—which must be released every two to five hours.",
+      "Urination, or micturition, is a combination of voluntary and involuntary actions regulated by the micturition center—a signal center located in the pons of the brainstem. As the bladder fills and the bladder wall is stretched, sensors send nerve impulses to the micturition center. The result is the relaxing and contracting of the detrusor muscle along with the external and internal urethral sphincters.",
+    ],
 
-      {
-        image: require("../../assets/images/insects/ants/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Prefer arid chaparral habitats and are native to the Southwestern United States.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/ants/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "In harvester ants, mated reproductive females, called ‘queens’, produce new male reproductives and female reproductives, called ‘gynes’.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: In men, it is bordered by the pubic bone at the front of the pelvis and the rectum at the back of the pelvis in the lower abdomen. In women, the bladder is bordered posteriorly by the uterus and vagina.",
+      "Shape: The bladder is a triangle-shaped, hollow organ.",
+      "Structure: The bladder is supported by ligaments and connects at the top to two ureters and at the bottom to the urethra.",
+      "The bladder itself is divided into four sections.",
+      "Apex: This is the top part of the bladder. The apex points forward toward the abdominal wall.",
+      "Fundus: The base of the bladder",
+      "Body: The main portion of the bladder between the apex and fundus.",
+      "Neck: The narrow part of the bladder that constricts and connects the organ to the urethra.",
     ],
   },
-  fly: {
+
+  kidney: {
     slide: [
-      { image: require("../../assets/images/insects/fly/toanthan1.png") },
-      { image: require("../../assets/images/insects/fly/toanthan2.png") },
-      { image: require("../../assets/images/insects/fly/toanthan3.png") },
+      { name: "Kidney", image: require('../../assets/image/Home/excretorySystem/kidney.png') },
     ],
-    weight: "11.5 - 17.5 mg",
-    length: "1 mm - 7 cm",
-    lifespan: "28 days",
-    speed: "7 km/h",
-    climateZone:
-      "Warmer climates bring more insects, and those insects can bring illnesses.",
-    biome:
-      "True Flies can be found almost anywhere. Adults of many species are strong fliers, which helps them locate supplies of food for their larvae. Fly larvae are most common in damp habitats, and flies populations are largest in humid places with lots of moisture",
-    facts: [
-      "- Flies are more than just a nuisance",
-      "- These buzzing insects also play important roles in nature, including pollinating plants, breaking down organic material, and serving as food for other bugs and animals",
-      "- Find more fun fly facts below and then learn how to help keep them away.",
+  
+    intro: [
+      `The kidneys are two bean-shaped organs that filter your blood. Your kidneys are part of your urinary system.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/fly/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Adult flies feed and harvest their larvae on organic decaying material. This includes, fruit, vegetables, meat, animal, plant secretions and human feces. Both male and female flies suck nectar from flowers as well.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The main role of the kidneys is maintaining homeostasis. They manage fluid levels, electrolyte balance, and other factors that keep the internal environment of the body consistent and comfortable.",
+      "These organs carry out a wide range of bodily functions:",
+      "Waste excretion: The kidneys remove various waste products and get rid of them in the urine. Some major compounds that the kidneys remove are:",
+      "urea, which results from the breakdown of proteins",
+      "uric acid from the breakdown of nucleic acids",
+      "drugs and their metabolites",
+      "Reabsorption of nutrients:",
+      "The kidneys reabsorb nutrients from the blood using tubules and transport them to where they will best support health. They also reabsorb other products to help maintain homeostasis.",
+      "Reabsorbed products include: glucose, amino acids, bicarbonate, water, phosphate, chloride, sodium, magnesium, and potassium ions",
+      "Maintaining pH",
+      "The kidneys manage the pH by reabsorbing and producing bicarbonate from urine, which helps neutralize acids.",
+      "The kidneys can retain bicarbonate if the pH is tolerable and release it if acid levels rise. They can produce new bicarbonate by excreting acid.",
+      "Osmolality regulation",
+      "Increasing urine concentration",
+      "Increasing water reabsorption",
+      "Reopening portions of the collecting duct that water cannot normally enter, allowing water back into the body",
+      "Retaining urea in the medulla of the kidney rather than excreting it, as this compound draws in water",
+      "Regulating blood pressure",
+      "The kidneys regulate blood pressure when necessary, but they are responsible for slower adjustments.",
+      "They adjust long-term pressure in the arteries by causing changes in the fluid outside of cells (extracellular fluid).",
+      "Secretion of active compounds: The kidneys release several important compounds, including:",
+      "Erythropoietin: This controls erythropoiesis, which is the production of red blood cells. The liver also produces erythropoietin, but the kidneys are its main producers in adults.",
+      "Renin: This enzyme helps manage the expansion of arteries and the volumes of blood plasma, lymph, and interstitial fluid. Lymph is a fluid that contains white blood cells, which support immune activity, and interstitial fluid is the main component of extracellular fluid.",
+      "Calcitriol: This is the hormonally active metabolite of vitamin D. It increases both the amount of calcium that the intestines can absorb and the reabsorption of phosphate in the kidney.",
+    ],
 
-      {
-        image: require("../../assets/images/insects/fly/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "A single fruit fly can lay around 500 eggs in her lifetime and the entire life cycle from egg to adult only takes about a week. Not to be outdone, a single female house fly can lay up to 500 eggs over the span of just three to four days",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/fly/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The life cycle of a fly consists of four stages: egg, larva, pupa, and adult. Since larval forms, always morphologically distinct from adults, also occupy different habitats.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The positioning of the kidneys is just below the rib cage, with one on each side of the spine. The right kidney is generally slightly lower than the left kidney to make space for the liver.",
+      "Size: Each kidney is approximately 3 centimeters (cm) thick, 6 cm wide, and 12 cm long.",
+      "Weight: In males, the average weight of the kidneys is roughly 129g for the right one and 137g for the left. In females, the average weight of these organs is 108g for the right kidney and 116g for the left kidney.",
+      "Shape: The kidneys are two bean-shaped organs that are roughly the size of a fist. ",
+      "Structure: ",
+      "A tough, fibrous renal capsule surrounds each kidney and provides support for the soft tissue inside. Beyond that, two layers of fat serve as further protection. The adrenal glands lie on top of the kidneys.",
+      "Inside the kidneys are a number of pyramid-shaped lobes. Each consists of an outer renal cortex and an inner renal medulla. Nephrons flow between these sections. Each nephron includes a filter, called the glomerulus, and a tubule.",
+      "The tubule returns necessary substances to the blood and removes waste that then becomes urine. The kidneys excrete urine through the ureter, a tube that leads to the bladder.",
     ],
   },
-  flea: {
+
+  ureters: {
     slide: [
-      { image: require("../../assets/images/insects/flea/toanthan1.png") },
-      { image: require("../../assets/images/insects/flea/toanthan2.png") },
-      { image: require("../../assets/images/insects/flea/toanthan3.png") },
+      { name: "Ureters", image: require('../../assets/image/Home/excretorySystem/ureters.png') },
     ],
-    weight: "5 - 1 mg",
-    length: "0.1 - 0.32 cm",
-    lifespan: "60 - 100 days",
-    speed: "1.9 meters per second",
-    climateZone:
-      "Fleas tend to prefer a temperature that is 70°F or greater, but ticks and fleas can still survive cold weather in the winter. Fleas thrive in warm temperatures and high humidity—perfect parameters for both their activity and their reproduction",
-    biome:
-      "Outdoors, fleas prefer moist, shady, cool places. They especially like shrubs, leaves, and trees, and don't fare well in sunny areas or open grass. By trimming back shrubs, raking out leaves, and, in effect, limiting the amount of areas where fleas thrive, you can help prevent infestations out of doors",
-    facts: [
-      "- Fleas Are Infamous for Their Role in Transmitting the Black Death",
-      "- Fleas Lay Their Eggs on Other Animals, Not in Your Carpet",
+  
+    intro: [
+      `The ureters are the part of the urinary system. They are tubes made of smooth muscle that propel urine from the kidneys to the urinary bladder. `,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/flea/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "A flea eats blood from humans, blood from pets, feces, and decaying plant or animal matter. They are best known for being hematophagic, or a creature that dines on blood more than any other food source.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The ureters’s function is to filter blood and create urine as a waste product. Ureters carry urine from the kidneys to the bladder. The ureters work constantly, emptying urine into the bladder about every 10 to 15 seconds.",
+      "Length: In a human adult, the ureters are usually 20–30 cm (8–12 inch) long and around 3–4 mm (0.12–0.16 inch) in diameter. ",
+      "Structure:",
+      "There are two ureters, one connected to each kidney. The kidneys are situated below the ribs, toward the middle of the back. The ureters each run to the bladder, a hollow, muscular organ located in the pelvis. Ligaments, connected to other organs and bones, hold the bladder in place.",
+      "The wall of the ureter has three layers: the outer layer, made of fibrous connective tissue; the middle layer, made of smooth muscle; and a moist, inner lining that protects the surface of the cells.",
+    ],
 
-      {
-        image: require("../../assets/images/insects/flea/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Fleas thrive in many climates but prefer moist, humid, and shady areas. The area underneath a porch or deck can turn into an overwintering site. Areas with tall grass, leaf litter, weeds, wood piles, gravelly areas.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/flea/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "After finding an animal or human host and taking a blood meal, adult fleas will mate and begin laying eggs in the fur and surroundings of the host.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: Ureters connect the kidneys to the bladder. The upper half of each ureter is located in the abdomen and the lower half is in the pelvis.",
+      "Depth: a little over 3.5 inches deep, but depends on various factors, including age, weight.",
     ],
   },
-  dragonfly: {
+
+  urethra: {
     slide: [
-      { image: require("../../assets/images/insects/dragonfly/toanthan1.png") },
-      { image: require("../../assets/images/insects/dragonfly/toanthan2.png") },
-      { image: require("../../assets/images/insects/dragonfly/toanthan3.png") },
+      { name: "Urethra", image: require('../../assets/image/Home/excretorySystem/urethra.png') },
     ],
-    weight: "600 mg - 1 g",
-    length: "1 - 4 inches",
-    lifespan: "5 years",
-    speed: "36 – 54 km/h",
-    climateZone:
-      "They are most abundant an diverse in slow-moving freshwater that has no fish (small streams and ponds) but can be found in many shallow freshwater habitats. Adult dragonflies often stay near water, but sometimes travel away from water while hunting or on migration",
-    biome:
-      "Immature dragonflies live in freshwater. They are most abundant an diverse in slow-moving freshwater that has no fish (small streams and ponds) but can be found in many shallow freshwater habitats",
-    facts: [
-      "- Dragonflies or odonates, are among the most ancient insects and were some of the first winged insects to evolve, about 300 million years ago",
-      "- While modern dragonflies have wingspans of about two to five inches, fossil dragonflies have been found with wingspans of up to two feet",
+  
+    intro: [
+      `The urethra is a hollow tube that connects the urinary bladder to the urinary meatus for the removal of urine from the body.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/dragonfly/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Dragonflies eat flies, mosquitos, butterflies, and tadpoles. Dragonflies are almost exclusively carnivorous, meaning that they eat other animal matter",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The urethra is part of the excretory system. This system is made up of  kidneys, bladder, ureters and urethra.  Kidneys clean  blood and produce urine, a waste product. From two kidneys, two ureters move the urine to the bladder, where it’s stored until urinate (pee).",
+      "Urine leaves the body through a hole at the end of  urethra. That hole from the inside to the outside is called the urethral meatus. (The term ‘meatus’ refers to any opening from the inside to the outside.)",
+    ],
 
-      {
-        image: require("../../assets/images/insects/dragonfly/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Dult Dragonflies and Damselflies can be seen rapidly flying about marshes, ponds, lakes, rivers, streams, etc. Immature Odonata (called nymphs) live submerged in lowland streams and ponds",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/dragonfly/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "When dragonflies breed, the male will attach the back of his abdomen to the female's head and in this position they fly together. They will then find a perch to land on and the male and female mate",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The urethra is a passageway located in the body's pelvic region. ",
+      "Structure:",
+      "The walls of the tube are thin and made up of epithelial tissue, smooth muscle cells and connective tissue. ",
+      "The urethra has two different types of sphincters, or muscles that act as valves that open or close:",
+      "An internal urethral sphincter which is located at the point where the urethra leaves the bladder.",
+      "An external urethral sphincter located in the pelvic floor. These muscles work together with the bladder to get urine out of the body.",
+      "Length",
+      "Female: urethra is about 1.5 inches (3 to 4 centimeters) long",
+      "Male: urethra is about 8 to 9 inches long (about 20 centimeters).",
+      "There are three parts to the male urethra:",
+      "The prostatic urethra: The part of the urethra that carries seminal fluid through the prostate gland to produce the semen that will be ejaculated.",
+      "The membranous urethra: The short part of the urethra that transports fluids through the pelvic floor.",
+      "The penile urethra (also called the spongy urethra or the cavernous urethra): The longest piece of the urethra. This section extends the entire length of the penis and ends at the urethral meatus or the opening outside the body.",
     ],
   },
-  cricket: {
+
+  endocrineSystem: {
     slide: [
-      { image: require("../../assets/images/insects/cricket/toanthan1.png") },
-      { image: require("../../assets/images/insects/cricket/toanthan2.png") },
-      { image: require("../../assets/images/insects/cricket/toanthan3.png") },
+      { name: "Endocrine System", image: require('../../assets/image/Home/endocrineSystem/endocrineSystem.png') },
     ],
-    weight: "0.2 - 0.8 g",
-    length: "0.12 - 2 inches",
-    lifespan: "90 days",
-    speed: "3.5 mph",
-    climateZone:
-      "Cricket will survive at room temperature, but they will be considerably more active and reproduce better at temperatures 80°-85° F is about right. Field crickets are commonly found in fields, pastures, along roadsides and in yards where they feed on a variety of plants. They also are known to feed on dead or weakened insects, including other crickets. Field crickets are strongly attracted to light",
-    biome:
-      "Crickets live in almost any environment—forests, grasslands, wetlands, caves, beaches, and underground. Crickets, like other animals, will make their home wherever they can find food, water, air, shelter, and space.",
-    facts: [
-      "- Crickets don't have lungs and can't breathe through their mouths or nostrils.",
-      "- Instead, they take air in through a series of small holes on the sides of their bodies called spiracles.",
+  
+    intro: [
+      `The endocrine system is a messenger system comprising feedback loops of the hormones released by internal glands of an organism directly into the circulatory system, regulating distant target organs.`,
+      `A gland is an organ that makes and puts out hormones that do a specific job in your body. Endocrine and exocrine glands release the substances they make into your bloodstream.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/cricket/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "A natural cricket diet consists of plants and meat and includes protein, grains, and produce. In the wild, crickets will consume a wide-ranging diet including insect larvae, aphids, flowers, seeds, leaves, fruit, and grasses",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Your endocrine system continuously monitors the amount of hormones in your blood.",
+      "Hormones deliver their messages by locking into the cells they target so they can relay the message. Hormones affect nearly every process in your body, including:",
+      "Metabolism (the way you break down food and get energy from nutrients).",
+      "Growth and development.",
+      "Emotions and mood.",
+      "Fertility and sexual function.",
+      "Sleep.",
+      "Blood pressure.",
+    ],
 
-      {
-        image: require("../../assets/images/insects/cricket/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Crickets are found on the soil, hiding under dead plants or on live plants. They only occur where there is plant material to eat, and they are most diverse and abundant in humid areas with lots of plants",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/cricket/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Most crickets lay their eggs in the soil or inside the stems of plants, and to do this, female crickets have a long, needle-like or sabre-like egg-laying organ called an ovipositor.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Your endocrine system is made up of several organs called glands. These glands, located all over your body, create and secrete (release) hormones. The main glands that produce hormones include:",
+      "Hypothalamus: This gland is located in your brain and controls your endocrine system. It uses information from your nervous system to determine when to tell other glands, including the pituitary gland, to produce hormones. The hypothalamus controls many processes in your body, including your mood, hunger and thirst, sleep patterns and sexual function.",
+      "Pituitary: This little gland is only about the size of a pea, but it has a big job. It makes hormones that control several other glands such as the thyroid gland, adrenal glands, ovaries and testicles. The pituitary gland is in charge of many different functions, including how your body grows. It’s located at the base of your brain.",
+      "Thyroid: Your thyroid is a butterfly-shaped gland in the front of your neck. It’s responsible for your metabolism (how your body uses energy).",
+      "Parathyroid: These four tiny glands are no larger than a grain of rice. They control the level of calcium in your body. For your heart, kidneys, bones and nervous system to work, you need the right amount of calcium.",
+      "Adrenal: You have two adrenal glands, one on top of each kidney. They control your metabolism, blood pressure, sexual development and response to stress.",
+      "Pineal: This gland manages your sleep cycle by releasing melatonin, a hormone that causes you to feel sleepy.",
+      "Pancreas: Your pancreas is part of your endocrine system, and it plays a significant role in your digestive system too. It makes a hormone called insulin that controls the level of sugar in your blood.",
+      "Ovaries: In women, the ovaries release sex hormones called estrogen, progesterone and testosterone. Women have two ovaries in their lower abdomen, one on either side.",
+      "Testes: In men, the testes (testicles) make sperm and release the hormone testosterone. This hormone affects sperm production, muscle strength and sex drive.",
     ],
   },
-  cicadas: {
+
+  stomach: {
     slide: [
-      { image: require("../../assets/images/insects/cicada/toanthan1.png") },
-      { image: require("../../assets/images/insects/cicada/toanthan2.png") },
-      { image: require("../../assets/images/insects/cicada/toanthan3.png") },
+      { name: "Stomach", image: require('../../assets/image/Home/digestiveSystem/stomach.png') },
     ],
-    weight: "2 g",
-    length: "1 - 1.5 inches",
-    lifespan: "2 - 5 years",
-    speed: "9 mph",
-    climateZone:
-      "Tropical rainforests, Desert scrub, Temperate seasonal forests",
-    biome:
-      "Within the region of the world located north of Mexico there are about 170 different cicada species that include both the annual, dog-day cicadas and the periodical cicadas that have a 13 or 17-year life cycle",
-    facts: [
-      "- The 13 - 17 year lifespan of periodical cicadas is one of the longest of any insect, but only a tiny fraction of that time is spent above ground.",
-      "- The rest of a periodical cicada’s life is spent underground as a nymph feeding on liquid sucked from plant roots.",
-      "- Over their many years beneath the soil, the nymphs shed their exoskeletons, a process known as molting, five times",
+  
+    intro: [
+      `Your stomach is a part of your gastrointestinal (GI) tract. It is a muscular organ that digests food.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/cicada/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Cicadas are herbivores meaning they primarily feed on vegetation. The young ones (nymph) use their modified mouthparts to feed on includes juices and sap obtained from plant roots while the molting cicadas eat twigs",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Your stomach’s purpose is to digest food and send it to your small intestine. It has three functions:",
+      "Temporarily store food.",
+      "Contract and relax to mix and break down food.",
+      "Produce enzymes and other specialized cells to digest food.",
+    ],
 
-      {
-        image: require("../../assets/images/insects/cicada/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Adult cicada habitats are the crown, trunk and small twigs of trees and woody shrubs. Cicada adults fly, come together to mate and the females cut small slits in the tender twigs",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/cicada/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The first instar (instar is the particular life stage of the insect) nymphs that hatched from the eggs drop to the ground where they burrow to about one inch beneath the soil surface",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: Your stomach sits in your upper abdomen on the left side of your body. The top of your stomach connects to a valve called the esophageal sphincter (a muscle at the end of your esophagus). The bottom of your stomach connects to your small intestine.",
+      "Size: Your stomach expands when full and deflates when empty. Because of this, your stomach size can vary depending on how recently and how much you have eaten.",
+      "Components: Your stomach has five distinct sections:",
+      "The cardia is the top part of your stomach. It contains the cardiac sphincter, which prevents food from traveling back up your esophagus.",
+      "The fundus is a rounded section next to the cardia. It's below your diaphragm (the dome-shaped muscle that helps you breathe).",
+      "The body (corpus) is the largest section of your stomach. In the body, your stomach contracts and begins to mix food.",
+      "The antrum lies below the body. It holds food until your stomach is ready to send it to your small intestine.",
+      "The pylorus is the bottom part of your stomach. It includes the pyloric sphincter. This ring of tissue controls when and how your stomach contents move to your small intestine.",
+      "Structure: Several layers of muscle and other tissues make up your stomach:",
+      "Mucosa is your stomach’s inner lining. When your stomach is empty, the mucosa has small ridges (rugae). When your stomach is full, the mucosa expands, and the ridges flatten.",
+      "Submucosa contains connective tissue, blood vessels, lymph vessels (part of your lymphatic system) and nerve cells. It covers and protects the mucosa.",
+      "Muscularis externa is the primary muscle of your stomach. It has three layers that contract and relax to break down food.",
+      "Serosa is a layer of membrane that covers your stomach.",
     ],
   },
-  'bumble bees': {
+
+  smallIntestine: {
     slide: [
-      { image: require("../../assets/images/insects/bumble/toanthan1.png") },
-      { image: require("../../assets/images/insects/bumble/toanthan2.png") },
-      { image: require("../../assets/images/insects/bumble/toanthan3.png") },
+      { name: "Small Intestine.png", image: require('../../assets/image/Home/digestiveSystem/smallIntestine.png') },
     ],
-    weight: "150 - 200 milligrams",
-    length: "0.4 - 1.6 inches",
-    lifespan: "1 week - 1 year",
-    speed: "3.0 - 4.5 metres per second",
-    climateZone:
-      "Live mostly in temperate climates in the Northern Hemisphere.",
-    biome:
-      "Bumble bees live all over the United States and in every grassland you could find, but Bombus bimaculatus is native to the state of Iowa. In the summer they make their homes in abandoned underground nests of mice or other small creatures",
-    facts: [
-      "- There are more than 250 species of bumblebees, belonging to the genus Bombus (honeybees belong to the genus Apis.)",
+  
+    intro: [
+      `The small intestine is part of your digestive system. It is a long tube-like organ that connects the stomach and the large intestine.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/bumble/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Herbivore",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The small intestine is where most of the long process of digestion takes place. It:",
+      "Systematically breaks food down.",
+      "Absorbs nutrients.",
+      "Extracts water.",
+      "Extracts water.",
+      "Moves food along the gastrointestinal tract.",
+    ],
 
-      {
-        image: require("../../assets/images/insects/bumble/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Nest in hives in underground holes made by larger animals, while some nest above ground in abandoned bird nests, grass tussocks or cavities such as hollow logs or spaces beneath rocks",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/bumble/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Queens emerge from hibernation underground in the spring and find a nest site, which can often be an old rodent burrow.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The small intestine is coiled inside the lower abdominal cavity beneath the stomach. The large intestine surrounds it, framing the edges of the abdominal cavity.",
+      "Size: The small intestine is about 18 feet (6.5 meters) long and folds many times to fit in the abdomen. Although it is longer than the large intestine, it is called the small intestine because it is narrower in diameter.",
+      "Shape: It looks like a long, pink or red tube with many folds.",
+      "Components: Made up of three segments — the duodenum, jejunum, and ileum",
     ],
   },
-  beetle: {
+
+  rectum: {
     slide: [
-      { image: require("../../assets/images/insects/beetle/toanthan1.png") },
-      { image: require("../../assets/images/insects/beetle/toanthan2.png") },
-      { image: require("../../assets/images/insects/beetle/toanthan3.png") },
+      { name: "Rectum", image: require('../../assets/image/Home/digestiveSystem/rectum.png') },
     ],
-    weight: "70 – 100 g",
-    length: "11 cm",
-    lifespan: "30 years",
-    speed: "5.5 mph",
-    climateZone:
-      "More than fifty carabid beetle species occur in areas with appreciably lower air temperatures",
-    biome:
-      "Beetles are found in nearly all habitats, including freshwater and coastal habitats, wherever vegetative foliage is found, from trees and their bark to flowers, leaves, and underground near roots - even inside plants in galls, in every plant tissue, including dead or decaying ones",
-    facts: [
-      "- One out of Every Four Animals on Earth Is a Beetle",
-      "- Beetles are the largest group of living organisms known to science, bar none",
+  
+    intro: [
+      `The rectum is the end part of the large intestine that connects the colon to the anus. It is the area where a person holds stool before excreting it from the body.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/insects/beetle/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Most beetles are herbivores, eating only plants. This includes roots, stems, leaves, seeds, nectar, fruits or even the wood of the plant itself. This subcategory includes weevils, leaf beetles and some species of Longhorned beetles",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The rectum's job is to receive stool from the colon, let you know that there is stool to be evacuated (pooped out) and to hold the stool until evacuation happens. ",
+      "When anything (gas or stool) comes into the rectum, sensors send a message to the brain. The brain then decides if the rectal contents can be released or not.",
+    ],
 
-      {
-        image: require("../../assets/images/insects/beetle/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Beetles have lived on Earth for about 300 million years and can be found almost everywhere, from deserts to lakes, rainforests to polar ice caps. Most beetles live on land. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/insects/beetle/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Female beetles usually lay dozens or hundreds of eggs. Reproduction is often timed to match the time of most available food.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The position of the rectum is between the sigmoid section of the colon and the anal canal.",
+      "Size: The rectum is a straight, 8-inch chamber that connects the colon to the anus.",
     ],
   },
-  'goura victoria': {
+
+  pancreas: {
     slide: [
-      { image: require("../../assets/images/feathered/goura_victoria/toanthan1.png") },
-      { image: require("../../assets/images/feathered/goura_victoria/toanthan2.png") },
-      { image: require("../../assets/images/feathered/goura_victoria/toanthan3.png") },
+      { name: "Pancreas", image: require('../../assets/image/Home/digestiveSystem/pancreas.png') },
     ],
-    weight: "4.5 pounds",
-    length: "24 – 28 inches",
-    lifespan: "20 - 25 years",
-    speed: "",
-    climateZone:
-      "Are native to a tropical climate and will do best in warm, humid regions.",
-    biome:
-      "Pigeons and doves include about 316 species of birds in the family Columbidae. Most species are found in forests of various types, with fewer species occurring in more open habitats. By far the greatest richness of species of pigeons and doves occurs in moist tropical and subtropical forests",
-    facts: [
-      "- The Victoria crowned pigeon is the largest species of pigeon in the world",
-      "- This species was named in honor of the British monarch, Queen Victoria",
-      "- The Victoria crowned pigeon is closely related to the extinct ground-dwelling pigeon, dodo",
+  
+    intro: [
+      `The pancreas is an organ in the back of your abdomen (belly). It is part of your digestive system.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/goura_victoria/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Like all pigeons, Victoria crowned pigeons feed on the ground. In the wild, their diet consists mainly of fallen fruits, seeds, grains, and small invertebrates. They're particularly fond of figs.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The pancreas performs two main functions:",
+      "As an endocrine gland, it functions mostly to regulate blood sugar levels, secreting the hormones insulin, glucagon, somatostatin, and pancreatic polypeptide.",
+      "As a part of the digestive system, it functions as an exocrine gland secreting pancreatic juice into the duodenum through the pancreatic duct.",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/goura_victoria/toanthan2.png"),
-        title: "Habitat", 
-        summary:
-          "The wild pigeon is found in coastal area sand the feral pigeon is found almost exclusively in areas of human habitation. Distribution: Worldwide except Sahara Desert, Antarctica and the high Arctic",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/goura_victoria/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The Victoria crowned pigeon builds a rather solid platform nest of sticks and leaves in which a single egg is laid. Both parents incubate the egg (about 30 days) and care for the chick.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: Your pancreas sits behind your stomach and in front of your spine. Your gallbladder, liver and spleen surround your pancreas.",
+      "Length: The pancreas is about 6 inches long. It’s about the length of your hand.",
+      "Components: The pancreas anatomy includes:",
+      "Head: The wider part of the pancreas that sits in the curve of your duodenum.",
+      "Neck: The short part of the pancreas extending from the head.",
+      "Body: The middle part of the pancreas between the head and neck, which extends upward.",
+      "Tail: The thinnest part of the pancreas, located near your spleen.",
     ],
   },
-  toucans: {
+
+  mouth: {
     slide: [
-      { image: require("../../assets/images/feathered/toucans/toanthan1.png") },
-      { image: require("../../assets/images/feathered/toucans/toanthan2.png") },
-      { image: require("../../assets/images/feathered/toucans/toanthan3.png") },
+      { name: "Mouth", image: require('../../assets/image/Home/digestiveSystem/mouth.png') },
     ],
-    weight: "2 pounds",
-    length: "25 inches",
-    lifespan: "20 years",
-    speed: "64 km/h",
-    climateZone:
-      "Most Tropical Rain forest",
-    biome:
-      "Toucans are native to the Neotropics, from Southern Mexico, through Central America, into South America south to northern Argentina. They mostly live in the lowland tropics, but the mountain species from the genus Andigena reach temperate climates at high altitudes in the Andes and can be found up to the tree line",
-    facts: [
-      "- Toucans Make Many Noises",
-      "- They Come From a Big Family",
+  
+    intro: [
+      `Your mouth is part of your digestive system. This oval-shaped opening in your skull starts at your lips and ends at your throat.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/toucans/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Toucans are omnivorous. In the wild, they eat a variety of foods including a multitude of fruits and berries plus lizards, rodents, small birds, and an assortment of insects",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The mouth is involved in several essential bodily functions:",
+      "Breathing.",
+      "Chewing.",
+      "Digesting foods and drinks.",
+      "Drinking.",
+      "Swallowing.",
+      "Talking.",
+      "Tasting.",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/toucans/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Toucans can be found high in the rainforest canopies, and they rarely make trips to the forest floor. They typically create their nests in hollowed-out tree cavities",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/toucans/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Reproduction. Male toucans use their bills to attract mates for breeding season. They bring the female with whom they wish to mate a piece of food.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "The boundaries of your mouth hold food in place for chewing and allow you to form sounds and words:",
+      "Cheeks",
+      "Lips",
+      "Palate: The palate is the roof of your mouth, which separates your mouth from your nasal cavity, or nose area. It’s made of bone and muscle. Inside your mouth are the:",
+      "Gums: Your gums are tissue that anchor your teeth in place.",
+      "Oral mucosa (mucous membranes): The oral mucosa is a lining all over the inside of your mouth.",
+      "Salivary glands: Three pairs of salivary glands make saliva (spit).",
+      "Sensory receptors: Sensory receptors located throughout your mouth help you sense the temperature and texture of foods and drinks.",
+      "Taste buds: These cells help sense flavors and tastes (sweet, salty, sour, and bitter).",
+      "Teeth: Your mouth has 32 teeth that crush and tear food for swallowing and digestion.",
+      "Tongue: Your tongue is a strong muscle that contains taste buds. It moves food around your mouth and helps you speak.",
+      "Uvula: This piece of flesh hanging in the back of the palate helps move food from your mouth into your throat.",
     ],
   },
-  'resplendent quetzal': {
+
+  liver: {
     slide: [
-      { image: require("../../assets/images/feathered/resplendent_quetzals/toanthan1.png") },
-      { image: require("../../assets/images/feathered/resplendent_quetzals/toanthan2.png") },
-      { image: require("../../assets/images/feathered/resplendent_quetzals/toanthan3.png") },
+      { name: "Liver", image: require('../../assets/image/Home/digestiveSystem/liver.png') },
     ],
-    weight: "210 g",
-    length: "36 cm",
-    lifespan: "20 – 25 years",
-    speed: "none",
-    climateZone:
-      "The Resplendent Quetzal lives in cloud forests from southern Mexico to Panama, anywhere between about 4 to 7,000 feet elevation in these really moist, cloud-laden, very biologically rich forests",
-    biome:
-      "The resplendent quetzal can be found from southern Mexico (southernmost Oaxaca and Chiapas) to western Panama (Chiriquí). The ranges of the two subspecies differ: P. m. mocinno is found in southern Mexico, northern El Salvador, and northwestern Nicaragua, Guatemala and Honduras, while P.",
-    facts: [
-      "- Resplendent quetzals are beautiful birds well known for their colorful plumage",
-      "- They have a green body (showing iridescence from green-gold to blue-violet) and red breasts",
-      "- Depending on the light, quetzal feathers can shine in a variant of colors: green, cobalt, lime, yellow, to ultramarine",
+  
+    intro: [
+      `The liver is a large organ in the abdomen that performs many important bodily functions, including blood filtering. It is also considered a gland because it makes chemicals the body needs.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/resplendent_quetzals/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Resplendent quetzals are considered specialized fruit-eaters, feeding on 41 to 43 species, although they also feed on insects (primarily wasps, ants, and larvae), frogs, lizards, and snails",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The liver has hundreds of jobs. Some of the most vital are:",
+      "Cleans toxins (harmful substances) out of the blood.",
+      "Gets rid of old red blood cells.",
+      "Makes bile, a fluid that helps the body digest (break down) food.",
+      "Metabolizes proteins, carbohydrates and fats so your body can use them.",
+      "Produces substances to help blood clot.",
+      "Regulates the amount of blood in the body.",
+      "Stores glycogen (an energy source) and vitamins to be used by the body later.",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/resplendent_quetzals/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Quetzals are found from southern Mexico to Bolivia. The resplendent quetzal and the golden-headed quetzal are the only species found in Central America.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/resplendent_quetzals/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Resplendent quetzal pairs use their powerful beaks to hollow hole nests in rotted trees or stumps.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: It is located in the right upper quadrant of the abdomen, under the ribs. However, in a condition called situs inversus, the liver is located on the left side.",
+      "Shape: It’s spongy, wedge-shaped, reddish-brown in color and about the size of a football",
+      "Size: The size varies based on how tall you are and how much you weigh. ",
+      "Weight: The liver is the largest internal organ. Weighing, on average, about three pounds in an adult",
+      "Components: The liver has two main parts: the larger right lobe and the smaller left lobe.",
+      "The lobes contain many blood vessels. Blood travels through the liver. The liver filters (cleans) the blood, removing toxins and waste that eventually leave the body through urine and feces.",
+      "The lobes also contain thousands of lobules (small lobes). These lobules connect with many bile ducts, tubes that transport bile from the liver to the small intestine.",
     ],
   },
-  peacocks: {
+
+  gallbladder: {
     slide: [
-      { image: require("../../assets/images/feathered/peacock/toanthan1.png") },
-      { image: require("../../assets/images/feathered/peacock/toanthan2.png") },
-      { image: require("../../assets/images/feathered/peacock/toanthan3.png") },
+      { name: "Gallbladder", image: require('../../assets/image/Home/digestiveSystem/gallbladder.png') },
     ],
-    weight: "8.8 – 13 pounds",
-    length: "6 inches",
-    lifespan: "10 – 25 years",
-    speed: "16 km/h",
-    climateZone:
-      "Peafowl prefer warm climates. Their ideal habitat is an open tropical seasonal forest with trees for roosting. They usually settle near all-season water sources such as rivers and creeks. They also like living within a convenient distance of vegetable gardens and fruit orchards, but not too close to humans",
-    biome:
-      "There are two familiar peacock species. The blue peacock lives in India and Sri Lanka, while the green peacock is found in Java and Myanmar (Burma). A more distinct and little-known species, the Congo peacock, inhabits African rain forests",
-    facts: [
-      "- None",
+  
+    intro: [
+      `The gallbladder stores and concentrates bile from the liver, and then releases it into the duodenum in the small intestine to help absorb and digest fats.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/peacock/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Peacocks are non-fussy omnivores and will eat most plant foods such as seeds, grains, berries, vegetables and fruits as well as insects, arthropods, small lizards, snakes, frogs and rodents",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Its main function is to store bile. Bile helps your digestive system break down fats. Bile is a mixture of mainly cholesterol, bilirubin and bile salts.",
+      "Your gallbladder is connected to other parts of your digestive system through a series of bile ducts called the biliary tract. The biliary tract (sometimes called biliary system or biliary tree) is a pipe-like system that carries bile from your liver to your small intestine.",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/peacock/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Both the blue peacock and green peacock inhabit open lowland forests, as well as farms and agricultural fields. They can be found in both tropical and dry habitats.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/peacock/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "During sex, the male peacock mounts the peahen and aligns his tail with hers, which in turn, aligns the sexual organs, known cloacas. Both peacocks and peahens have cloacas. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: Your gallbladder is located in the upper right part of your abdomen (belly). It sits just under your liver.",
+      "Shape: Your gallbladder is a small, pear-shaped organ",
+      "Component: gallbladder stores and releases bile. Bile is the fluid your liver produces that helps digest fats in the food you eat",
     ],
   },
-  parrots: {
+
+  esophagus: {
     slide: [
-      { image: require("../../assets/images/feathered/parrots/toanthan1.png") },
-      { image: require("../../assets/images/feathered/parrots/toanthan2.png") },
-      { image: require("../../assets/images/feathered/parrots/toanthan3.png") },
+      { name: "Esophagus", image: require('../../assets/image/Home/digestiveSystem/esophagus.png') },
     ],
-    weight: "64 g - 1.6 kg",
-    length: "8.7 - 100 cm",
-    lifespan: "10 - 30 years",
-    speed: "81 - 200 mph",
-    climateZone:
-      "The ideal temperature for birds is between 18 to 22 degrees Celsius. Although parrots can withstand anything up to 29 degrees. Anything under 4 degrees Celsius might be harmful to your bird. Plumper birds might experience heat stress above 30 degrees Celsius",
-    biome:
-      "Parrots spawn in jungle biomes, and can also be spawned using parrot spawn eggs (only in Creative). They can be red, green, blue, cyan, or gray in color. They move around by flying, but will always eventually land",
-    facts: [
-      "- None",
+  
+    intro: [
+      `The esophagus is the hollow, muscular tube that passes food and liquid from your throat to your stomach. It functions as part of your digestive system.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/parrots/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Parrots eat plants, flowers, grains, nuts, seeds, and insects for much of their diet. Parrots are omnivores in most cases, enjoying a mix of plant and animal foods.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "The primary function of your esophagus is to carry food and liquid from your mouth to your stomach. ",
+      "When you swallow, food and liquid first move from your mouth to your throat (pharynx).",
+      "A small muscular flap called the epiglottis closes to prevent food and liquid from going down the “wrong pipe” — your windpipe (trachea).",
+      "Another small flap called the uvula helps prevent liquid from passing upward into your nasal cavity.",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/parrots/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Some of the different types of habitats that these birds live in include woodlands, rainforests, palm forests, savannas, grasslands, desert edges, scrubland, and more. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/parrots/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "All birds reproduce by laying eggs. Eggs are produced inside the female and then deposited in a nest. In captive female birds, egg laying, which is actually the equivalent of ovulation in mammals",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The esophagus is located in the center of your chest in an area called the mediastinum. It lies behind your windpipe (trachea) and in front of your spine.",
+      "Length: The average adult esophagus is about 10 to 13 inches long. It’s about three-fourths of an inch thick at its smallest point.",
     ],
   },
-  'mute swans': {
+
+  colon: {
     slide: [
-      { image: require("../../assets/images/feathered/mute_swan/toanthan1.png") },
-      { image: require("../../assets/images/feathered/mute_swan/toanthan2.png") },
-      { image: require("../../assets/images/feathered/mute_swan/toanthan3.png") },
+      { name: "Colon", image: require('../../assets/image/Home/digestiveSystem/colon.png') },
     ],
-    weight: "25 - 30 pounds",
-    length: "140 - 160 cm",
-    lifespan: "20 - 30 years",
-    speed: "80 km/h)",
-    climateZone:
-      "The swans inhabiting cold areas migrate south for wintering. Other swans stay in breeding areas or join up with other wintering flocks",
-    biome:
-      "Swans living on fresh water will typically eat pondweed, stonewort and wigeon grass, as well as tadpoles and insects such as milfoil. Swans living on salt water will typically eat sea arrow grass, salt marsh grass, eel grass, club rush and green algae, as well as insects and molluscs",
-    facts: [
-      "- As the name implies, they are the least vocal of swans, but by no means mute",
-      "- They utter short grunts and hisses",
-      "-  During the breeding period they make short, loud snorts, but do not make the honking flight calls of other species. The only sound is the beating of the wings",
+  
+    intro: [
+      `The colon (large intestine) is the last part of the gastrointestinal (GI) tract, the long, tube-like pathway that food travels through your digestive system.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/mute_swan/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "What mute swans eat. Swans eat aquatic vegetation, which their long necks equip them to take from the riverbed. They take the molluscs which cling to the vegetation and also eat small fish, frogs and worms",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "When the large intestine receives food from the small intestine, the food has been liquified by the digestive process and most of the nutrients have been absorbed.",
+      "The colon’s job is to dehydrate what’s left of the food and form it into stool. It does this by slowly absorbing water and electrolytes as its muscle system moves the waste along. ",
+      "Meanwhile, bacteria living in your colon feed on the waste and break it down further, completing the chemical part of the digestive process.",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/mute_swan/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "The adaptable Mute Swan can be found in aquatic habitats ranging from urban lakes and farm ponds to coastal estuaries. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/mute_swan/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Male and female pairs may mate for many years. The female lays 5-6 eggs in a cup-shaped depression lined with down on a large mound of vegetation. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The large intestine is in your lower abdominal cavity from your waist down. It surrounds the small intestine in a sort of a square question mark shape, with the tail of the question mark ending at the anal canal",
+      "Shape: The large intestine looks like a semi-flat, segmented tube that lays loosely around the edges of the abdominal cavity. A seam runs vertically down the middle of the tube, making the segments bulge on either side of it",
+      "Length: The colon is the longest part of the large intestine and its average length in the adult human is 65 inches or 166 cm (range of 80 to 313 cm) for males, and 61 inches or 155 cm (range of 80 to 214 cm) for females.",
+      "Structure: The colon is made up of the cecum, the ascending (right) colon, the transverse (across) colon, the descending (left) colon, and the sigmoid colon, which connects to the rectum.",
     ],
   },
-  'mandarin ducks': {
+
+  anus: {
     slide: [
-      { image: require("../../assets/images/feathered/mandarin_duck/toanthan1.png") },
-      { image: require("../../assets/images/feathered/mandarin_duck/toanthan2.png") },
-      { image: require("../../assets/images/feathered/mandarin_duck/toanthan3.png") },
+      { name: "Anus", image: require('../../assets/image/Home/digestiveSystem/anus.png') },
     ],
-    weight: "0.63 kg",
-    length: "41–49 cm",
-    lifespan: "10 years",
-    speed: "none",
-    climateZone:
-      "Mandarin ducks prefer to breed in the dense, shrubby forested edges of rivers and lakes. In winter, they may occur in marshes, flooded fields, and open rivers",
-    biome:
-      "The main population of mandarin ducks is in south, central and eastern England, but small numbers occur in Wales, Northern England and Scotland. These birds like lakes with plenty of overhanging trees and bushes",
-    facts: [
-      "- Mandarin ducks are highly social, flying in large flocks during winter.",
-      "- Their pair bonds are very strong and they will return to the same mate if they survive",
-      "- Females initiate courtship using enticing behavior to attract a preferred male.",
+  
+    intro: [
+      `The anus is the last part of the digestive tract.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/mandarin_duck/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Mandarin ducks feed on mostly on plants and seeds, but will eat small fish, insects, and molluscs. They eat mostly at dawn and dusk. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Its function is to control the expulsion of feces, the residual semi-solid waste that remains after food digestion",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/mandarin_duck/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "The Mandarin lives in the forests of China and Japan. They prefer wooded ponds and fast flowing rocky streams to swim, wade, and feed in",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/mandarin_duck/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Breeding. In the wild, mandarin ducks breed in densely wooded areas near shallow lakes, marshes or ponds.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: The anus starts at the bottom of the rectum, the last portion of the colon (large intestine). The anorectal line separates the anus from the rectum.",
+      "Size: It is a 2-inch long canal consisting of the pelvic floor muscles and the two anal sphincters (internal and external).",
+      "Structure: The anus is surrounded by sphincter muscles that are important in allowing control of stool. The pelvic floor muscle creates an angle between the rectum and the anus that stops stool from coming out when it’s not supposed to. The internal sphincter is always tight, except when stool enters the rectum. This keeps us continents (prevents us from pooping involuntarily) when we are asleep or otherwise unaware of the presence of stool.",
     ],
   },
-  macaws: {
+
+  heart: {
     slide: [
-      { image: require("../../assets/images/feathered/macaw/toanthan1.png") },
-      { image: require("../../assets/images/feathered/macaw/toanthan2.png") },
-      { image: require("../../assets/images/feathered/macaw/toanthan3.png") },
+      { name: "Heart", image: require('../../assets/image/Home/circulatorySystem/heart.png') },
     ],
-    weight: "900 g",
-    length: "102 cm",
-    lifespan: "50 years",
-    speed: "35 mph",
-    climateZone:
-      "Macaws are native to South and Central America, found anywhere between Southern Mexico and Northern Argentina. They prefer rainforests, but can also be found in other types of forests as well as woodland and savannah-like habitats",
-    biome:
-      "The scarlet macaw can be found from southern Mexico to Peru, as well as Bolivia, eastern Brazil and the island of Trinidad. They prefer to spend their time in tall, deciduous trees in forests and near rivers, usually in large, noisy groups",
-    facts: [
-      "- Macaws fall in love and stay that way",
-      "- Unlike the vast majority of animals, once macaws find a mate, they tend to stay together for the rest of their lives.",
-      "- They raise their babies together, groom one another and can be seen flying so close to one another it’s as if they are holding hands…we mean, wing",
+  
+    intro: [
+      `The heart is a fist-sized organ that pumps blood throughout your body. It's the primary organ of your circulatory system.`,
+      `Your heart contains four main sections (chambers) made of muscle and powered by electrical impulses. Your brain and nervous system direct your heart’s function.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/macaw/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Macaws eat a variety of seeds, nuts, fruits, berries and vegetation such as leaf buds in the wild. A higher level of fat seems to be specifically important for certain macaws such as the Hyacinth Macaw",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Main function:",
+      "Your heart’s main function is to move blood throughout your body. Your heart also:",
+      "Controls the rhythm and  speed of your heart rate.",
+      "Maintains your blood pressure.",
+      "Work with other Organ:",
+      "Your heart works with other body systems to control your heart rate and other body functions. The primary systems are:",
+      "Nervous system: Your nervous system helps control your heart rate. It sends signals that tell your heart to beat slower during rest and faster during stress.",
+      "Endocrine system: Your endocrine system sends out hormones. These hormones tell your blood vessels to constrict or relax, which affects your blood pressure. Hormones from your thyroid gland can also tell your heart to beat faster or slower.",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/macaw/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Sleep in the trees at night, and in the morning they may fly long distances to feed on fruit, nuts, insects, and snails. Some species also eat damp soil, which may help to neutralize chemicals in their fruity diet and ease their stomachs",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/macaw/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Like other parrots, macaws start out inside of an egg, usually in a clutch of two or three. It can take up to three weeks for the eggs to hatch",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: in the front of your chest. Your heart is slightly on the left side of your body. It sits between your right and left lungs. The left lung is slightly smaller to make room for the heart in your left chest.",
+      "Size: Generally, adult hearts are about the same size as two clenched fists, and children’s hearts are about the same size as one clenched fist.",
+      "Weight: depending on your body size and sex, an adult’s heart weighs about 10 ounces",
+      "Component: Walls, Chambers (rooms), Valves (doors), Blood vessels (plumbing), Electrical conduction system (electricity).",
     ],
   },
-  'gouldian finches': {
+
+  bloodVessels: {
     slide: [
-      { image: require("../../assets/images/feathered/gouldian_finches/toanthan1.png") },
-      { image: require("../../assets/images/feathered/gouldian_finches/toanthan2.png") },
-      { image: require("../../assets/images/feathered/gouldian_finches/toanthan3.png") },
+      { name: "Blood Vessels", image: require('../../assets/image/Home/circulatorySystem/bloodVessels.png') },
     ],
-    weight: "14 – 15 g",
-    length: "4.7 – 5.9 inches",
-    lifespan: "5 years",
-    speed: "none",
-    climateZone:
-      "Gouldian finches should be kept at a temperature of approximately 70 degrees fahrenheit or more with a humidity level at or above 50 percent. Cold or drafty locations should be avoided. Gouldians need natural sun- light as well as shade",
-    biome:
-      "Gouldian Finches live in tropical savanna woodland amongst the grassy understorey that contains a mixture of their preferred annual and perennial grass species.",
-    facts: [
-      "- Gouldian Finches are Australia's most spectacularly coloured grassfinches, and are perhaps the most spectacularly coloured of all Australian birds.",
-      "- They are small birds, with a bright green back, yellow belly and a purple breast",
-      "- The facial colour is usually black, and is found in about 75% of the birds.",
+  
+    intro: [
+      `Blood vessels are channels that carry blood throughout your body. They form a closed loop, like a circuit, that begins and ends at your heart`,
+      "Your body contains about 60,000 miles of blood vessels.",
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/gouldian_finches/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "For most of the year Gouldian Finches feed mostly on ripe or half-ripe grass seeds. During the breeding season, however, the diet consists almost entirely of insects.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Your blood vessels’ main function is to deliver blood and carry waste products, CO2 away from your organs and tissues",
+      "Each type of blood vessel serves a different function:",
+      "Arteries: carry oxygen-rich blood from your heart to your body. At any given time, only about 10% to 15% of your body’s blood is in your arteries.",
+      "Arterioles: Arteries branch into smaller vessels called arterioles. Both arteries and arterioles are very flexible. They get bigger or smaller to help maintain your body’s blood pressure.",
+      "Capillaries: Capillaries are where tissues exchanged CO2 and waste for oxygen and nutrients ",
+      "Venules: Venules receive blood from capillaries",
+      "Veins: Veins carry large volumes of deoxygenated blood back to your heart. About 75% of your blood is in your veins",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/gouldian_finches/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Gouldian Finches live in tropical savanna woodlandamongst the grassy understorey that contains a mixture of their preferred annual and perennial grass species",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/gouldian_finches/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "In many species, the hen will sit in a “mating position”, lifting and vibrating her tail. The male will then proceed to mount her and impregnate her with a “cloacal kiss”.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Location: There are blood vessels throughout your body.",
+      "Size; Some, like the aorta, have a wide diameter. For example, a normal aorta in the abdomen is about 2 centimeters wide. Others, such as capillaries, are extremely small, ranging from 2 to 12 micrometers.",
+      "Component: Three layers: Tunica intima, media, adventitia",
+      "Types:",
+      "Arteries: strong, muscular blood vessels",
+      "Arterioles: Arteries branch into smaller vessels called arterioles.",
+      "Capillaries: These tiny blood vessels have thin walls. Oxygen and nutrients from the blood can move through the walls",
+      "Veins: Thin, less elastic walls help them handle high volumes and low pressure. Most veins have valves that open and close.",
+      "Venules: Veins begin as tiny vessels called venules and get gradually larger as they near your heart.",
     ],
   },
-  flamingos: {
+
+  blood: {
     slide: [
-      { image: require("../../assets/images/feathered/flamingos/toanthan1.png") },
-      { image: require("../../assets/images/feathered/flamingos/toanthan2.png") },
-      { image: require("../../assets/images/feathered/flamingos/toanthan3.png") },
+      { name: "Blood", image: require('../../assets/image/Home/circulatorySystem/blood.png') },
     ],
-    weight: "7.7 pounds",
-    length: "1.2 - 1.4 m",
-    lifespan: "20 to 30 years",
-    speed: "60 km/h",
-    climateZone:
-      "All flamingos are found in tropical and subtropical areas. Populations of Chilean flamingos are found in central Peru, both coasts of southern South America (mainly in the winter), Argentina, Uruguay, Paraguay, Peru, Bolivia, and southern Brazil",
-    biome:
-      "These famous pink birds can be found in warm, watery regions on many continents. They favor environments like estuaries and saline or alkaline lakes. Considering their appearance, flamingos are surprisingly fluid swimmers, but really thrive on the extensive mud flats where they breed and feed",
-    facts: [
-      "- Flamingos really are what they eat. Many plants produce natural red, yellow or orange pigments, called carotenoids",
-      "- Carotenoids give carrots their orange color or turn ripe tomatoes red",
-      "- They are also found in the microscopic algae that brine shrimp eat",
-      "- As a flamingo dines on algae and brine shrimp, its body metabolizes the pigments — turning its feathers pink"
+  
+    intro: [
+      `Blood is a body fluid in the circulatory system of humans and other vertebrates that delivers necessary substances such as nutrients and oxygen to the cells, and transports metabolic waste products away from those same cells.`,
     ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/feathered/flamingos/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "They eat algae, small seeds, tiny crustaceans (like brine shrimp), fly larvae, and other plants and animals that live in shallow waters. When it's time to eat, a flamingo will place its head upside down in the water with its bill pointed at its feet",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    func: [
+      "Transporting oxygen and nutrients to the lungs and tissues (red blood cells)",
+      "Forming blood clots to prevent excess blood loss (platelets)",
+      "Carrying cells and antibodies that fight infection (white blood cells)",
+      "Bringing waste products to the kidneys and liver, which filter and clean the blood",
+      "Regulating body temperature",
+    ],
 
-      {
-        image: require("../../assets/images/feathered/flamingos/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "The flamingo's most characteristic habitats are large alkaline or saline lakes or estuarine lagoons that usually lack vegetation. Lakes may be far inland or near the sea.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/feathered/flamingos/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Mating occurs in the water. The male jumps onto the female's back from behind, firmly planting his feet on her wing joints. After mating, the male stands on the female's back, then jumps off over her head.",
-        icon: require("../../assets/images/vecter.png"),
-      },
+    anatomy: [
+      "Four main components: plasma, red blood cells, white blood cells, and platelets",
+      "Blood is composed of 55% plasma and 45% “formed elements,” including red blood cells, white blood cells, and platelets.",
+      "Because of these living cells suspended in the plasma, blood is considered a fluid connective tissue (not a fluid). It is the only fluid tissue in the body.",
     ],
   },
-  'tiger prawn': {
-    slide: [
-      { image: require("../../assets/images/crustacean/tiger_prawn/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/tiger_prawn/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/tiger_prawn/toanthan3.png") },
-    ],
-    weight: "35 - 50g",
-    length: "9 - 11 inches",
-    lifespan: "3 - 4 years",
-    speed: "none",
-    climateZone:
-      "Water Temperature 70-78°F (22-25°C)",
-    biome:
-      "The northern areas of Australia",
-    facts: [
-      "- They can eat anything. They spend most of the time at the bottom of the aquarium, consuming anything that comes down",
-      "- Tiger Shrimps carry the eggs on the body’s underside. A Tiger Shrimp carrying eggs is called Berried shrimp. The tail fans the eggs to offer sufficient oxygen",
-      "- Tiger Shrimps will work hard to keep the tank clean. They don’t just eat the dead livestock but also consume algae",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/tiger_prawn/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Arrion and plankton, which are microorganisms. They also eat the smallest shellfish, worms and any organic matter that is decayed",
-        icon: require("../../assets/images/vecter.png"),
-      },
 
-      {
-        image: require("../../assets/images/crustacean/tiger_prawn/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Tiger Shrimp is native to the Asian continent and is fairly distributed in Asian countries",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/tiger_prawn/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Tiger prawns reproduce via internal fertilization. After mating, females release hundreds of thousands of fertilized eggs, which quickly hatch",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  lobster: {
-    slide: [
-      { image: require("../../assets/images/crustacean/lobster/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/lobster/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/lobster/toanthan3.png") },
-    ],
-    weight: "680 - 910 g",
-    length: "230 mm",
-    lifespan: "10-40 years",
-    speed: "none",
-    climateZone:
-      "Lobsters can remain happy and healthy in waters up to 20°C (68°F)",
-    biome:
-      "Northern Atlantic Ocean, Gulf of Mexico, the Caribbean Sea and off the coast of Florida in the Atlantic Ocean",
-    facts: [
-      "- They Come in Many Different Colors",
-      "- Lobsters Communicate Through Their Urine",
-      "- They Have Eyes, But Their Antennae Provide More Information",
-      "- They Can Be Cannibalistic"
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/lobster/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "They feed primarily on fish and mollusks, but will consume algae and other plant life",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/lobster/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "The bottom-dwelling American lobster flourishes in cold, rocky waters off the Atlantic coast of North America. But lobsters can be found in all of the world’s oceans, as well as brackish environments and even freshwater",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/lobster/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "A lobster reproduces by laying eggs that a female carries until they are ready to hatch. Depending on the warmth of the water, a female lobster carries the eggs for about a year in its swimmerets",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'hermit crab': {
-    slide: [
-      { image: require("../../assets/images/crustacean/hermit_crab/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/hermit_crab/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/hermit_crab/toanthan3.png") },
-    ],
-    weight: "1.3 ounces - 11 pounds",
-    length: "12.5-foot leg span",
-    lifespan: "40 years",
-    speed: "none",
-    climateZone:
-      "75-85 degrees Fahrenh (23-29 Celsius) during the day and 65-75 degrees F (18-24 C) at night",
-    biome:
-      "Indo Pacific ocean",
-    facts: [
-      "- There are over 800 species of hermit crabs worldwide, and almost all are ocean dwellers",
-      "- Hermit crabs are opportunistic scavengers, feeding on anything they can find",
-      "- They have tough pincers but a soft body which they coil up inside their borrowed shell, using their hooked tail to help them to grip on.",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/hermit_crab/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Omnivore",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/hermit_crab/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "These crabs spend most of their lives underwater as aquatic animals, living in depths of saltwater that range from shallow reefs and shorelines to deep sea bottoms",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/hermit_crab/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Hermit crabs mate in seawater. Before mating, the male holds the female with one claw, and then taps or strokes her with the other or pulls her back and forth.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'ghost crab': {
-    slide: [
-      { image: require("../../assets/images/crustacean/ghost_crab/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/ghost_crab/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/ghost_crab/toanthan3.png") },
-    ],
-    weight: "0.53 – 2.5 ounces",
-    length: "2 - 3 inches",
-    lifespan: "3 years",
-    speed: "10 mph",
-    climateZone:
-      "none",
-    biome:
-      "Indo-Pacific region, Mediterranean, the Pacific coast of North America, and on storefronts along the Atlantic Ocean from Massachusetts down to Florida and further south to Brazil.",
-    facts: [
-      "- Their eyestalks, which are sometimes horned, can swivel 360 degrees",
-      "- Ghost crabs are only semi terrestrial. Though they lay eggs in water and need to keep their gills wet, they will drown if they stay in water too long.",
-      "- Ghost cabs can make sounds that include bubbling, stridulation and thumping",
-      "- They can change color to blend in with the sand, one of the adaptations that helps them avoid predators",
-      "- Though they’re small crabs, their larva are among the largest of the crab larvae during the final larval, or megalopa stage",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/ghost_crab/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Smaller crabs, other marine arthropods, and insects",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/ghost_crab/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Sand and mud",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/ghost_crab/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Fertilization is internal and mating usually happens near the male’s burrow. The sperm comes in a fluid that hardens and forms a plug in the female to make sure her eggs are not fertilized by a rival crab",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'cray fish': {
-    slide: [
-      { image: require("../../assets/images/crustacean/cray_fish/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/cray_fish/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/cray_fish/toanthan3.png") },
-    ],
-    weight: "10 g",
-    length: "7.5 cm",
-    lifespan: "2 - 3 years",
-    speed: "none",
-    climateZone:
-      "18 to 25º C",
-    biome:
-      "North America",
-    facts: [
-      "- Crayfish actually have brilliant eyesight. Their eyes can move independently from one another and are referred to as compound eyes.",
-      "- There are seven species of crayfish currently known to be present in the wild in the UK.",
-      "- White-clawed crayfish require water-bodies to be alkaline, calcium-rich, clean and well oxygenated",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/cray_fish/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "They feed largely on snails, insect larvae, worms, and amphibian tadpoles; some eat vegetation",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/cray_fish/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Lakes, streams, ponds, swamps, and rivers",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/cray_fish/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Crayfish mate in the autumn and lay eggs in the spring. The eggs, attached to the female’s abdomen, hatch in five to eight weeks.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'coconut crab': {
-    slide: [
-      { image: require("../../assets/images/crustacean/coconut_crab/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/coconut_crab/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/coconut_crab/toanthan3.png") },
-    ],
-    weight: "4.5 kg",
-    length: "1 m",
-    lifespan: "60 years",
-    speed: "none",
-    climateZone:
-      "none",
-    biome:
-      " Coconut crabs are found across the Indo-Pacific, from islands off the coast of Africa near Zanzibar to the Gambier Islands in the Eastern Pacific Ocean",
-    facts: [
-      "- Coconut crabs are a type of hermit crab and are the world’s largest terrestrial arthropod (up to 3 feet across!).",
-      "- Unlike most other hermit crabs, only juveniles use shells to protect their abdomens; older coconut crabs develop a hard skin",
-      "- They have large muscular claws to help open coconuts",
-      "- They cannot swim, and will drown if immersed in water for long."
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/coconut_crab/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Coconut meat, fruit, nuts, seeds, and carrion.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/coconut_crab/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "They are found across the Indo-Pacific, from islands off the coast of Africa near Zanzibar to the Gambier Islands in the Eastern Pacific Ocean",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/coconut_crab/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The female releases her ripe eggs in the sea, and they immediately hatch as microscopic swimming zoeas. Coconut crab eggs hatch in the ocean, and the larvae float in the sea for up to 28 days",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'gecarcoidea natalis': {
-    slide: [
-      { image: require("../../assets/images/crustacean/Gecarcoidea_natalis/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/Gecarcoidea_natalis/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/Gecarcoidea_natalis/toanthan3.png") },
-    ],
-    weight: "17 ounces",
-    length: "4.6 inches",
-    lifespan: "20 - 30 years",
-    speed: "none",
-    climateZone:
-      "The environment of the burrow is moist",
-    biome:
-      "Is found only on Christmas and Cocos Islands, which are now owned by Australia.",
-    facts: [
-      "- During the breeding season, roads can be dangerous for cars as well as the crab. Their shells are so hard they can puncture tires",
-      "- The Christmas Island Red Crab is a land crab, but it still breathes through its gills and needs to stay moist. It will die if it dries out.",
-      "- They are endemic to Christmas Island and Cocos Island. Endemic means they are naturally found nowhere else in the world.",
-      "- In order to keep migrating crabs from being run over and tires from being punctured, the Australian government has built bridges and tunnels for the crabs to cross in safety. In other places, cars are simply not allowed to be on the road during the crab’s migration."
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/Gecarcoidea_natalis/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Omnivore",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/Gecarcoidea_natalis/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Rainforest",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/Gecarcoidea_natalis/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "When the eggs hatch, the larvae join the clouds of plankton in the ocean. If they’re not eaten, it takes about a month for them to develop into tiny megalopae, then very tiny crabs",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'blue crab': {
-    slide: [
-      { image: require("../../assets/images/crustacean/blue_crab/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/blue_crab/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/blue_crab/toanthan3.png") },
-    ],
-    weight: "1 - 2 pounds",
-    length: "4 - 9 inches",
-    lifespan: "1 - 3 years",
-    speed: "15.5 m/h",
-    climateZone:
-      "Blue crabs will grow at temperatures of 50 degrees Fahrenheit",
-    biome:
-      "Underwater grasses and oyster reefs, and they range from shallow, brackish waters to deeper, saltier waters",
-    facts: [
-      "- The blue crab’s shell—called the “carapace”—is a blue to olive green",
-      "- Shells can reach up to 9 inches across",
-      "- Blue crab claws are bright blue, and mature females have red tips on their claws too",
-      "- They have three pairs of walking legs and rear swimming legs that look like paddles",
-      "- Blue crabs have an “apron” that covers their abdomen. Males’ aprons are thin; females’ are wider"
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/blue_crab/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "These crabs are predaceous and scavenge for food. They have been known to eat other crustaceans (including their own species), recently dead fish, plant materials, clams, oysters, worms, insects, and mussels.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/blue_crab/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Blue crabs are found in brackish coastal lagoons and estuaries from Nova Scotia, through the Gulf of Mexico, and as far south as Uruguay",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/blue_crab/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The blue crab's mating season occurs between May and October. A male will mate with a female after she has completed her final molt, and she has a soft shell",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'antarctic krill': {
-    slide: [
-      { image: require("../../assets/images/crustacean/antarctic_krill/toanthan1.png") },
-      { image: require("../../assets/images/crustacean/antarctic_krill/toanthan2.png") },
-      { image: require("../../assets/images/crustacean/antarctic_krill/toanthan3.png") },
-    ],
-    weight: "0.035 ounces",
-    length: "2.4 inches",
-    lifespan: "10 years",
-    speed: "0.6 m/s",
-    climateZone:
-      "Antarctic krill are an ecologically and commercially valuable stenothermal crustacean species in the Southern Ocean where they inhabit a temperature range of −2.0°C to 4.0°C",
-    biome:
-      "Antarctic waters of the Southern Ocean",
-    facts: [
-      "- Based on their size and sheer abundance, these hundreds of millions of krill could wrap around the earth a million times and are estimated to weigh more than 400 million tonnes - that’s about the same collective weight of all the people on the planet",
-      "- Antarctic krill form super-swarms that can be tens of kilometers wide and over one hundred meters deep. This amazing spectacle can be seen from space",
-      "- Antarctic krill are a key species, supporting populations of penguins, seals, whales and other marine life",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/crustacean/antarctic_krill/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Krill feed on phytoplankton, microscopic, single-celled plants that drift near the ocean’s surface and live off carbon dioxide and the sun’s rays.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/antarctic_krill/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Southern Ocean, south of the Antarctic convergence",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/crustacean/antarctic_krill/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "During the mating season, which varies by species and climate, the male deposits a sperm sack at the female's genital opening. The females can carry several thousand eggs in their ovary.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'wyoming toad': {
-    slide: [
-      { image: require("../../assets/images/amphibia/wyoming_toad/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/wyoming_toad/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/wyoming_toad/toanthan3.png") },
-    ],
-    weight: "20 - 80g",
-    length: "19 - 33cm",
-    lifespan: "8 years",
-    speed: "none",
-    climateZone:
-      "Temperate",
-    biome:
-      "Wetlands, grassland, freshwater",
-    facts: [
-      "- A Wyoming toad is terrestrial (lives on the land)",
-      "- This toad is extinct in the wild",
-      "- Efforts are being made by zoos to breed these toads and slowly introduce them back into the wild",
-      "- The female Wyoming toad is a little bit larger than the male",
-      "- Wyoming toads release poison from a gland in their neck as a defense against predators",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/wyoming_toad/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Adult toads are carnivores, so they eat beetles, ants, spiders and worms. In short, this toad eats the small insects that are most plentiful in its environment",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/wyoming_toad/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "The Wyoming toad lives in North America, more specifically in Albany county located in the state of Wyoming in the United States.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/wyoming_toad/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "In the month of May, after Wyoming toads come out of hibernation, they move to a nearby pond or lake for breeding. The males chirp and croak to attract female toads in the area.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'oak toad': {
-    slide: [
-      { image: require("../../assets/images/amphibia/oak_toad/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/oak_toad/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/oak_toad/toanthan3.png") },
-    ],
-    weight: "20 - 80g",
-    length: "19 - 33cm",
-    lifespan: "2 - 4 years",
-    speed: "none",
-    climateZone:
-      "Temperate",
-    biome:
-      "Wetlands, river, grassland, temporary pool, anthropogenic, shrubland",
-    facts: [
-      "- Oak toads are the smallest of the toad species in North America, easily identified by a mid-dorsal, light stripe with variable black and brown spots. They have proportionally large parotid glands",
-      "- The species uses a series of high-pitched calls to communicate. They can warn other oak toads of predators or call out for mates.",
-      "- Toads prefer to crawl rather than hop",
-      "- Oak toads taste bad. Or rather the poisonous fluid they secrete does. That’s how they chase away predators.",
-      "- The oak toad doesn’t ribbit. It has its call, which is more sing-song than anything",
-      "- The creatures, like all toads, shed their external skin regularly. Once peeled, the toad places the substance under its tongue and proceeds to eat it.",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/oak_toad/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Adult toads are insectivorous. Their fave meal is ants, but the toads have no problem munching on aphids, beetles, orthopterans, spiders, dipterans, centipedes and mollusks.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/oak_toad/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Oak toads love open canopied oak as well as pine forests with ditches and temporary ponds. For the most part, you won’t find oak toads in areas with permanent water and drained soils.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/oak_toad/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Oak toads breed only once a year and seasonally. Mating begins with warmer temperatures and seasonal thunderstorms. The ovulation interval takes place between late May and mid-August.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'eastern newt': {
-    slide: [
-      { image: require("../../assets/images/amphibia/eastern_newt/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/eastern_newt/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/eastern_newt/toanthan3.png") },
-    ],
-    weight: "5 - 11g",
-    length: "7 - 13 cm",
-    lifespan: "12 - 15 years",
-    speed: "none",
-    climateZone:
-      "Eastern North America",
-    biome:
-      "coniferous and deciduous forests, wet marshlands",
-    facts: [
-      "- Eastern newts are native to the U.S",
-      "- They have yellow or green-brown skin with red dots that signal their slight toxicity",
-      "- The eastern newt's appearance evolves throughout its three distinct life stages: larvae, juvenile (or eft) and adult",
-      "- Its primary habitat shifts between water and land, depending on its life stage"
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/eastern_newt/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Eastern newts eat a variety of prey, such as insects, small mollusks and crustaceans, young amphibians, worms, and frog eggs. They also eat a lot of snails, beetles, ants, and mosquito larvae",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/eastern_newt/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Eastern newts home using magnetic orientation. Their magnetoreception system seems to be a hybrid of polarity-based inclination and a sun-dependent compass.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/eastern_newt/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "The breeding season begins in late winter and lasts until early spring. Females are attracted by a male's spots, which he uses to lure a female towards him.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'grass frog': {
-    slide: [
-      { image: require("../../assets/images/amphibia/grass_frog/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/grass_frog/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/grass_frog/toanthan3.png") },
-    ],
-    weight: "22,7g",
-    length: "6 - 9cm",
-    lifespan: "7 - 8 years",
-    speed: "none",
-    climateZone:
-      "Cold climate",
-    biome:
-      "Terrestrial Biomes (taiga, forest, mountains), Aquatic Biomes (lakes and ponds rivers and stream)",
-    facts: [
-      "- Life stages of grass frog include three life stages: aquatic larva, terrestrial juvenile, and adult",
-      "- Common frogs are often confused with the common toad Bufo bufo, but frogs can easily be distinguished as they have longer legs, hop, and have a moist skin, whereas toads crawl and have a dry 'warty' skin",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/grass_frog/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Carnivore. Common frogs eat insects, their larvae, wood lice, spiders, snails and worms. They are able to detect worms by smell. Eating habits are greatly influenced by the time of year",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/grass_frog/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Great Britain, Europe and northwestern Asia. Outside the breeding season, common frogs live a solitary life in damp places near ponds or marshes or in long grass. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/grass_frog/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Rana temporaria breeds in warmer lowlands in February & March and in the north and at high altitudes as late as June.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'glass frog': {
-    slide: [
-      { image: require("../../assets/images/amphibia/glass_frog/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/glass_frog/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/glass_frog/toanthan3.png") },
-    ],
-    weight: "5 - 14 g",
-    length: "3cm",
-    lifespan: "10 - 14 years",
-    speed: "20 feet/jump",
-    climateZone:
-      "Tropical",
-    biome:
-      "Humid montane forests",
-    facts: [
-      "- The glass frog lives high in the trees above mountainous streams during the dry season. When the rainy season comes, it climbs down to the stream level to mate",
-      "- The male frog guards the females’ fertilized eggs placed on leaves until they hatch and the tadpoles fall into the water",
-      "- The translucent skin of some species permits an observer to see the frog’s beating heart",
-      "- Glass frogs live up to 14 years"
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/glass_frog/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Carnivore.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/glass_frog/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Southern Mexico, Colombia, Costa Rica, and Ecuador",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/glass_frog/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "For glass frogs, mating and egg-laying happen above a stream. As a female lays her eggs on the underside of a leaf, the male fertilizes them.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'cane toad': {
-    slide: [
-      { image: require("../../assets/images/amphibia/cane_toad/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/cane_toad/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/cane_toad/toanthan3.png") },
-    ],
-    weight: "1 - 2 kg",
-    length: "10 - 15 cm",
-    lifespan: "10 - 15 years",
-    speed: "none",
-    climateZone:
-      "none",
-    biome:
-      "Closed scrub, grassland, low open forest, low shrubland, open forest, open woodland, woodland",
-    facts: [
-      "- The cane toad is the largest toad in the world",
-      "- Like other members of the family Bufonidae, the cane toad secretes a potent toxin, which acts as a hallucinogen and cardiotoxin",
-      "- Cane toads will eat anything they swallow - both dead and living. This includes pet food, carrion and household scraps, but mostly they exist on a diet of living insects.",
-      "- Once fertilized, female cane toads lay anywhere between 8,000 to 30,000 eggs - twice a year! These eggs hatch within 1-3 days and tiny tadpoles emerge"
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/cane_toad/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Omnivores",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/cane_toad/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "The cane toad is native to the Americas, from southern Texas to southern Peru, the Amazon, Trinidad, and Tobago. Despite its name, the toad isn't actually a marine species. ",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/cane_toad/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Cane toads can reproduce year-round if temperatures are high enough. In subtropical regions, breeding occurs during the wet season when temperatures are warm.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  caecilian: {
-    slide: [
-      { image: require("../../assets/images/amphibia/caecilian/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/caecilian/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/caecilian/toanthan3.png") },
-    ],
-    weight: "1 kg",
-    length: "8 - 152 cm",
-    lifespan: "13.8 years",
-    speed: "none",
-    climateZone:
-      "Neotropical, Tropical",
-    biome:
-      "Anthropogenic biome, forest, savana",
-    facts: [
-      "- While the amphibians possess no arms or legs, they are powerful diggers, using a strong skull and muscles that run the length of their body to drive through dirt and mud like a piston in a car engine",
-      "- Caecilian heads are built for burrowing. A hard, thick skull with a pointy snout helps them move effectively through dirt or mud",
-      "- Some caecilians are born with short, blunt teeth, used to peel off the outer layer of the mother’s thick skin for food. This behavior is called",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/caecilian/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Carnivore. Most species spend a majority of their lives underground or lying in the waters of shallow streams. Caecilians can be found in tropical and neotropical areas around the world",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/caecilian/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Most species spend a majority of their lives underground or lying in the waters of shallow streams. Caecilians can be found in tropical and neotropical areas around the world",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/caecilian/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "As amphibians, some caecilians lay their eggs in water or moist soil, similar to frog and salamander reproduction",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'bullfrog': {
-    slide: [
-      { image: require("../../assets/images/amphibia/bullfrog/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/bullfrog/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/bullfrog/toanthan3.png") },
-    ],
-    weight: "5 - 175 g",
-    length: "9 - 15 cm",
-    lifespan: "7 - 10 years",
-    speed: "2 - 3 feet/jump",
-    climateZone:
-      "Temperate",
-    biome:
-      "Lakes, ponds, swamps, marshes, brackish waters, streams, rivers, ditches, and canals",
-    facts: [
-      "- Bullfrogs are typically green or gray-brown with brown spots and have easily identifiable circular eardrums, or tympanum, on either side of their heads",
-      "- Males are highly territorial and will aggressively guard their land. Females are slightly larger than males",
-      "- Life Cycle: Eggs are laid as a jelly-like mass floating on the surface of the water. Around 12,000-20,000 eggs can be laid in each mass. They usually spend 2 winters as tadpoles and live around 8 years",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/bullfrog/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "They like to eat crayfish, water beetles, snails and dragonfly larvae. The also eat fish, small turtles, young water birds, and even other frogs",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/bullfrog/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "Nova Scotia, Canada, the continental United States, Mexico and Cuba",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/bullfrog/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "Males stake out territories with good egg-laying sites and defend them, calling loudly to attract females and chasing away rival males.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
-  'clawed frog': {
-    slide: [
-      { image: require("../../assets/images/amphibia/african_clawed_frog/toanthan1.png") },
-      { image: require("../../assets/images/amphibia/african_clawed_frog/toanthan2.png") },
-      { image: require("../../assets/images/amphibia/african_clawed_frog/toanthan3.png") },
-    ],
-    weight: "60 - 200g",
-    length: "5 - 13 cm",
-    lifespan: "10 - 15 years",
-    speed: "5 mph",
-    climateZone:
-      "Temperate, tropical",
-    biome:
-      "Freshwater, Lake, river, anthropogenic, forest, grassland, savanna, shrubland, wetland.",
-    facts: [
-      "- The African clawed frog is named for its three short claws on their hind feet",
-      "- The African clawed frog is the only amphibian in the world that can climb and shred its food",
-      "- When food and water is scarce, the African clawed frog will burrow itself in the mud and remain dormant for up to a year",
-    ],
-    bodyParts: [
-      {
-        image: require("../../assets/images/amphibia/african_clawed_frog/toanthan1.png"),
-        title: "Diet",
-        summary:
-          "Scavengers",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/african_clawed_frog/toanthan2.png"),
-        title: "Habitat",
-        summary:
-          "North America, Europe, Asia, Africa",
-        icon: require("../../assets/images/vecter.png"),
-      },
-
-      {
-        image: require("../../assets/images/amphibia/african_clawed_frog/toanthan3.png"),
-        title: "Reproduction and Offspring",
-        summary:
-          "African Clawed frogs sexually mature after 12 months. They mate four times a year, usually during early spring to summer, depending on the location.",
-        icon: require("../../assets/images/vecter.png"),
-      },
-    ],
-  },
 };

@@ -1,13 +1,23 @@
 import { MemberImageProps } from "../components/MemberImage";
 import { MemberItemProps } from "../components/MemberItem";
-import { amphibiansItems, crustaceanItems, featheredItems, insectItems, mammalItems, reptileItems } from "./category";
+import { 
+  amphibiansItems, 
+  crustaceanItems, 
+  featheredItems, 
+  insectItems, 
+  mammalItems, 
+  reptileItems, 
+  nerveItems, 
+  endoctineItems, 
+  reproductiveItems 
+} from "./category";
 
 export const headerSlide: MemberImageProps[] = [
-  { name: "Red Panda", image: require("../../assets/images/slide/red-panda.png") },
-  { name: "Tiger", image: require("../../assets/images/slide/tiger.png") },
-  { name: "Zebra", image: require("../../assets/images/slide/zebra.png") },
-  { name: "Lizard", image: require("../../assets/images/slide/lizard.png") },
-  { name: "Flamigo", image: require("../../assets/images/slide/flamigo.png") },
+{ name: "respiratorySystem", image: require("../../assets/image/body.png") },
+{ name: "respiratorySystem", image: require("../../assets/image/body.png") },
+{ name: "respiratorySystem", image: require("../../assets/image/body.png") },
+{ name: "respiratorySystem", image: require("../../assets/image/body.png") },
+{ name: "respiratorySystem", image: require("../../assets/image/body.png") },
 ];
 
 // CategoryData
@@ -16,10 +26,13 @@ interface CategoryData {
 }
 
 export const categoryData: CategoryData = {
-  mammals: mammalItems,
-  reptile: reptileItems,
-  insect: insectItems,
-  feathered: featheredItems,
-  crustacean: crustaceanItems,
-  amphibians: amphibiansItems,
+  respiratorySystem : mammalItems,
+  nervousSystem : reptileItems,
+  musculoskeletalSystem : insectItems,
+  maleSystem : featheredItems,
+  femaleSystem : crustaceanItems,
+  excretorySystem : amphibiansItems,
+  endocrineSystem : nerveItems,
+  digestiveSystem : endoctineItems,
+  circulatorySystem : reproductiveItems,
 };

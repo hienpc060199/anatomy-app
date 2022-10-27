@@ -81,14 +81,6 @@ const Quizz = () => {
       <View style={styles.container}>
         <Text style={styles.text_main}>ZOODY'S QUIZ</Text>
         <Text style={styles.text_level}>Level: {show[level]}</Text>
-        <Image
-          style={{
-            width: imgWidth,
-            height: Math.round((159 / 290) * imgWidth),
-          }}
-          source={img}
-          // alt="Question"
-        />
         <Text style={styles.text_ques}>{quizzData[level][currQues].ques}</Text>
       </View>
       <View>
@@ -124,16 +116,6 @@ const Quizz = () => {
           </Button>
         )}
       </View>
-      <Image
-        source={require("../../../assets/images/quiz-bg.png")}
-        // width="100%"
-        height={Math.round(((5 / 4) * imgWidth) / 6)}
-        // alt="quiz-bg"
-        // position="absolute"
-        // resizeMode="stretch"
-        // bottom="0"
-        style={{ zIndex: -1 }}
-      />
     </Stack>
   );
 };

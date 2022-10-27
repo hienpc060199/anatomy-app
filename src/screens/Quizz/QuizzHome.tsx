@@ -26,17 +26,8 @@ const QuizzHome = () => {
   return (
     <Stack style={{ height: "100%" }}>
       <StatusBar barStyle="dark-content" />
-      <Image
-        source={require("../../../assets/images/quiz1-bg.png")}
-        width="40%"
-        alt="quiz-bg"
-        position="absolute"
-        resizeMode="stretch"
-        top="0"
-        right="0"
-      />
       <View style={styles.container}>
-        <Text style={styles.textmain}>ZOODY'S QUIZ</Text>
+        <Text style={styles.textmain}>Biotolofy’s quiz</Text>
         {levels.map((info) => (
           <TouchableOpacity
             style={styles.box}
@@ -49,14 +40,6 @@ const QuizzHome = () => {
           </TouchableOpacity>
         ))}
       </View>
-      <Image
-        source={require("../../../assets/images/quiz2-bg.png")}
-        width="100%"
-        alt="quiz-bg"
-        position="absolute"
-        resizeMode="stretch"
-        bottom="0"
-      />
     </Stack>
   );
 };

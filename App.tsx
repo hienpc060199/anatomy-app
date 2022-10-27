@@ -11,6 +11,7 @@ import QuizzStack from "./src/navigations/QuizzStack";
 import PracticeStack from "./src/navigations/PracticeStack";
 import PopupWarning from "./src/components/PopupWarning";
 import Signin from "./src/screens/Signin";
+import {StyleSheet } from "react-native";
 
 // Define the config
 const config = {
@@ -48,10 +49,10 @@ const options = (props: TabOptions): BottomTabNavigationOptions => {
   return {
     tabBarIcon,
     headerShown: false,
-    tabBarActiveTintColor: "#3D7944",
+    tabBarActiveTintColor: "#fff",
     tabBarInactiveTintColor: "#B8B8B8",
     tabBarLabelStyle: { fontSize: 12 },
-    tabBarStyle: { paddingVertical: 4 },
+    tabBarStyle: { paddingVertical: 4, backgroundColor: '#306599' },
   };
 };
 
