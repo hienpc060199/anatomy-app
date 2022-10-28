@@ -11,7 +11,7 @@ import QuizzStack from "./src/navigations/QuizzStack";
 import PracticeStack from "./src/navigations/PracticeStack";
 import PopupWarning from "./src/components/PopupWarning";
 import Signin from "./src/screens/Signin";
-import {StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 // Define the config
 const config = {
@@ -52,7 +52,7 @@ const options = (props: TabOptions): BottomTabNavigationOptions => {
     tabBarActiveTintColor: "#fff",
     tabBarInactiveTintColor: "#B8B8B8",
     tabBarLabelStyle: { fontSize: 12 },
-    tabBarStyle: { paddingVertical: 4, backgroundColor: '#306599' },
+    tabBarStyle: { paddingVertical: 4, backgroundColor: "#306599" },
   };
 };
 
@@ -64,7 +64,6 @@ export default function App() {
           <Tab.Screen name="Home" component={HomeStack} options={options} />
           <Tab.Screen name="Quizz" component={QuizzStack} options={options} />
           <Tab.Screen name="Practice" component={PracticeStack} options={options} />
-          <Tab.Screen name="Profile" component={Signin} options={options} />
         </Tab.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

@@ -11,14 +11,14 @@ export default function Home() {
   const navigation = useNavigation<any>();
   return (
     <ScrollView width="100%" bg="white">
-      {Platform.OS == "android" && <StatusBar barStyle="light-content" />}
+      <StatusBar barStyle="light-content" />
       <View height={Platform.OS == "android" ? 8 : 44} bg="#306599" />
       <Header title="Daily body's story" showSlide dataSlide={headerSlide} />
       <Stack marginTop={8} bg="white">
         <Text paddingX={8} fontSize={18} bold>
           OUR'S BODY
         </Text>
-        <View style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
+        <View style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
           {categoriesData.map((item, index) => (
             <CategoryInfo
               key={index}

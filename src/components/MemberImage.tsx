@@ -13,7 +13,7 @@ export default function MemberImage(props: MemberImageProps) {
 
   return (
     <View style={[styles.wrapper, wrapperStyle]}>
-      <Image source={image} width="100%" alt="Animal" />
+      <Image source={image} width="100%" height="100%" alt="Animal" />
       {name && (
         <View style={styles.box}>
           <Text bold>{name}</Text>

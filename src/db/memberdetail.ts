@@ -11,12 +11,9 @@ export interface MemberDetailData {
   };
 }
 
-export const memberDetailData : MemberDetailData = {
-
+export const memberDetailData: MemberDetailData = {
   pharynx: {
-    slide: [
-      { name: "Pharynx", image: require('../../assets/image/Home/respiratorySystem/pharynx.png') },
-    ],
+    slide: [{ name: "Pharynx", image: require("../../assets/image/Home/respiratorySystem/pharynx.png") }],
     intro: [
       "The pharynx, commonly called the throat, is a muscular, funnel-shaped passageway inside the body. It connects the mouth and nose to the esophagus (leading to the stomach) and larynx (leading to the trachea and then lungs).",
     ],
@@ -39,9 +36,7 @@ export const memberDetailData : MemberDetailData = {
   },
 
   trachea: {
-    slide: [
-      { name: "Trachea", image: require('../../assets/image/Home/respiratorySystem/trachea.png') },
-    ],
+    slide: [{ name: "Trachea", image: require("../../assets/image/Home/respiratorySystem/trachea.png") }],
     intro: [
       "Your trachea is a long, U-shaped tube that connects your larynx (voice box) to your lungs. The trachea is often called the windpipe. It's a key part of your respiratory system",
     ],
@@ -61,9 +56,7 @@ export const memberDetailData : MemberDetailData = {
   },
 
   sinuses: {
-    slide: [
-      { name: "Sinuses", image: require('../../assets/image/Home/respiratorySystem/sinuses.png') },
-    ],
+    slide: [{ name: "Sinuses", image: require("../../assets/image/Home/respiratorySystem/sinuses.png") }],
     intro: [
       "The sinuses are hollow spaces in the skull and the face bones around your nose. There are four pairs of sinuses",
     ],
@@ -86,9 +79,7 @@ export const memberDetailData : MemberDetailData = {
   },
 
   nose: {
-    slide: [
-      { name: "Nose", image: require('../../assets/image/Home/respiratorySystem/nose.png') },
-    ],
+    slide: [{ name: "Nose", image: require("../../assets/image/Home/respiratorySystem/nose.png") }],
     intro: [
       "Openings that pull air from outside your body into your respiratory system",
       "The mouth, also called the oral cavity or buccal cavity, in human anatomy, through which food and air enter the body,  and it also helps you speak",
@@ -114,10 +105,10 @@ export const memberDetailData : MemberDetailData = {
   },
 
   lungs: {
-    slide: [
-      { name: "Lungs", image: require('../../assets/image/Home/respiratorySystem/lungs.png') },
+    slide: [{ name: "Lungs", image: require("../../assets/image/Home/respiratorySystem/lungs.png") }],
+    intro: [
+      "Your lungs make up a large part of your respiratory system, which is the network of organs and tissues that allow you to breathe.",
     ],
-    intro: ["Your lungs make up a large part of your respiratory system, which is the network of organs and tissues that allow you to breathe.",],
     func: [
       "Your lungs make oxygen available to your body and remove other gases, such as carbon dioxide, from your body. This process takes place 12 to 20 times per minute.",
       "When you inhale: air travels down your pharynx, passes through your larynx, into your trachea and bronchial tubes. One bronchial tube leads to your left lung, the other to your right lung. Your bronchial tubes lead to smaller air passages called bronchi, and then into bronchioles. The bronchioles end in tiny air sacs called alveoli, where oxygen is transferred from the inhaled air to your blood",
@@ -134,10 +125,10 @@ export const memberDetailData : MemberDetailData = {
   },
 
   bronchial: {
-    slide: [
-      { name: "Bronchial", image: require('../../assets/image/Home/respiratorySystem/bronchial.png') },
+    slide: [{ name: "Bronchial", image: require("../../assets/image/Home/respiratorySystem/bronchial.png") }],
+    intro: [
+      "Bronchial tubes are the large tubes that connect to your trachea (windpipe) and direct the air you breathe to your right and left lungs",
     ],
-    intro: ["Bronchial tubes are the large tubes that connect to your trachea (windpipe) and direct the air you breathe to your right and left lungs",],
     func: [
       "Your bronchi carries air to and from your lungs. The bronchi also helps moisturize the air you breathe and screen out foreign particles.",
       "Your airways are lined with cells that create mucus. The mucus keeps your airways moist. It also traps bacteria, viruses, fungi and other particles to protect your lungs and prevent infection.",
@@ -153,14 +144,13 @@ export const memberDetailData : MemberDetailData = {
       "Left main bronchus is a narrow, long passageway into your left lung",
       "Your right and left main bronchi are the widest portions of your bronchi. Then your bronchi divide into branches that get smaller and smaller starting with:",
     ],
-
   },
 
   spinal: {
-    slide: [
-      { name: "Spinal", image: require('../../assets/image/Home/nervousSystem/spinal.png') },
+    slide: [{ name: "Spinal", image: require("../../assets/image/Home/nervousSystem/spinal.png") }],
+    intro: [
+      "The spinal cord is a long, tube-like band of tissue. It connects your brain to your lower back. Your spinal cord carries nerve signals from your brain to your body and vice versa. These nerve signals help you feel sensations and move your body",
     ],
-    intro: ["The spinal cord is a long, tube-like band of tissue. It connects your brain to your lower back. Your spinal cord carries nerve signals from your brain to your body and vice versa. These nerve signals help you feel sensations and move your body",],
     func: [
       "These nerve messages have three crucial functions:",
       "Control body movements and functions. Signals from your brain to other body parts control your movements. They also direct autonomic (involuntary) functions like your breathing rate and heartbeat, as well as bowel and bladder function.",
@@ -177,14 +167,11 @@ export const memberDetailData : MemberDetailData = {
       "Location and size: The spinal cord begins at the bottom part of your brainstem, called the medulla oblongata. At your lower back, your spinal cord forms a cone shape called the conus medullaris.",
       "Length: In most adults, your spinal cord is about 18 inches (45 centimeters) long.",
     ],
-
   },
 
   nerves: {
-    slide: [
-      { name: "Nerves", image: require('../../assets/image/Home/nervousSystem/nerves.png') },
-    ],
-  
+    slide: [{ name: "Nerves", image: require("../../assets/image/Home/nervousSystem/nerves.png") }],
+
     intro: [
       "Nerves are like cables that carry electrical impulses between your brain and the rest of your body. These impulses help you feel sensations and move your muscles. They also maintain certain autonomic functions like breathing, sweating or digesting food",
       "Nerve cells are also called neurons. Neurons are present all over your body, especially in your brain and spinal cord. Nerves, together with your brain and spinal cord, are the foundation of your nervous system.",
@@ -225,10 +212,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   brain: {
-    slide: [
-      { name: "Brain", image: require('../../assets/image/Home/nervousSystem/brain.png') },
-    ],
-  
+    slide: [{ name: "Brain", image: require("../../assets/image/Home/nervousSystem/brain.png") }],
+
     intro: [
       `The brain is an organ that’s made up of a large mass of nerve tissue that’s protected within the skull. It plays a role in just about every major body system.`,
     ],
@@ -255,10 +240,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   skeletal: {
-    slide: [
-      { name: "Skeletal", image: require('../../assets/image/Home/musculoskeletalSystem/skeletal.png') },
-    ],
-  
+    slide: [{ name: "Skeletal", image: require("../../assets/image/Home/musculoskeletalSystem/skeletal.png") }],
+
     intro: [
       `The skeletal system is your body’s central framework. It consists of bones and connective tissue, including cartilage, tendons, and ligaments.`,
     ],
@@ -287,10 +270,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   muscles: {
-    slide: [
-      { name: "Muscles", image: require('../../assets/image/Home/musculoskeletalSystem/muscles.jpg') },
-    ],
-  
+    slide: [{ name: "Muscles", image: require("../../assets/image/Home/musculoskeletalSystem/muscles.jpg") }],
+
     intro: [
       `Skeletal muscles (commonly referred to as muscles) are organs of the vertebrate muscular system and typically are attached by tendons to bones of a skeleton. The muscle cells of skeletal muscles are much longer than in the other types of muscle tissue, and are often known as muscle fibers. The muscle tissue of a skeletal muscle is striated – having a striped appearance due to the arrangement of the sarcomeres.`,
     ],
@@ -315,10 +296,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   vas: {
-    slide: [
-      { name: "Vas", image: require('../../assets/image/Home/maleSystem/vas.png') },
-    ],
-  
+    slide: [{ name: "Vas", image: require("../../assets/image/Home/maleSystem/vas.png") }],
+
     intro: [
       `Your two vasa deferentia are part of the male reproductive system. The vas deferens is also called a ductus deferens or a sperm duct. This long muscular tube runs from the epididymis into the pelvic cavity behind your bladder and connects to your urethra through a structure called the ejaculatory duct. `,
     ],
@@ -334,10 +313,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   testicles: {
-    slide: [
-      { name: "Testicles", image: require('../../assets/image/Home/maleSystem/testicles.png') },
-    ],
-  
+    slide: [{ name: "Testicles", image: require("../../assets/image/Home/maleSystem/testicles.png") }],
+
     intro: [
       `Either of the two round male sex organs that produce sperm and are contained in the scrotum below and behind the penis`,
     ],
@@ -355,10 +332,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   seminalVesicles: {
-    slide: [
-      { name: "Seminal Vesicles", image: require('../../assets/image/Home/maleSystem/seminalVesicles.png') },
-    ],
-  
+    slide: [{ name: "Seminal Vesicles", image: require("../../assets/image/Home/maleSystem/seminalVesicles.png") }],
+
     intro: [
       `A seminal vesicle is a part of the anatomy that’s typically considered male. The two seminal vesicles are glands that produce the fluids that will turn into semen. The vesicles may also be called seminal glands or vesicular glands.`,
     ],
@@ -380,10 +355,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   scrotum: {
-    slide: [
-      { name: "Scrotum", image: require('../../assets/image/Home/maleSystem/scrotum.png') },
-    ],
-  
+    slide: [{ name: "Scrotum", image: require("../../assets/image/Home/maleSystem/scrotum.png") }],
+
     intro: [
       `The scrotum is a part of a male's body that is the loose pouch-like sac of skin that hangs behind the penis. It holds the testicles (also called testes), as well as many nerves and blood vessels.`,
     ],
@@ -401,10 +374,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   prostateGland: {
-    slide: [
-      { name: "ProstateGland", image: require('../../assets/image/Home/maleSystem/prostateGland.png') },
-    ],
-  
+    slide: [{ name: "ProstateGland", image: require("../../assets/image/Home/maleSystem/prostateGland.png") }],
+
     intro: [
       `A firm partly muscular partly glandular body that is situated about the base of the male urethra and that secretes an alkaline viscid fluid which is a major constituent of the semen`,
     ],
@@ -425,10 +396,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   penis: {
-    slide: [
-      { name: "Penis", image: require('../../assets/image/Home/maleSystem/penis.png') },
-    ],
-  
+    slide: [{ name: "Penis", image: require("../../assets/image/Home/maleSystem/penis.png") }],
+
     intro: [
       `The penis is the male sex organ, a complex external organ used to urinate and for sex and reproduction in people who are born biologically male.`,
     ],
@@ -451,10 +420,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   maleUrethra: {
-    slide: [
-      { name: "Male Urethra", image: require('../../assets/image/Home/maleSystem/maleUrethra.png') },
-    ],
-  
+    slide: [{ name: "Male Urethra", image: require("../../assets/image/Home/maleSystem/maleUrethra.png") }],
+
     intro: [
       `The urethra is the tube that lets urine leave your bladder and your body. If you were assigned male at birth, your urethra passes through your prostate and into your penis. If you were assigned female at birth, your urethra is much shorter. It runs from your bladder to open in front of your vagina.`,
     ],
@@ -475,13 +442,9 @@ export const memberDetailData : MemberDetailData = {
   },
 
   epididymis: {
-    slide: [
-      { name: "Epididymis", image: require('../../assets/image/Home/maleSystem/epididymis.png') },
-    ],
-  
-    intro: [
-      `The epididymis is a long, coiled tube that stores sperm and transports it from the testes.`,
-    ],
+    slide: [{ name: "Epididymis", image: require("../../assets/image/Home/maleSystem/epididymis.png") }],
+
+    intro: [`The epididymis is a long, coiled tube that stores sperm and transports it from the testes.`],
     func: [
       "The primary functions of the epididymis are sperm transport and sperm maturation.",
       "The sperm move from the testes, through the epididymis, and into the vas deferens prior to being mixed with various secretions at the time of ejaculation.",
@@ -495,13 +458,9 @@ export const memberDetailData : MemberDetailData = {
   },
 
   ejaculatoryDuct: {
-    slide: [
-      { name: "Ejaculatory Duct", image: require('../../assets/image/Home/maleSystem/ejaculatoryDuct.png') },
-    ],
-  
-    intro: [
-      `On each side of the prostate gland (in the male reproductive system) is an ejaculatory duct.`,
-    ],
+    slide: [{ name: "Ejaculatory Duct", image: require("../../assets/image/Home/maleSystem/ejaculatoryDuct.png") }],
+
+    intro: [`On each side of the prostate gland (in the male reproductive system) is an ejaculatory duct.`],
     func: [
       "The ejaculatory duct delivers sperm into the urethra, adding secretions and additives from the prostate necessary for sperm function, while providing an interface between the reproductive and urinary systems in men",
     ],
@@ -514,10 +473,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   fallopian: {
-    slide: [
-      { name: "Fallopian", image: require('../../assets/image/Home/femaleSystem/fallopian.png') },
-    ],
-  
+    slide: [{ name: "Fallopian", image: require("../../assets/image/Home/femaleSystem/fallopian.png") }],
+
     intro: [
       `Your fallopian tubes are a pair of hollow, muscular ducts located between your ovaries and your uterus. Each fallopian tube is a channel between your ovaries, where your body makes eggs, and your uterus, where a fertilized egg can develop into a fetus.`,
     ],
@@ -538,10 +495,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   ovaries: {
-    slide: [
-      { name: "Ovaries", image: require('../../assets/image/Home/femaleSystem/ovaries.png') },
-    ],
-  
+    slide: [{ name: "Ovaries", image: require("../../assets/image/Home/femaleSystem/ovaries.png") }],
+
     intro: [
       `The ovaries are small, oval-shaped glands that produce and store your eggs (also called ovum) and make hormones.`,
     ],
@@ -559,10 +514,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   uterus: {
-    slide: [
-      { name: "Uterus", image: require('../../assets/image/Home/femaleSystem/uterus.png') },
-    ],
-  
+    slide: [{ name: "Uterus", image: require("../../assets/image/Home/femaleSystem/uterus.png") }],
+
     intro: [
       `Your uterus is a pear-shaped organ in the reproductive system of people assigned female at birth. It’s where a fertilized egg implants during pregnancy and where your baby develops until birth.`,
     ],
@@ -584,10 +537,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   vagina: {
-    slide: [
-      { name: "Vagina", image: require('../../assets/image/Home/femaleSystem/vagina.png') },
-    ],
-  
+    slide: [{ name: "Vagina", image: require("../../assets/image/Home/femaleSystem/vagina.png") }],
+
     intro: [
       `The vagina is a muscular canal lined with nerves and mucus membranes. It connects the uterus and cervix to the outside of the body.`,
     ],
@@ -605,10 +556,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   bladder: {
-    slide: [
-      { name: "Bladder", image: require('../../assets/image/Home/excretorySystem/bladder.png') },
-    ],
-  
+    slide: [{ name: "Bladder", image: require("../../assets/image/Home/excretorySystem/bladder.png") }],
+
     intro: [
       `The urinary bladder, or simply bladder, is a hollow organ in humans and other vertebrates that stores urine from the kidneys before disposal by urination. In humans the bladder is a distensible organ that sits on the pelvic floor. Urine enters the bladder via the ureters and exits via the urethra.`,
     ],
@@ -633,10 +582,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   kidney: {
-    slide: [
-      { name: "Kidney", image: require('../../assets/image/Home/excretorySystem/kidney.png') },
-    ],
-  
+    slide: [{ name: "Kidney", image: require("../../assets/image/Home/excretorySystem/kidney.png") }],
+
     intro: [
       `The kidneys are two bean-shaped organs that filter your blood. Your kidneys are part of your urinary system.`,
     ],
@@ -680,10 +627,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   ureters: {
-    slide: [
-      { name: "Ureters", image: require('../../assets/image/Home/excretorySystem/ureters.png') },
-    ],
-  
+    slide: [{ name: "Ureters", image: require("../../assets/image/Home/excretorySystem/ureters.png") }],
+
     intro: [
       `The ureters are the part of the urinary system. They are tubes made of smooth muscle that propel urine from the kidneys to the urinary bladder. `,
     ],
@@ -702,10 +647,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   urethra: {
-    slide: [
-      { name: "Urethra", image: require('../../assets/image/Home/excretorySystem/urethra.png') },
-    ],
-  
+    slide: [{ name: "Urethra", image: require("../../assets/image/Home/excretorySystem/urethra.png") }],
+
     intro: [
       `The urethra is a hollow tube that connects the urinary bladder to the urinary meatus for the removal of urine from the body.`,
     ],
@@ -733,9 +676,9 @@ export const memberDetailData : MemberDetailData = {
 
   endocrineSystem: {
     slide: [
-      { name: "Endocrine System", image: require('../../assets/image/Home/endocrineSystem/endocrineSystem.png') },
+      { name: "Endocrine System", image: require("../../assets/image/Home/endocrineSystem/endocrineSystem.png") },
     ],
-  
+
     intro: [
       `The endocrine system is a messenger system comprising feedback loops of the hormones released by internal glands of an organism directly into the circulatory system, regulating distant target organs.`,
       `A gland is an organ that makes and puts out hormones that do a specific job in your body. Endocrine and exocrine glands release the substances they make into your bloodstream.`,
@@ -766,13 +709,9 @@ export const memberDetailData : MemberDetailData = {
   },
 
   stomach: {
-    slide: [
-      { name: "Stomach", image: require('../../assets/image/Home/digestiveSystem/stomach.png') },
-    ],
-  
-    intro: [
-      `Your stomach is a part of your gastrointestinal (GI) tract. It is a muscular organ that digests food.`,
-    ],
+    slide: [{ name: "Stomach", image: require("../../assets/image/Home/digestiveSystem/stomach.png") }],
+
+    intro: [`Your stomach is a part of your gastrointestinal (GI) tract. It is a muscular organ that digests food.`],
     func: [
       "Your stomach’s purpose is to digest food and send it to your small intestine. It has three functions:",
       "Temporarily store food.",
@@ -799,9 +738,9 @@ export const memberDetailData : MemberDetailData = {
 
   smallIntestine: {
     slide: [
-      { name: "Small Intestine.png", image: require('../../assets/image/Home/digestiveSystem/smallIntestine.png') },
+      { name: "Small Intestine.png", image: require("../../assets/image/Home/digestiveSystem/smallIntestine.png") },
     ],
-  
+
     intro: [
       `The small intestine is part of your digestive system. It is a long tube-like organ that connects the stomach and the large intestine.`,
     ],
@@ -823,10 +762,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   rectum: {
-    slide: [
-      { name: "Rectum", image: require('../../assets/image/Home/digestiveSystem/rectum.png') },
-    ],
-  
+    slide: [{ name: "Rectum", image: require("../../assets/image/Home/digestiveSystem/rectum.png") }],
+
     intro: [
       `The rectum is the end part of the large intestine that connects the colon to the anus. It is the area where a person holds stool before excreting it from the body.`,
     ],
@@ -842,13 +779,9 @@ export const memberDetailData : MemberDetailData = {
   },
 
   pancreas: {
-    slide: [
-      { name: "Pancreas", image: require('../../assets/image/Home/digestiveSystem/pancreas.png') },
-    ],
-  
-    intro: [
-      `The pancreas is an organ in the back of your abdomen (belly). It is part of your digestive system.`,
-    ],
+    slide: [{ name: "Pancreas", image: require("../../assets/image/Home/digestiveSystem/pancreas.png") }],
+
+    intro: [`The pancreas is an organ in the back of your abdomen (belly). It is part of your digestive system.`],
     func: [
       "The pancreas performs two main functions:",
       "As an endocrine gland, it functions mostly to regulate blood sugar levels, secreting the hormones insulin, glucagon, somatostatin, and pancreatic polypeptide.",
@@ -867,10 +800,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   mouth: {
-    slide: [
-      { name: "Mouth", image: require('../../assets/image/Home/digestiveSystem/mouth.png') },
-    ],
-  
+    slide: [{ name: "Mouth", image: require("../../assets/image/Home/digestiveSystem/mouth.png") }],
+
     intro: [
       `Your mouth is part of your digestive system. This oval-shaped opening in your skull starts at your lips and ends at your throat.`,
     ],
@@ -902,10 +833,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   liver: {
-    slide: [
-      { name: "Liver", image: require('../../assets/image/Home/digestiveSystem/liver.png') },
-    ],
-  
+    slide: [{ name: "Liver", image: require("../../assets/image/Home/digestiveSystem/liver.png") }],
+
     intro: [
       `The liver is a large organ in the abdomen that performs many important bodily functions, including blood filtering. It is also considered a gland because it makes chemicals the body needs.`,
     ],
@@ -932,10 +861,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   gallbladder: {
-    slide: [
-      { name: "Gallbladder", image: require('../../assets/image/Home/digestiveSystem/gallbladder.png') },
-    ],
-  
+    slide: [{ name: "Gallbladder", image: require("../../assets/image/Home/digestiveSystem/gallbladder.png") }],
+
     intro: [
       `The gallbladder stores and concentrates bile from the liver, and then releases it into the duodenum in the small intestine to help absorb and digest fats.`,
     ],
@@ -952,10 +879,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   esophagus: {
-    slide: [
-      { name: "Esophagus", image: require('../../assets/image/Home/digestiveSystem/esophagus.png') },
-    ],
-  
+    slide: [{ name: "Esophagus", image: require("../../assets/image/Home/digestiveSystem/esophagus.png") }],
+
     intro: [
       `The esophagus is the hollow, muscular tube that passes food and liquid from your throat to your stomach. It functions as part of your digestive system.`,
     ],
@@ -973,10 +898,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   colon: {
-    slide: [
-      { name: "Colon", image: require('../../assets/image/Home/digestiveSystem/colon.png') },
-    ],
-  
+    slide: [{ name: "Colon", image: require("../../assets/image/Home/digestiveSystem/colon.png") }],
+
     intro: [
       `The colon (large intestine) is the last part of the gastrointestinal (GI) tract, the long, tube-like pathway that food travels through your digestive system.`,
     ],
@@ -995,13 +918,9 @@ export const memberDetailData : MemberDetailData = {
   },
 
   anus: {
-    slide: [
-      { name: "Anus", image: require('../../assets/image/Home/digestiveSystem/anus.png') },
-    ],
-  
-    intro: [
-      `The anus is the last part of the digestive tract.`,
-    ],
+    slide: [{ name: "Anus", image: require("../../assets/image/Home/digestiveSystem/anus.png") }],
+
+    intro: [`The anus is the last part of the digestive tract.`],
     func: [
       "Its function is to control the expulsion of feces, the residual semi-solid waste that remains after food digestion",
     ],
@@ -1014,10 +933,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   heart: {
-    slide: [
-      { name: "Heart", image: require('../../assets/image/Home/circulatorySystem/heart.png') },
-    ],
-  
+    slide: [{ name: "Heart", image: require("../../assets/image/Home/circulatorySystem/heart.png") }],
+
     intro: [
       `The heart is a fist-sized organ that pumps blood throughout your body. It's the primary organ of your circulatory system.`,
       `Your heart contains four main sections (chambers) made of muscle and powered by electrical impulses. Your brain and nervous system direct your heart’s function.`,
@@ -1042,10 +959,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   bloodVessels: {
-    slide: [
-      { name: "Blood Vessels", image: require('../../assets/image/Home/circulatorySystem/bloodVessels.png') },
-    ],
-  
+    slide: [{ name: "Blood Vessels", image: require("../../assets/image/Home/circulatorySystem/bloodVessels.png") }],
+
     intro: [
       `Blood vessels are channels that carry blood throughout your body. They form a closed loop, like a circuit, that begins and ends at your heart`,
       "Your body contains about 60,000 miles of blood vessels.",
@@ -1074,10 +989,8 @@ export const memberDetailData : MemberDetailData = {
   },
 
   blood: {
-    slide: [
-      { name: "Blood", image: require('../../assets/image/Home/circulatorySystem/blood.png') },
-    ],
-  
+    slide: [{ name: "Blood", image: require("../../assets/image/Home/circulatorySystem/blood.png") }],
+
     intro: [
       `Blood is a body fluid in the circulatory system of humans and other vertebrates that delivers necessary substances such as nutrients and oxygen to the cells, and transports metabolic waste products away from those same cells.`,
     ],
@@ -1095,5 +1008,4 @@ export const memberDetailData : MemberDetailData = {
       "Because of these living cells suspended in the plasma, blood is considered a fluid connective tissue (not a fluid). It is the only fluid tissue in the body.",
     ],
   },
-
 };
