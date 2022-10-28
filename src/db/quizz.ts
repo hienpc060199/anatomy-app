@@ -2,7 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 
 export interface QuizzData {
-  image?: ImageSourcePropType;
+  image: ImageSourcePropType;
   ques: string;
   choose: string[];
   ans: number;
@@ -11,362 +11,188 @@ export interface QuizzData {
 export const quizzData: { [key: string]: QuizzData[] } = {
   easy: [
     {
-      image: require('../../assets/images/quizz/easy1.png'),
-      ques:"Question 1: Where is the heart located in the human body?",
-      choose:['Culinary','Teas','Medicine'],
+      image: require('../../assets/image/easy/Blood.jpg'),
+      ques:"Question 1: What are the blood components?",
+      choose:['red blood cells, white blood cells','plasma, red blood cells, white blood cells, and platelets','red blood cells, white blood cells, and platelets'],
       ans: 1
     },
     {
-      image: require('../../assets/images/quizz/easy2.png'),
-      ques:"Question 2: Which group of animals Tortoises are?",
-      choose:['Reptile','Mammal', 'Amphibian'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy3.png'),
-      ques:"Question 3: Which is the reptile animal that can not swim?",
-      choose:['Turtle','Tortoise','Sulcata Tortoise'],
+      image: require('../../assets/image/easy/Bloodvessels.jpg'),
+      ques:"Question 2: What are the functions of blood vessels?",
+      choose:['To deliver blood and carry waste products,','To take CO2 away from your organs and tissues', 'All correct'],
       ans: 2
     },
     {
-      image: require('../../assets/images/quizz/easy4.png'),
-      ques:"Question 4: How many species of Snake?",
-      choose:['5,789','3,789','6,789'],
+      image: require('../../assets/image/easy/heart.jpg'),
+      ques:"Question 3: Where is the heart located?",
+      choose:['On the left side of your body','Between your right and left lungs','All correct'],
       ans: 1
     },
     {
-      image: require('../../assets/images/quizz/easy5.png'),
-      ques:"Question 5: How many teeth do Wolves have?",
-      choose:['52','32','42'],
+      image: require('../../assets/image/easy/Anus.jpg'),
+      ques:"Question 4: How long the anus is?",
+      choose:['2 inch','3 inch','4 inch'],
+      ans: 0
+    },
+    {
+      image: require('../../assets/image/easy/smallintestine.png'),
+      ques:"Question 5: Is the large intestine or the small intestine longer?",
+      choose:['Arge intestine','Small intestine','The same'],
+      ans: 1
+    },
+    {
+      image: require('../../assets/image/easy/Esophagus.jpg'),
+      ques:"Question 6: What is the length of the esophagus?",
+      choose:['8-10 inch','9-12 inch', '10-13 inch'],
       ans: 2
     },
     {
-      image: require('../../assets/images/quizz/easy6.png'),
-      ques:"Question 6: What is the normal gestation period of Tiger?",
-      choose:['100 days','150 days', '200 days'],
+      image: require('../../assets/image/easy/gallbladder.png'),
+      ques:"Question 7: What is the bile?",
+      choose:['Bile is a mixture of mainly cholesterol, bilirubin and bile salts','Bile is a mixture of mainly cholesterol, fats and bile salts','Bile is a mixture of mainly cholesterol, bilirubin, fats and bile salts'],
       ans: 0
     },
     {
-      image: require('../../assets/images/quizz/easy7.png'),
-      ques:"Question 7: What is the scientific name of Otter?",
-      choose:['Sea Otter','Enhydra Lutris','Hippocampus'],
-      ans: 1
-    },
-    {
-      image: require('../../assets/images/quizz/easy8.png'),
-      ques:"Question 8: About how fast can an orca swim at top speed?",
-      choose:['25 - 30 kilometers per hour','56 kilometers per hour','Over 100 kilometers per hour'],
-      ans: 1
-    },
-    {
-      image: require('../../assets/images/quizz/easy9.png'),
-      ques:"Question 9: Which of the following stages in the life cycle of a mosquito is found in water?",
-      choose:['Egg, larva, adult','Larva, pupa, adult','Egg, larva, pupa'],
+      image: require('../../assets/image/easy/liver.jpg'),
+      ques:"Question 8: Which is the function of the liver?",
+      choose:['To help absorb and digest fats','To regulate blood sugar levels','To clean toxins (harmful substances) out of the blood'],
       ans: 2
     },
     {
-      image: require('../../assets/images/quizz/easy10.png'),
-      ques:"Question 10: The approximate number of Ladybug species is…?",
-      choose:['2,500','5,000', '3,000'],
-      ans: 1
-    },
-    {
-      image: require('../../assets/images/quizz/easy11.png'),
-      ques:"Question 11: In terms of their scientific classification, to which order do  Harvester Ant belong?",
-      choose:['Pogonomyrmex barbatus','Anthophila','Anisoptera'],
+      image: require('../../assets/image/easy/Pancreas.png'),
+      ques:"Question 9: Which roles the pancreas are in charge of?",
+      choose:['As an endocrine gland and as a part of the digestive system','As a part of excretory system and as a part of the digestive system','As a part of the digestive system'],
       ans: 0
     },
     {
-      image: require('../../assets/images/quizz/easy12.png'),
-      ques:"Question 12: How many stages are there that a life circle of fly consist?",
-      choose:['5','4','2'],
-      ans: 1
-    },
-    {
-      image: require('../../assets/images/quizz/easy13.png'),
-      ques:"Question 13: Is Victoria Crowned Pigeon the largest species in the world?",
-      choose:['True','False'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy14.png'),
-      ques:"Question 14: On what continent is the Toucan found?",
-      choose:['South and Central America','Asia', 'Africa'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy15.png'),
-      ques:"Question 15: The lifespan of Resplendent Quetzals?",
-      choose:['20- 25 years','20 - 30 years','20 - 35 years'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy16.png'),
-      ques:"Question 16: Are Peacocks birds?",
-      choose:['Yes','No'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy17.png'),
-      ques:"Question 17: Which continents you can find the Tiger Prawn?",
-      choose:['Asia','Europe','Africa'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy18.png'),
-      ques:"Question 18: Lobsters are caugt in?",
-      choose:['Pacific Ocean','Atlantic Ocean','All the above'],
-      ans: 2
-    },
-    {
-      image: require('../../assets/images/quizz/easy19.png'),
-      ques:"Question 19: Hermit Crabs are divided into?",
-      choose:['Two groups','Four groups','Just only 1'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy20.png'),
-      ques:"Question 20: Which larva is the largest of the crab larvae during the final larval?",
-      choose:['Ghost Crab','Hermit Crab','Sand Crab'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy21.png'),
-      ques:"Question 21: You can find Wyoming Toad in?",
-      choose:['North America','South America','America'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy22.png'),
-      ques:"Question 22: What is the favorite meal of Oak Toad?",
-      choose:['Ants','Spiders','Beetles'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/easy23.png'),
-      ques:"Question 23: The lifespan of Notophthalmus viridescens?",
-      choose:['20 - 25 years','22 - 32 years','12 - 15 years'],
-      ans: 2
-    },
-    {
-      image: require('../../assets/images/quizz/easy24.png'),
-      ques:"Question 24: A Grass Forg weight?",
-      choose:['About 15g','About 22,7g','About 20,5g'],
+      image: require('../../assets/image/easy/rectum.jpg'),
+      ques:"Question 10: How does the rectum work?",
+      choose:['Colon delivers stool to rectum, let you know and pooped out','Rectum receives stool from the colon, let you know that there is stool to be evacuated (pooped out) and to hold the stool until evacuation happens', 'Sensors of rectum send a message to the brain let you know about the appearance of gas or stool and then pooped out'],
       ans: 1
     },
   ],
   medium: [
     {
-      image: require('../../assets/images/quizz/medium1.png'),
-      ques:"Question 1: Which is the largest group of Reptiles?",
-      choose:['Snake','Chameleon','Lizard'],
-      ans: 2
-    },
-    {
-      image: require('../../assets/images/quizz/medium2.png'),
-      ques:"Question 2: The average lifespan of Leopard Gecko?",
-      choose:['Rougly 8 to 15 years','4 to 8 years', '3 to 5 years'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/medium3.png'),
-      ques:"Question 3: Which is one of special things about Iguana?",
-      choose:['A photopigment called Parapinopsin','Fully-functional eyelids','Be able to go their entire life without drinking water'],
-      ans: 2
-    },
-    {
-      image: require('../../assets/images/quizz/medium4.png'),
-      ques:"Question 4: How long are the Jaguar pregnant for?",
-      choose:['14 weeks','8 weeks','2 weeks'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/medium5.png'),
-      ques:"Question 5: What is the approximate number of muscle units in an Elephant’s trunk?",
-      choose:['20,000 - 40,000','250,000','150,000'],
-      ans: 2
-    },
-    {
-      image: require('../../assets/images/quizz/medium6.png'),
-      ques:"Question 6: Deer are a member of the Cervidae family. What other animal is not included in this family?",
-      choose:['Moose','Sheep','Elk'],
+      image: require('../../assets/image/medium/Endocrinesystem.jpg'),
+      ques:"Question 1: What is the endocrine system made of?",
+      choose:['Hormones','Glands','Red blood cells'],
       ans: 1
     },
     {
-      image: require('../../assets/images/quizz/medium7.png'),
-      ques:"Question 7: In world wide, how many species of flea are there?",
-      choose:['5,500','2,500','1,500'],
+      image: require('../../assets/image/medium/Fallopian.jpg'),
+      ques:"Question 2: Where does fertilization happen?",
+      choose:['Stomach','Ovary', 'Fallopian tubes'],
+      ans: 2
+    },
+    {
+      image: require('../../assets/image/medium/ovaries.jpg'),
+      ques:"Question 3: How does the ovary size grow?",
+      choose:['The average size of an ovary is around 5 centimeters, and declines every decade of life once you turn 40','The size of the ovaries is related to age. The average size of an ovary is around 3-6 centimeters and increases in size with each decade of life','The average size of an ovary is around 4 centimeters, and declines every decade of life once you turn 30'],
+      ans: 2
+    },
+    {
+      image: require('../../assets/image/medium/Uterus.png'),
+      ques:"Question 4: What is the uterus function?",
+      choose:['Pregnancy, Fertility, Menstrual cycle','Hormones control, Pregnancy','Egg protection, Pregnancy, Fertility'],
+      ans: 0
+    },
+    {
+      image: require('../../assets/image/medium/Vagina.jpg'),
+      ques:"Question 5: Where is vagina located?",
+      choose:['Between two fallopian tubes','Between your bladder and your rectum','Between your bladder and your uterus'],
       ans: 1
     },
     {
-      image: require('../../assets/images/quizz/medium8.png'),
-      ques:"Question 8: What is the maximum possible speed of dragonfly?",
-      choose:['36 - 54 km/h','45 - 55 km/h','26 - 44km/h'],
+      image: require('../../assets/image/medium/Vasdeferens.jpeg'),
+      ques:"Question 6: What is the process of sperm movement in the male reproductive system?",
+      choose:['The sperm move from the testes, through the epididymis, and into the vas deferens prior to being mixed with various secretions at the time of ejaculation','The sperm are produced from the prostate gland, through the epididymis, and into the vas deferens, then come out during ejaculation.','The sperm move from the testes, through ejaculatory ducts where the sperm mature and gain additional function, then into the epididymis and come out.'],
       ans: 0
     },
     {
-      image: require('../../assets/images/quizz/medium9.png'),
-      ques:"Question 9: How do the Cricket breath?",
-      choose:['Lungs','Mouth','Spiracles'],
+      image: require('../../assets/image/medium/penis.jpg'),
+      ques:"Question 7: Why does the erection of penis happen?",
+      choose:['The penis fills with urine','The penis fills with semen','The penis fills with blood'],
       ans: 2
     },
     {
-      image: require('../../assets/images/quizz/medium10.png'),
-      ques:"Question 10: What is the natural habitat of Parrots?",
-      choose:['Sparsely populated countryside','Cooler regions','Tropical and subtropical regions'],
-      ans: 2
+      image: require('../../assets/image/medium/Prostategland.png'),
+      ques:"Question 8: What is the main function of the prostate gland?",
+      choose:['Helping to produce semen','Producing and storing sperm','Transporting mature sperm to the urethra'],
+      ans: 0
     },
     {
-      image: require('../../assets/images/quizz/medium11.png'),
-      ques:"Question 11: What could be the weight of a Mute swan?",
-      choose:['10 - 15 pounds','20 - 25 pounds','30 - 35 pounds'],
+      image: require('../../assets/image/medium/Muscles.jpg'),
+      ques:"Question 9: How many skeletal muscles in the human body?",
+      choose:['400','600','800'],
       ans: 1
     },
     {
-      image: require('../../assets/images/quizz/medium12.png'),
-      ques:"Question 12: The lifespan of Mandarin Duck?",
-      choose:['Around 10 years','Around 20 years','15 - 25 years'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/medium13.png'),
-      ques:"Question 13: Which larva is the largest of the crab larvae during the final larval??",
-      choose:['Ghost Crab','Hermit Crab','Sand Crab'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/medium14.png'),
-      ques:"Question 14: Where do Crayfish live?",
-      choose:['In bodies of freshwater','In only saltwater','Lake, streams, and seas'],
-      ans: 2
-    },
-    {
-      image: require('../../assets/images/quizz/medium15.png'),
-      ques:"Question 15: The lifespan of Coconut Crab?",
-      choose:['Up to 60 years','Up to 80 years','20 - 40 years'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/medium16.png'),
-      ques:"Question 16: The approximate number of Glass Frog species is…?",
-      choose:['160','220','350'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/medium17.png'),
-      ques:"Question 17: A Female Cane Toad can lay — — eggs?",
-      choose:['8,000 - 25,000','8,000 - 15,000','8,000 - 20,000'],
-      ans: 0
+      image: require('../../assets/image/medium/SkeletalSystem.jpg'),
+      ques:"Question 10: Which is NOT the function of the skeletal system?",
+      choose:['Produces blood cells','Maintains your blood pressure','Protects and supports organs'],
+      ans: 1
     },
   ],
   hard: [
     {
-      image: require('../../assets/images/quizz/hard1.png'),
-      ques:"Question 1: How long can a Crocodile stay underwater",
-      choose:['30 minutes','Two hours','At least one hours'],
+      image: require('../../assets/image/hard/brain.jpg'),
+      ques:"Question 1: Which is part of the brain responsible for elements that require thinking?",
+      choose:['Cerebrum','Cerebellum','Brain stem'],
+      ans: 0
+    },
+    {
+      image: require('../../assets/image/hard/nerves.png'),
+      ques:"Question 2: Where do most nerves start?",
+      choose:['Heart','Nerves cells','Spinal cord'],
       ans: 2
     },
     {
-      image: require('../../assets/images/quizz/hard2.png'),
-      ques:"Question 2: The Chameleon changes colour?",
-      choose:['Depending on their mood','Their temperature','Both of them'],
+      image: require('../../assets/image/hard/lungs.jpg'),
+      ques:"Question 3: How does the respiratory system prevent harmful substances from entering your lungs?",
+      choose:['Small hairs in your nose','Mucus in your trachea and bronchial, and the sweeping motion of cilia','All correct'],
       ans: 2
     },
     {
-      image: require('../../assets/images/quizz/hard3.png'),
-      ques:"Question 3: Where do Caimans live?",
-      choose:['The Northern and Southern hemispheres','Central and South America','Humic tropics'],
-      ans: 1
+      image: require('../../assets/image/hard/lungs.png'),
+      ques:"Question 4: How long do the lungs make oxygen available to your body and remove other gases from your body?",
+      choose:['3-5s','5-7s','7-9s'],
+      ans: 0
     },
     {
-      image: require('../../assets/images/quizz/hard4.png'),
-      ques:"Question 4: Which genus does cheetah belong to?",
-      choose:['Leptailurus','Pardofelis','Acinonyx'],
+      image: require('../../assets/image/hard/bronchial.jpg'),
+      ques:"Question 5: Where is the bronchi in the respiratory system?",
+      choose:['Left lung','Right lung','Throughout both lungs'],
       ans: 2
     },
     {
-      image: require('../../assets/images/quizz/hard5.png'),
-      ques:"Question 5: What is number of Blue Whales populations left in the world today?",
-      choose:['10,000 - 25,000','100,000 - 150,000','20,000 - 55,000'],
+      image: require('../../assets/image/hard/pharynx.jpg'),
+      ques:"Question 6: What does the pharynx look like?",
+      choose:['Tube','Funnel','Oval'],
+      ans: 1
+    },
+    {
+      image: require('../../assets/image/hard/bladder.png'),
+      ques:"Question 7: How much urine can the bladder hold at a time?",
+      choose:['500ml','600ml','700ml'],
       ans: 0
     },
     {
-      image: require('../../assets/images/quizz/hard6.png'),
-      ques:"Question 6: Which species of bears inhabits the Arctic?",
-      choose:['Panda Bears','Brown Bears','Polar Bears'],
+      image: require('../../assets/image/hard/kidney.png'),
+      ques:"Question 8: What is the main role of the kidneys?",
+      choose:['Bringing urine to the bladder','Maintaining homeostasis that keep the internal environment of the body consistent and comfortable','Monitoring the amount of hormones in your blood'],
+      ans: 1
+    },
+    {
+      image: require('../../assets/image/hard/urethra.png'),
+      ques:"Question 9: What are the main differences between male and female urethra?",
+      choose:['The function','The starting point','The number of organ systems it belongs to'],
       ans: 2
     },
     {
-      image: require('../../assets/images/quizz/hard7.png'),
-      ques:"Question 7: Baby cicadas are called?",
-      choose:['Nymphs','Lymphs','Joeys'],
+      image: require('../../assets/image/hard/Humananatomy.jpg'),
+      ques:"Question 10: How many main organs in the human body?",
+      choose:['78 organs','74 organs','71 organs'],
       ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/hard8.png'),
-      ques:"Question 8: How many different species of bumblebee are known?",
-      choose:['Over 300','250','150'],
-      ans: 1
-    },
-    {
-      image: require('../../assets/images/quizz/hard9.png'),
-      ques:"Question 9: Lifespan of Beetle?",
-      choose:['20 years','Up to 30 years','Up to 15 years'],
-      ans: 1
-    },
-    {
-      image: require('../../assets/images/quizz/hard10.png'),
-      ques:"Question 10: In which country might you find a Macaw in the wild?",
-      choose:['Brazil','Vietnam','Australia'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/hard11.png'),
-      ques:"Question 11: What is the approximate temperature you should keep Gouldian Finches at?",
-      choose:['About 70 degree fahrenheit','About 35 degree fahrenheit','About 65 degree fahrenheit'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/hard12.png'),
-      ques:"Question 12: How fast can Flamingos fly?",
-      choose:['60 km/h','75 km/h','50 km/h'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/hard13.png'),
-      ques:"Question 13: You can find Christmas Island Red Crab?",
-      choose:['Everywhere in the world','In North America','On Christmas and Cocos Islands (Australia)'],
-      ans: 2
-    },
-    {
-      image: require('../../assets/images/quizz/hard14.png'),
-      ques:"Question 14: When is the mating season of Blue Crab?",
-      choose:['Between May and October','Between January and August','Between May and July'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/hard15.png'),
-      ques:"Question 15: The females can carry several thousand eggs in their ovary, which may then account for as much as — — — — — of the animal's body mass?",
-      choose:['One third','One and a half','One Fourth'],
-      ans: 0
-    },
-    {
-      image: require('../../assets/images/quizz/hard16.png'),
-      ques:"Question 16: There are – – – species of Caecilian?",
-      choose:['125','124','120'],
-      ans: 1
-    },
-    {
-      image: require('../../assets/images/quizz/hard17.png'),
-      ques:"Question 17: How long do the American Bullfrog live up to?",
-      choose:['2 - 4 years','7 - 10 years','3 - 8 years'],
-      ans: 1
-    },
-    {
-      image: require('../../assets/images/quizz/hard18.png'),
-      ques:"Question 18: The African Clawed Frog's main food?",
-      choose:['Insects','Water Bugs and small Fish','Ants'],
-      ans: 1
     },
   ],
 };

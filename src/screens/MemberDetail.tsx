@@ -27,20 +27,20 @@ export default function MemberDetail() {
           <View style={{ marginTop: 10 }}>
             {
               memberDetailData[name].intro.map((text) => (
-                <Text style={{ fontWeight: "normal", marginTop: 10 }} key={text}>{text}</Text>
+                <Text style={{ fontWeight: "normal", marginTop: 10, fontSize: 16  }} key={text}>{text}</Text>
               ))
             }
           </View>
 
           <View>
               {memberDetailData[name].func.map((text) => (
-                  <Text style={{ fontWeight: "normal", marginTop: 10 }} key={text}>{text}</Text>
+                  <Text style={{ fontWeight: "normal", marginTop: 10, fontSize: 16 }} key={text}>{text}</Text>
                 ))}
           </View>
 
           <View>
               {memberDetailData[name].anatomy.map((text) => (
-                  <Text style={{ fontWeight: "normal", marginTop: 10 }} key={text}>{text}</Text>
+                  <Text style={{ fontWeight: "normal", marginTop: 10, fontSize: 16  }} key={text}>{text}</Text>
                 ))}
           </View>
         </View>
