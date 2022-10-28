@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   textmain: {
-    color: "#A1783F",
+    color: "#1F405F",
     fontSize: 30,
     fontWeight: "bold",
     marginBottom: 50,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   box: {
     width: "70%",
     height: 41,
-    backgroundColor: "#3D7944",
+    backgroundColor: "#1F405F",
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 20,

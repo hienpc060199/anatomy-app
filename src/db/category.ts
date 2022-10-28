@@ -5,55 +5,55 @@ import { MemberItemProps } from "../components/MemberItem";
 export const categoriesData: CategoryInfoProps[] = [
   {
     image: require("../../assets/image/Home/respiratorySystem.png"),
-    name: 'Respiratory\nsystem',
+    name: 'Respiratory\nSystem',
     title: 'respiratorySystem',
   },
 
   {
     image: require("../../assets/image/Home/nervousSystem.png"),
-    name: 'Nervous\nsystem',
+    name: 'Nervous\nSystem',
     title: 'nervousSystem',
   },
 
   {
     image: require("../../assets/image/Home/musculoskeletalSystem.png"),
-    name: 'Musculoskeletal\nsystem',
+    name: 'Musculoskeletal\nSystem',
     title: 'musculoskeletalSystem',
   },
 
   {
     image: require("../../assets/image/Home/maleSystem.png"),
-    name: 'Male\nreproductive\nsystem',
+    name: 'Male\nreproductive\nSystem',
     title: 'maleSystem',
   },
 
   {
     image: require("../../assets/image/Home/femaleSystem.png"),
-    name: 'Female\nreproductive\nsystem',
+    name: 'Female\nreproductive\nSystem',
     title: 'femaleSystem',
   },
 
   {
     image: require("../../assets/image/Home/excretorySystem.png"),
-    name: 'Excretory\nsystem',
+    name: 'Excretory\nSystem',
     title: 'excretorySystem',
   },
 
   {
     image: require("../../assets/image/Home/endocrineSystem.png"),
-    name: 'Endocrine\nsystem',
+    name: 'Endocrine\nSystem',
     title: 'endocrineSystem',
   },
 
   {
     image: require("../../assets/image/Home/digestiveSystem.png"),
-    name: 'Digestive\nsystem',
+    name: 'Digestive\nSystem',
     title: 'digestiveSystem',
   },
  
   {
     image: require("../../assets/image/Home/circulatorySystem.png"),
-    name: 'Circulatory\nsystem',
+    name: 'Circulatory\nSystem',
     title: 'circulatorySystem',
   },
 ];

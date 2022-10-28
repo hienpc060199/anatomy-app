@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     height: 41,
     backgroundColor: "#FFFFFF",
     borderRadius: 10,
-    borderColor: "#3D7944",
+    borderColor: "#1F405F",
     borderWidth: 1,
     justifyContent: "center",
   },
@@ -71,8 +71,8 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   correctBox: {
-    backgroundColor: "#3D7944",
-    borderColor: "#3D7944",
+    backgroundColor: "#1F405F",
+    borderColor: "#1F405F",
     borderWidth: 1,
   },
   correctText: {

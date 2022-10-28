@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F7D46B",
   },
   ques__true: {
-    backgroundColor: "#3D7944",
+    backgroundColor: "#1F405F",
   },
   ques__false: {
     backgroundColor: "#D00809",

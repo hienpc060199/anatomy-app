@@ -104,7 +104,7 @@ const Quizz = () => {
         >
           <Text
             style={{
-              color: "#3D7944",
+              color: "#1F405F",
             }}
           >
             Stop
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   text_level: {
-    color: "#3D7944",
+    color: "#1F405F",
     fontSize: 20,
     fontWeight: "bold",
     marginBottom: 20,
@@ -143,12 +143,12 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     fontSize: 18,
     fontWeight: "700",
-    color: "#757575",
+    color: "#1F405F",
   },
   box: {
     width: "70%",
     height: 41,
-    backgroundColor: "#3D7944",
+    backgroundColor: "#1F405F",
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 20,
@@ -161,13 +161,13 @@ const styles = StyleSheet.create({
   },
   btn__stop: {
     backgroundColor: "#FFFFFF",
-    borderColor: "#3D7944",
+    borderColor: "#1F405F",
     borderWidth: 1,
     borderRadius: 10,
     marginHorizontal: 5,
   },
   btn__continue: {
-    backgroundColor: "#3D7944",
+    backgroundColor: "#1F405F",
     borderRadius: 10,
     marginHorizontal: 5,
   },

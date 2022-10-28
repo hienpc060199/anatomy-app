@@ -23,18 +23,6 @@ export default function Slide(props: SlideProps) {
         sliderWidth={screenWidth}
         onSnapToItem={(index) => setSlideIndex(index)}
       />
-      {/* <HStack justifyContent="space-around" width={100}>
-        {data.map((_, i) => (
-          <Box
-            width={3}
-            height={3}
-            marginTop={2}
-            borderRadius={100}
-            bg={i == slideIndex ? "#306599" : "gray.600"}
-            key={i}
-          />
-        ))}
-      </HStack> */}
     </View>
   );
 }

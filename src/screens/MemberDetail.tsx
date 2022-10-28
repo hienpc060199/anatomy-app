@@ -23,15 +23,13 @@ export default function MemberDetail() {
         <View height={Platform.OS == "android" ? 8 : 44} bg="#306599" />
         <Header title={title} showSlide dataSlide={memberDetailData[name].slide} />
         
-        <View style={{ width: "90%", marginHorizontal: "5%", marginTop: 10 }}>
-          {/* <Text style={{ marginBottom: 10, fontSize: 24, fontWeight: "700" }}>{title.toLowerCase()}</Text> */}
+        <View style={{ width: "79%", marginHorizontal: "10.5%", marginTop: 10 }}>
           <View style={{ marginTop: 10 }}>
             {
               memberDetailData[name].intro.map((text) => (
                 <Text style={{ fontWeight: "normal", marginTop: 10 }} key={text}>{text}</Text>
               ))
             }
-              {/* <Text style={{ fontWeight: "normal"}}>{memberDetailData[name].intro}</Text> */}
           </View>
 
           <View>
